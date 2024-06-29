@@ -25,6 +25,8 @@ from huggingface_hub import HfApi
 
 import argparse
 
+from compute_acc import compute_accuracy
+
 def parse_args():
     parser = argparse.ArgumentParser(description="Train a model with optional resume and epoch settings.")
     parser.add_argument("--resume", action="store_true", default=False, help="Resume training from the last checkpoint.")
@@ -77,10 +79,10 @@ class QuestionAnsweringDataset(Dataset):
         return len(self.examples)
 
     def formatting_func(self, example):
-        prompt = f"Question: {example.question}\n"
+        prompt = f"Instruct: {example.question}\n"
         for i, option in enumerate(example.options, 1):
             prompt += f"Option {i}: {option}\n"
-        prompt += "Answer: "
+        prompt += "Output: "
         
         target = f"{example.answer}\nExplanation: {example.explanation}"
         
@@ -114,13 +116,27 @@ class QuestionAnsweringDataset(Dataset):
             "labels": labels,
         }
 
+class CustomTrainer(Trainer):
+    def __init__(self, dev_file=None, *args, **kwargs):
+        super().__init__(*args, **kwargs)
+        self.dev_file = dev_file
+
+    def evaluate(self, eval_dataset=None, ignore_keys=None, metric_key_prefix="eval"):
+        accuracy = compute_accuracy(self.model, self.tokenizer, self.dev_file)
+        self.log({"eval_accuracy": accuracy})
+        logging.info(f"Validation Accuracy: {accuracy}")
+        metrics = super().evaluate(eval_dataset, ignore_keys=ignore_keys, metric_key_prefix=metric_key_prefix)
+        metrics["eval_accuracy"] = accuracy
+        
+        return metrics
+
 def main():
     args = parse_args()
     model_name = "microsoft/phi-2"
     train_file = "data/qs_train.txt"
     dev_file = "data/qs_dev.txt"
     output_dir = "./save_phi2_ft_lora"
-    hf_repo_name = "alexgichamba/phi-2-finetuned-qa-lora-r8"
+    hf_repo_name = "alexgichamba/phi-2-finetuned-qa-lora-r32-a16"
 
     tokenizer = AutoTokenizer.from_pretrained(model_name,
                                               padding_side="left",
@@ -131,13 +147,20 @@ def main():
     tokenizer.pad_token = tokenizer.eos_token
     model = AutoModelForCausalLM.from_pretrained(model_name)
 
+    print(model)
+
     # Configure LoRA
     peft_config = LoraConfig(
-        task_type=TaskType.CAUSAL_LM,
-        r=8,
-        lora_alpha=32,
-        lora_dropout=0.1,
-    )
+                            r=32,
+                            lora_alpha=64,
+                            target_modules=[
+                                            "Wqkv",
+                                            "fc1",
+                                            "fc2",],
+                            bias="none",
+                            lora_dropout=0.05,  # Conventional
+                            task_type="CAUSAL_LM",
+                            )
     model = get_peft_model(model, peft_config)
 
     train_dataset = QuestionAnsweringDataset(train_file, tokenizer)
@@ -146,16 +169,17 @@ def main():
     training_args = TrainingArguments(
         output_dir=output_dir,
         num_train_epochs=args.num_epochs,
-        per_device_train_batch_size=2,
-        per_device_eval_batch_size=2,
-        warmup_steps=500,
+        per_device_train_batch_size=1,
+        per_device_eval_batch_size=1,
+        gradient_accumulation_steps=4,
+        warmup_steps=100,
         weight_decay=0.01,
         logging_dir="./logs",
         logging_steps=10,
-        evaluation_strategy="steps",
-        eval_steps=500,
-        save_steps=1400,
-        save_total_limit=3,
+        eval_strategy="steps",
+        eval_steps=50,
+        save_steps=50,
+        save_total_limit=20,
         load_best_model_at_end=True,
         report_to="wandb",
     )
@@ -163,12 +187,14 @@ def main():
     # Use DataCollatorForLanguageModeling for dynamic padding
     data_collator = DataCollatorForLanguageModeling(tokenizer=tokenizer, mlm=False)
 
-    trainer = Trainer(
+    trainer = CustomTrainer(
+        dev_file=dev_file, # Custom argument
         model=model,
         args=training_args,
         train_dataset=train_dataset,
         eval_dataset=dev_dataset,
         data_collator=default_data_collator,
+        tokenizer=tokenizer,
     )
 
     trainer.train()

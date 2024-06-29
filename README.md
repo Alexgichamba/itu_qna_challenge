@@ -8,6 +8,16 @@ pip install -r requirements.txt
 ```
 
 ## Training
+First login to HF
 ```shell
 huggingface-cli login
+```
+### Finetuning Phi-2 on the questions
+```shell
+python3 finetuning/trainer_qns.py --num_epochs <num_epochs>
+```
+
+### Inference with Phi-2
+```shell
+python3 phi2_inference.py --model_name "alexgichamba/phi-2-finetuned-qa-lora-r32-a16" --adapter_path save_phi2_ft_lora/checkpoint-300/
 ```
