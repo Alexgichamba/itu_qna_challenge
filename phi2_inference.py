@@ -44,7 +44,7 @@ def load_model(model_name, local_checkpoint=None, adapter_path=None):
 
     return model, tokenizer
 
-def generate_answer(question, options, model, tokenizer, max_length=512, max_new_tokens=20):
+def generate_answer(question, options, model, tokenizer, max_length=512, max_new_tokens=10):
     input_text = f"Instruct: {question}\n"
     for i, option in enumerate(options, 1):
         input_text += f"Option {i}: {option}\n"
