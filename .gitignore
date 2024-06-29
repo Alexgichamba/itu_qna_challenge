@@ -1,0 +1,5 @@
+data/rel18
+data/qs_*.txt
+wandb
+training.log
+save_phi2_ft_lora
