@@ -1,6 +1,9 @@
 import json
 import re
 import torch
+from tqdm import tqdm
+def remove_tags(question):
+    return (question.split('?')[0] + '?')
 
 def compute_accuracy(model, tokenizer, dev_file):
     model.eval()
@@ -12,8 +15,8 @@ def compute_accuracy(model, tokenizer, dev_file):
     
     tokenizer.pad_token = tokenizer.eos_token
     with torch.no_grad():
-        for question_id, question_data in dev_data.items():
-            question = question_data['question']
+        for question_id, question_data in tqdm(dev_data.items(), desc="Computing accuracy"):
+            question = remove_tags(question_data['question'])
             option_keys = sorted(key for key in question_data if key.startswith("option "))
             options = [question_data[key] for key in option_keys]
             correct_answer = question_data['answer']
@@ -29,7 +32,7 @@ def compute_accuracy(model, tokenizer, dev_file):
             # Generate answer
             outputs = model.generate(
                 **inputs,
-                max_new_tokens=50,
+                max_new_tokens=15,
                 num_return_sequences=1,
                 no_repeat_ngram_size=2,
             )
@@ -41,6 +44,11 @@ def compute_accuracy(model, tokenizer, dev_file):
             match = re.search(r'option (\d)', generated_answer.lower())
             if match:
                 generated_option = f"option {match.group(1)}"
+                if generated_option in correct_answer.lower():
+                    correct += 1
+            # if not, find the first number in the generated answer
+            elif match := re.search(r'\d', generated_answer):
+                generated_option = f"option {match.group()}"
                 if generated_option in correct_answer.lower():
                     correct += 1
             else:

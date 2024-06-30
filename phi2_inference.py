@@ -10,6 +10,8 @@ import argparse
 import csv
 from tqdm import tqdm
 
+from finetuning.compute_acc import remove_tags
+
 def load_model(model_name, local_checkpoint=None, adapter_path=None):
     tokenizer = AutoTokenizer.from_pretrained(model_name,
                                               padding_side="left",
@@ -74,17 +76,23 @@ def process_file(input_file, model, tokenizer):
     
     for question_id, question_data in tqdm(data.items(), desc="Processing questions"):
         question_id = question_id.split(" ")[1]
-        question = question_data['question']
+        question = remove_tags(question_data['question'])
         option_keys = sorted(key for key in question_data if key.startswith("option "))
         options = [question_data[key] for key in option_keys]
         
         generated_answer = generate_answer(question, options, model, tokenizer)
         
+        print(question)
+        print(generated_answer)
         # Extract the option number from the generated answer
         match = re.search(r'option (\d)', generated_answer.lower())
         if match:
             answer_id = int(match.group(1))
             print(f"Answer ID: {answer_id}")
+        # if not, find the first number in the generated answer
+        elif match := re.search(r'\d', generated_answer):
+            answer_id = int(match.group())
+            print(f"Matched ID: {answer_id}")
         else:
             print(f"ERROR: Could not extract option number from the generated answer for question {question_id}")
             answer_id = 0  # Indicates failure to extract an answer

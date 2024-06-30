@@ -25,7 +25,7 @@ from huggingface_hub import HfApi
 
 import argparse
 
-from compute_acc import compute_accuracy
+from compute_acc import compute_accuracy, remove_tags
 
 def parse_args():
     parser = argparse.ArgumentParser(description="Train a model with optional resume and epoch settings.")
@@ -68,7 +68,7 @@ class QuestionAnsweringDataset(Dataset):
             option_keys = sorted(key for key in item if key.startswith("option "))
             options = [item[key] for key in option_keys]
             examples.append(QuestionAnsweringExample(
-                question=item["question"],
+                question=remove_tags(item["question"]),
                 options=options,
                 answer=item["answer"],
                 explanation=item["explanation"]
@@ -104,12 +104,12 @@ class QuestionAnsweringDataset(Dataset):
         attention_mask = result["attention_mask"].squeeze(0)
         
         # Find the position where the answer starts
-        prompt = full_text.split("Answer:")[0] + "Answer:"
+        prompt = full_text.split("Output:")[0] + "Output:"
         answer_start = len(self.tokenizer.encode(prompt, add_special_tokens=False))
         
         labels = input_ids.clone()
         labels[:answer_start] = -100  # We don't want to predict the prompt, only the answer and explanation
-        
+
         return {
             "input_ids": input_ids,
             "attention_mask": attention_mask,
@@ -136,7 +136,7 @@ def main():
     train_file = "data/qs_train.txt"
     dev_file = "data/qs_dev.txt"
     output_dir = "./save_phi2_ft_lora"
-    hf_repo_name = "alexgichamba/phi-2-finetuned-qa-lora-r32-a16"
+    hf_repo_name = "alexgichamba/phi-2-finetuned-qa-lora-r32-a16_notag"
 
     tokenizer = AutoTokenizer.from_pretrained(model_name,
                                               padding_side="left",
@@ -177,10 +177,12 @@ def main():
         logging_dir="./logs",
         logging_steps=10,
         eval_strategy="steps",
-        eval_steps=50,
-        save_steps=50,
+        eval_steps=100,
+        save_steps=100,
         save_total_limit=20,
         load_best_model_at_end=True,
+        metric_for_best_model="eval_accuracy",
+        greater_is_better=True,
         report_to="wandb",
     )
 
