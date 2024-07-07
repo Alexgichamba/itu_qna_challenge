@@ -6,11 +6,10 @@ import numpy as np
 import json
 import random
 
-if __name__ == '__main__':
+from prepare_docs import make_abbreviations, find_appearing_abbreviations
 
-    random_seed = 20
-    random.seed(random_seed)
-
+# arrange into functions
+def make_question_files():
     with open('data/TeleQnA_training.txt', 'r') as f_train_in:
         all_qns = json.load(f_train_in)
         # change to list
@@ -50,3 +49,24 @@ if __name__ == '__main__':
     print(f'Number of development questions: {len(dev_qns)}')
     print(f'Number of training questions: {len(train_qns)}')
     print(f'Number of evaluation questions: {len(eval_qns)}')
+
+if __name__ == '__main__':
+
+    random_seed = 20
+    random.seed(random_seed)
+
+    # make_question_files()
+
+    # # make abbreviations
+    # abbreviations = make_abbreviations(directory='data/rel18',
+    #                                    abbrevs_heading='Abbreviations',
+    #                                    abbrevs_heading_level=2)
+    # all_abbreviations = dict(sorted(abbreviations.items()))
+    # with open('data/abbreviations.txt', 'w') as f:
+    #     for abbreviation, full_form in all_abbreviations.items():
+    #         f.write(f"{abbreviation}: {full_form}\n")
+
+            
+        
+
+

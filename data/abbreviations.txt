@@ -1,6 +1,19 @@
+(H)eNB: eNB or HeNB
+(N)ES: (Network) Energy Saving
+(NG)EN-DC: E-UTRA NR Dual Connectivity (covering E-UTRA connected to EPC or 5GC)
+(P)T: Network Address (and Port) Translation
+(R)AN: (Radio) Access Network
+1xCS IWS: Single Radio Voice Call Continuity Interworking solution Function for 3GPP2 1xCS
+1xCSFB: Circuit Switched Fallback to 1xRTT
+1xRTT: CDMA2000 1x Radio Transmission Technology
+3DOF: 3 Degrees of freedom
+3DoF: Three Degrees of Freedom
+3G: 3rd Generation
+3GPP: Third Generation  Partnership Project
+3PTY: Three-Party
+3pcc: Third party call control
 4G-GUTI: 4G-Globally Unique Temporary Identifier
 4Rx: 4 UE receiver antenna ports
-4xx: A status-code in the range 400 through 499
 5G AV: 5G Authentication Vector
 5G DDNMF: 5G Direct Discovery Name Management Function
 5G GM: 5G Grand Master
@@ -25,79 +38,76 @@
 5G-TMSI: 5G Temporary Mobile Subscription Identifier
 5G-VN: 5G Virtual Network
 5GAA: 5G Automative Association
-5GC: 5G Core Network
+5GC: Fifth Generation core network
 5GCN: 5G Core Network
-5GMM: 5GS Mobility Management
+5GMM: 5G Mobility Management protocol
 5GMS: 5G Media Streaming
 5GMS EAS: Edge-enabled 5GMS Application Server
-5GMSA: 5GMS Architecture
-5GMSd: 5GMS downlink
-5GMSu: 5GMS uplink
-5GS: 5G System
+5GMSA: 5G Media Streaming Architecture
+5GMSd: 5G Media Streaming downlink
+5GMSu: 5G Media Streaming uplink
+5GS: 5G Systems
 5GS UDR: 5G Unified Data Repository
-5GSM: 5GS Session Management
+5GSM: 5G Session Management
 5GVN: 5G Virtual Network
-5MBS: 5G Multicast-Broadcast Service
+5MBS: 5G Multicast-Broadcast Services
 5QI: 5G QoS Identifier
-5xx: A status-code in the range 500 through 599
-6DoF: Three Degrees of Freedom
-6xx: A status-code in the range 600 through 699
+6DoF: Six Degrees of freedom
 8-VSB: 8-level Vestigial-SideBand
 A-ADRF: Application layer - Analytical Data Repository Function
 A-AoA: Azimuth-Angle of Arrival
-A-CSI: Aperiodic-CSI
+A-CSI: Aperiodic CSI
 A-DCCF: Application layer - Data Collection and Coordination Function
 A-GNSS: Assisted-GNSS
 A-KID: AKMA Key IDentifier
 A-MPR: Additional Maximum Power Reduction
 A-SE: Additional spurious emissions
 A-SEM: Spectrum Emission Mask
-A-TID: AKMA Temporary UE IDentifier
+A-TID: AKMA Temporary Identifier
 A/S: Actuator/Sensor
 A/V: Audio/Visual
 A2P: Application to Person
 A2X: Aircraft-to-Everything
 A2XP: Aircraft-to-Everything Policy
-AA: Antenna Array
-AAA: Authentication, Authorization, Account
-AAA : Authentication Authorization Accounting
-AAA-S: Authentication, Authorization and Accounting Server
+AA: Antenna Array | Authentication and Authorization | Authorization/Authentication
+AAA: Authentication, Authorization and Accounting
+AAA-S: Authentication, Authorization and Accounting Server 
 AAC: Advanced Audio Coding
 AAM: Area Airspace Manager
-AAS: Active Antenna System
+AAS: Antenna Array System
 AAS BS: Active Antenna System Base Station
 AAU: Active Antenna Unit
-AAnF: AKMA Anchor Function
+AAnF: Authentication and Key Management for Applications (AKMA) Anchor Function
 AB: Access Barring
 ABBA: Anti-Bidding down Between Architectures
 ABMF: Account Balance Management Function
 ABNF: Augmented Backus-Naur Form
 ABR: Adaptive Bit Rate
 ABS: Almost Blank Subframe
-AC: Application Client
+AC: Access Category | Access Class (of the USIM) | Access Condition | Alternating Current | Anechoic Chamber | Application Characteristics | Application Client
 ACA: Accounting-Answer
 ACDC: Application specific Congestion control for Data Communication
-ACE: Authentication and Authorization for Constrained Environments
+ACE: Application-Controlled Extension | Authentication and Authorization for Constrained Environments
 ACID: Application Client Identification
 ACIR: Adjacent Channel Interference Ratio
-ACK: Acknowledgement (in HARQ protocols)
-ACL: Access Control List
+ACK: ACKnowledgment message
+ACL: APN Control List
 ACLR: Adjacent Channel Leakage Ratio
 ACM: Address Complete Message
 ACME: Automatic Certificate Management Environment
-ACN: Ambisonics Channel Number
+ACN: Ambisonic Channel Number
 ACR: Application Context Relocation
 ACR/CB: Anonymous Communication Rejection and Communication Barring
-ACS: Adjacent Channel Selectivity
+ACS: Auto-Configuration Server
 ACT: Application Context Transfer
-ADAE: Application Data Analytics Enabler
+ADAE: Application Data Analytics Enablement
 ADAEC: Application Data Analytics Enabler Client
-ADAES: Application Data Analytics Enabler Server
-ADC: Application Detection and Control
+ADAES: Application Data Analytics Enablement Services
+ADC: Analog-to-Digital Converter
 ADF: Accounting Data Forwarding function block
 ADMF: LI Administration Function
 ADN: Abbreviated Dialling Number
-ADR: Accumulated Delta Range
+ADR: Accumulated Delta-Range
 ADRF: Analytics Data Repository Function
 ADU: Application Data Unit
 AE: Authentication Extension
@@ -106,33 +116,32 @@ AEF: API Exposing Function
 AES: Advanced Encryption Standard
 AF: Application Function
 AF/AS: Application Function / Application server
-AF_ID: AF Identifier
-AGC: Automatic Gain Control
+AF_ID: Application Function Identity
+AGC: Automatic gain control
 AGV: Automated Guided Vehicle
 AGW: Access GateWay
 AI: Artificial Intelligence
 AI/ML: Artificial Intelligence/Machine Learning
 AICH: Acquisition Indicator CHannel
-AID: Application Object Identifier 
+AID: Application Identifier 
 AILC: Assistance Information bit for Local Cache
-AK: Anonymity key
+AK: Anonymity Key
 AKA: Authentication and Key Agreement
 AKMA: Authentication and Key Management for Applications
-AL: Aggregation level
+AL: Aggregation level | Alert Limit
 AL FEC: Application Level FEC
 AL-SDU: Application Layer - Service Data Unit
 ALR: Area Loss Rate
 ALW: ALWays
-AM: Access and Mobility Management
-AMBR: Aggregated Maximum Bit Rate
+AM: Acknowledged Mode
+AMBR: Aggregated Maximum Bitrate
 AMC: Adaptive Modulation and Coding
 AMD: AM Data
-AMF: Access and Mobility Management Function
-AMF : Access and Mobility Management Function
+AMF: Access Management Function
 AMN: Artificial Mains Network
 AMR: Adaptive Multi Rate
 AMR-NB: Adaptive Multi-Rate - NarrowBand
-AMR-WB: Adaptive Multi-Rate - WideBand
+AMR-WB: Adaptive Multi Rate – Wide Band
 AMR-WB IO: Adaptive Multi-Rate - WideBand Inter-operable Mode, included in the EVS codec
 AN: Access Network
 ANBR: Access Network Bitrate Recommendation
@@ -143,22 +152,22 @@ ANDSF-SN: Access Network Discovery and Selection Function Server Name
 ANDSP: Access Network Discovery and Selection Policy
 ANID: Access Network Identity
 ANL: Autonomous Network Level
-ANM: Answer Message
+ANM: ANswer Message
 ANQP: Access Network Query Protocol
 ANR: Automatic Neighbour Relation
 AOA: Azimuth angle Of Arrival
-AOC: Advice Of Charge
+AOC: Advice Of Charge 
 AOD: Azimuth angle Of Departure
 AOI: Area of Interest
 AOMT: AS-Originated Mobile-Terminated
-AP: Antenna port
+AP: Access Point
 APC: Antenna Phase Center
 APCO: Additional Protocol Configuration Options
-APF: API Provider Function
-API: Application Programming Interface
+APF: API Publishing Function 
+API: Application Program Interfaces
 APN: Access Point Name
 APN-AMBR: APN Aggregate Maximum Bit Rate
-APN-NI: Access Point Name Network Identifier
+APN-NI: APN Network Identifier
 APN-OI: Access Point Name Operator Identifier
 APNS: Apple Push Notification Service
 APP: APPlication-defined RTCP packet
@@ -169,9 +178,9 @@ ARFCN: Absolute Radio Frequency Channel Number
 ARP: Antenna Reference Point
 ARPF: Authentication credential Repository and Processing Function
 ARPI: Additional RRM Policy Index
-ARQ: Automatic Repeat request
+ARQ: Automatic Repeat Request
 ARR: Aggregated RUCI Report Request
-AS: Application Server
+AS: Access Stratum  | Angular Spread | Application Server  | SIP Application Server
 AS layer: Access Stratum layer
 ASA: Azimuth angle Spread of Arrival
 ASCI: Advanced Speech Call Items, including VGCS, VBS and eMLPP
@@ -179,41 +188,41 @@ ASCII: American Standard Code for Information Interchange
 ASCS: Adjacent Subcarrier selectivity
 ASD: Azimuth angle Spread of Departure
 ASIC: Application-Specific Integrated Circuit
-ASK: Amplitude Shift Keying
+ASK: Amplitude-shift keying
 ASL: Active Speech Level
 ASM: Application Service Management
 ASME: Access Security Management Entity
 ASN.1: Abstract Syntax Notation One
 ASP: Application Service Provider
 ASTC: Adaptive Scalable Texture Compression
-ASTI: Access Stratum TIme
+ASTI: Access Stratum Time distribution
 AT: ATtention; this two-character abbreviation is always used to start a command line to be sent from TE to TA
 ATCF: Access Transfer Control Function
 ATG: Air To Ground
-ATGW: Access Transfer GateWay
+ATGW: Access Transfer Gateway
 ATIAS: Terminal Audio quality performance and Test methods for Immersive Audio Services
 ATM: Asynchronous Transfer Mode
 ATO: Automatic Train Operation 
 ATP: Automatic Train Protection
 ATSC: Advanced Television Systems Committee
-ATSSS: Access Traffic Steering, Switching, Splitting
-ATSSS-LL: ATSSS Low Layer
+ATSSS: Access Traffic Steering, Switching and Splitting | Access Traffic Steering, Switching, Splitting
+ATSSS-LL: ATSSS Low-Layer
 ATT: Attenuator
-ATW: Asynchronous TimeWarp
+ATW: Asynchronous Time Warping | Asynchronous TimeWarp
 AUC: Authentication Centre
-AUID: Application Unique ID
+AUID: Application Unique IDentity
 AUL: Autonomous Uplink
-AUL-DFI: Autonomous UL Downlink Feedback Indication 
+AUL-DFI: AUL downlink feedback information | Autonomous UL Downlink Feedback Indication 
 AUL-UCI: AUL uplink control information
 AUN3: Authenticable Non-3GPP devices
-AUSF: AUthentication Server Function
-AUTN: Authentication Token
+AUSF: Authentication Server Function
+AUTN: Authentication token
 AUTS: Re-synchronisation Token
-AV: Authentication Vector
+AV: Audio-Visual | Authentication Vector 
 AV': transformed Authentication Vector 
-AVC: Advanced Video Coding
+AVC: Advanced Video Coding | Assured Voice Communication
 AVC-HD: Advanced Video Codec – High Definition
-AVP: Attribute-Value-Pair
+AVP: Attribute-Value Pair
 AVPROD: AV Production
 AW: Average Window 
 AWGN: Additive White Gaussian Noise
@@ -226,20 +235,20 @@ App: Application
 Att: Attempt(s,ed)
 AuC: Authentication Centre
 Auto-NS-LCM: Automatic Application Layer Network Slice Lifecycle Management
-B-TID: Bootstrapping - Transaction IDentifier
+B-TID: Bootstrapping Transaction Identifier
 B2B: Business to Business
 B2B2X: Business to Business to Everything 
-B2BUA: Back-to-Back User Agent
+B2BUA: Back 2 Back User Agent | Back-to-Back User Agent
 B2C: Business to Consumer
 BA: Bandwidth Adaptation
-BAP: Backhaul Adaptation Protocol
+BAP: Backhaul Adaptation Protocol 
 BAR: Buffering Action Rule
 BAT: Burst Arrival Time
 BB: Base Band
 BBERF: Bearer Binding and Event Reporting Function
-BBF: Broadband Forum
+BBF: Broadband Forum 
 BBIFF: Bearer Binding Intercept and Forward Function
-BC: Band Combination
+BC: Band Category | Band Combination | Boundary Clock | Broadcast
 BC1: Block Compression for RGB
 BCCH: Broadcast Control Channel
 BCD: Binary Coded Decimal
@@ -255,7 +264,7 @@ BD MDT: Baseline DNS Message Detection Template
 BDN: Barred Dialling Number
 BDS: BeiDou Navigation Satellite System
 BDT: Background Data Transfer
-BER: Bit Error Rate
+BER: Basic Encoding Rules | Bit Error Ratio
 BER-TLV: Basic Encoding Rule - TLV
 BFCP: Binary Floor Control Protocol
 BFD: Beam Failure Detection
@@ -267,45 +276,44 @@ BH: Backhaul
 BHHL: Beside Head and Hand Left Side (Head and Hand Phantom)
 BHHR: Beside Head and Hand Right Side (Head and Hand Phantom)
 BICC: Bearer Independent Call Control
-BIPM: International Bureau of Weights and Measures
+BIPM: Bureau International des Poids et Mesures (International Bureau of Weights and Measures)
 BL: Bandwidth reduced Low complexity
 BL/CE: Bandwidth-reduced Low-complexity or Coverage Enhanced
 BLE: Bluetooth Low Energy
 BLER: Block Error Rate
 BM: Beam Management
 BM-RS: Beam Management Reference Signal
-BM-SC: Broadcast-Multicast Service Centre
+BM-SC: Broadcast Multicast Service Centre
 BMCA: Best Master Clock Algorithm
 BMFF: (ISO) Base Media File Format
 BMG: Broadcast Message Gateway
 BNF: Backus–Naur Form
-BP: Branching Point
+BP: Beam Peak | Branching Point
 BPF: Band Pass Filter 
 BPRE: Bits Per Resource Element
 BPS: Body Proximity Sensing
-BPSK: Binary Phase Shift Keying
+BPSK: Binary Phase-Shift Keying
 BR: Bandwidth Reduced
 BR-BCCH: Bandwidth Reduced Broadcast Control Channel
 BRAS: Broadband Remote Access Server
 BRID: Broadcast Remote Identification
 BRIR: Binaural Room Impulse Response
-BS: Bearer Services
+BS: Base Station | Bearer Services | Billing System | Binding Server
 BSC: Base Station Controller
-BSF: Bootstrapping Server Function
-BSM: Basic Safety Message
+BSF: Binding Support Function | BootStrapping Function | Bootstrapping Server Function
+BSM: Basic safety message
 BSR: Buffer Status Report
-BSS: Business Support System
+BSS: Base Station Subsystem | Base Station System | Basic Service Set | Business Support System
 BSSID: Basic Service Set Identifier
 BT: Bluetooth
-BTS: Base Transceiver Station
-BVLOS: Beyond Visual Line of Sight
+BTS: Base Transceiver Station (GERAN)
+BVLOS: Beyond Visual Line of Sight 
 BVT: Basic Vulnerability Testing
 BW: Bandwidth
-BWP: Bandwidth part
-BWP : Bandwidth part
+BWP: Bandwidth Part
 BoW: Bag-Of-visual-Words
 C-DNS: Central DNS
-C-IMD        : [Counter Intermodulation Distortion]
+C-IMD: Counter Intermodulation Distortion
 C-MSISDN: Correlation MSISDN
 C-NEF: Central NEF
 C-PSA UPF: Central PSA UPF
@@ -316,66 +324,66 @@ C-link: Control link
 C-plane: Control Plane
 C/I: Carrier-to-Interference Power Ratio
 C2: Command and Control
-CA: Carrier Aggregation
+CA: Carrier Aggregation  | Certification Authority
 CAA: Civil Aviation Authorities
 CAAR: Central AC Association Repository
 CABW: Cumulative Aggregated Channel Bandwidth
-CACLR: Cumulative ACLR
-CAD: Computer-Aided Design
+CACLR: Cumulative Adjacent Channel Leakage Ratio
+CAD: Computer Aided Design
 CAG: Closed Access Group
 CAG-ID: Closed Access Group Identifier
-CAM: Cooperative Awareness Message
-CAMEL: Customized Applications for  network Enhanced Logic
+CAM: Cooperative awareness message
+CAMEL: Customised Application Mobile Enhanced Logic | Customised Applications for Mobile network Enhanced Logic | Customized Applications for  network Enhanced Logic
 CAP: CAMEL Application Part 
 CAPC: Channel Access Priority Class
-CAPIF: Common API Framework
+CAPIF: Common API Framework for 3GPP northbound APIs | Common API Framework for northbound APIs
 CAPTCHA: Completely Automated Public Turing test to tell Computers and Humans Apart
 CAR: Correct Area Rate
-CAS: Cell Acquisition Subframes
-CAT: Consolidated Audit Trail
+CAS: Cell Acquisition Subframes | Cloud Application Server
+CAT: CATegory | Consolidated Audit Trail | Customized Alerting Tone
 CATR: Compact Antenna Test Range
 CAZAC: Constant Amplitude Zero Auto-Correlation
-CA_nX-nY: Inter-band CA of component carrier(s) in one sub-block within Band nX and component carrier(s) in one sub-block within Band nY where nX and nY are the applicable NR operating bands.
-CB: Communication Barring
-CBC: Cell Broadcast Centre
+CA_nX-nY: Inter-band CA of component carrier(s) in one sub-block within Band X and component carrier(s) in one sub-block within Band Y where X and Y are the applicable NR operating band | Inter-band CA of component carrier(s) in one sub-block within Band nX and component carrier(s) in one sub-block within Band nY where nX and nY are the applicable NR operating bands
+CB: Cell Broadcast | Code Block | Communication Barring
+CBC: Cell Broadcast Center
 CBD: Candidate Beam Detection
 CBE: Cell Broadcast Entity
 CBG: Code Block Group
 CBGTI: Code Block Group Transmission Information
 CBMID: Cell Broadcast Message Identifier
 CBOR: Concise Binary Object Representation
-CBP: Coverage-Based Paging
-CBR: Channel Busy Ratio
+CBP: Constrained Baseline Profile | Coverage-Based Paging
+CBR: Channel busy ratio | Constant BitRate
 CBRA: Contention Based Random Access
 CBRS: Citizens Broadband Radio Service
-CBS: Cell Broadcast Service
+CBS: Cell Broadcast Service | Central Binding Server
 CBW: Channel Bandwidth
-CC: Component Carriers
+CC: Common Criteria | Completion of Communications | Component Carriers | Content of Communication
 CC-RNTI: Common Control RNTI
-CCA: Client Credential Assertion
+CCA: Clear Channel Assessment | Client Credentials Assertion | Credit-Control-Answer
 CCBS: Completion of Communications to Busy Subscriber
 CCCF: Call Continuity Control Function
-CCCH: Common Control Channel
-CCE: Control Channel Element
-CCF: CAPIF Core Function
+CCCH: Common Control Channel *)
+CCE: Control Channel Element 
+CCF: CAPIF Core Function | Charging Collection Function
 CCM: Codec Control Messages
 CCNL: Completion of Communications on Not Logged-in
-CCNR: Communication Completion on No Reply
+CCNR: Communication Completion on No Reply | Completion of Communications on No Reply
 CCO: Cell Change Order
 CCP: Capability Configuration Parameter
-CCR: Credit Control Request
-CCS: Converged Charging System
+CCR: Credit-Control-Request
+CCS: Converged Charging System | Cross Carrier Scheduling
 CD: Communication Deflection
 CD-SSB: Cell Defining SSB
-CDF: Charging Data Function
-CDIV: Communication DIVersion
+CDF: Charging Data Function | Cumulative Distribution Function
+CDIV: Call DIVersion | Communication Diversion
 CDL: Clustered Delay Line
 CDM: Code division multiple
 CDMA: Code Division Multiple Access
-CDN: Content Delivery Network
+CDN: Content Delivery Network / Content Distribution Network | Coupling/Decoupling Network
 CDP: Customer Data Platform
 CDR: Charging Data Record
-CE: Coverage Enhancement
+CE: Control Element | Coverage Enhancement
 CEF: Charging Enablement Function
 CEMAF: Certificate Enrolment and MAnagement Framework
 CER: Capabilities Exposure Role
@@ -384,51 +392,51 @@ CFB: Communication Forwarding Busy
 CFFDNF: Combined Far-Field/Direct-Near-Field
 CFFNF: Combined Far-Field/Near-Field
 CFI: Control Format Indicator
-CFNL: Communication Forwarding on Not Logged-in
+CFNL: Communication Forwarding on No Logged-in
 CFNR: Communication Forwarding No Reply
 CFNRc: Communication Forwarding on subscriber Not Reachable
-CFO: Center frequency offset
-CFR: Common Frequency Resource
+CFO: Carrier Frequency Offset | Center frequency offset
+CFR: Common Frequency Resources | Crest Factor Reduction
 CFRA: Contention Free Random Access
 CFU: Communication Forwarding Unconditional
-CG: Charging Gateway
+CG: Carrier Group | Cell Group | Charging Gateway | Configured Grant
 CG-DFI: CG - Downlink Feedback Information
-CG-SDT: Configured Grant Small Data Transmission
+CG-SDT: Configured Grant-Small Data Transmission | Configured Grant-based SDT
 CG-UCI: CG - Uplink Control Information
 CGF: Charging Gateway Function 
-CGI: Cell Global Identifier
+CGI: Cell Global Identifier  | Cell Global Identity | Computer Generated Imagery | Computer Graphics and Images
 CH: Credentials Holder
-CHAP: Challenge Handshake Authentication Protocol
+CHAP: Challenge-Handshake Authentication Protocol
 CHEM: Coverage and Handoff Enhancements using Multimedia error robustness feature
-CHF: Charging Function
+CHF: CHarging Function
 CHO: Conditional Handover
 CHP: Constrained High Profile
 CI: Cancellation Indication
 CI-RNTI: Cancellation Indication RNTI
 CIBR: Common Informative Binaural Renderer
 CICP: Coding-independent Code Points
-CID: Cell-ID (positioning method)
+CID: Cell-ID (positioning method) | Context Identifier
 CIF: Carrier Indicator Field
 CIM: Counter-InterModulation
 CIR: Channel Impulse Response
 CIS: Center for Internet Security
-CIoT: Cellular Internet of Things
+CIoT: Cellular Internet of Things | Cellular IoT
 CJT: Coherent Joint Transmission
-CK: Ciphering Key
+CK: Cipher key | Ciphering Key | Confidentiality Key
 CKSRVCC: Cipher Key for Single Radio Voice Continuity
-CLAS: Centimeter Level Augmentation Service
+CLAS: Centimetre Level Augmentation Service
 CLF: Connectivity session Location and repository Function
-CLI: Cross link interference
+CLI: Calling Line Identifier | Cross Link Interference 
 CLTA: Co-Location Test Antenna
 CLUE: ControLling mUltiple streams for tElepresence
-CM: Configuration Management
+CM: Certificate Management | Conditional Mandatory | Configuration Management  | Connection Management
 CMAF: Common Media Application Format
-CMAS: Commercial Mobile Alert System
-CMC: Configuration Management Client
+CMAS: Commercial Mobile Alert Service | Commercial Mobile Alert System
+CMC: Configuration Management Client | Connection Mobility Control
 CMNE: Certificate Management Network Entity
 CMOS: Complementary Metal-Oxide-Semiconductor
-CMP: Certificate Management Protocol
-CMR: Channel Measurement Resource
+CMP: Certificate Management Protocol | Cube-Map Projection
+CMR: Channel Measurement Resource | Codec Mode Request
 CMS: Configuration Management Server
 CN: Core Network
 CN PDB: Core Network Packet Delay Budget
@@ -439,64 +447,63 @@ CNC: Centralized Network Configuration
 CNF: Conjunctive Normal Form
 CNI: Critical National Infrastructure
 CNL: Co-operative Network List
-CNN: Convolution Neural Network
+CNN: Convolutional Neural Network
 CNR: Completion of communication on No Reply
 CO: Conditional Optional
 CONF: CONFerence calling
 CORBA: Common Object Request Broker Architecture
-CORESET: Control resource set
+CORESET: Control Resource Set
 CORS: Cross-Origin Resource Sharing
 COT: Channel Occupancy Time
 COTS: Commercial Off The Shelf
-CP: Control Plane
+CP: Carrier Phase | Client Provisioning | Communication Pattern | Content Provider | Control Plane  | Cyclic Prefix 
 CP-CIoT: Control Plane CIoT
 CP-EDT: Control Plane EDT
 CP-OFDM: Cyclic Prefix-OFDM
 CP-OFDMA: Cyclic Prefix-Orthogonal Frequency-Division Multiple Access
-CP-PRUK: Control Plane Prose Remote User Key
-CPA: Conditional PSCell Addition
+CP-PRUK: Control Plane ProSe Remote User Key
+CPA: Commercial Product Assurance | Conditional PSCell Addition
 CPAC: Conditional PSCell Addition/Change
 CPBCCH: COMPACT Packet BCCH
 CPC: Conditional PSCell Change
 CPCF: Content Provider Charging Function
 CPCN: Control Plane data transfer Charging Node (MME, SCEF, IWK-SCEF)
-CPE: Common Phase Error
+CPE: Common Phase Error | Customer Premises Equipment
 CPG: Call ProGress message
-CPICH: Common Pilot Channel
-CPIM: Common Profile for Instant Messaging
+CPICH: Common Pilot CHannel
+CPIM: Common Presence and Instant Messaging | Common Profile for Instant Messaging
 CPM: Collective Perception Message
 CPN: Customer Premises Network
-CPP: Communication Patterns Parameters
-CPS: Contiguous partial sensing
-CPU: Compute Processing Unit
+CPP: Carrier Phase Positioning | Communication Patterns Parameters
+CPS: Call Placement Service | Contiguous partial sensing
+CPU: CSI Processing Unit  | Central Processing Unit | Compute Processing Unit
 CQI: Channel Quality Indicator
 CQP: Contant QP
 CQRCI: Clock Quality Reporting Control Information
-CR: Change Request
+CR: Certificate Repository | Change Request | Channel occupancy ratio
 CRB: Common Resource Block
-CRC: Cyclic redundancy check 
+CRC: Cyclic Redundancy Check 
 CRE: Cell Range Extension
-CRF: Charging Rules Function
+CRF: Charging Rules Function | Constant Rate Factor
 CRG: Cable Residential Gateway
 CRI: CSI-RS Resource Indicator
-CRL: Certificate Revocation List
-CRS: Cell-specific Reference Signal
+CRL: Certificate Revocation List | Certification Revocation List
+CRS: Cell-specific Reference Signals | Customized Ringing Signal
 CRUD: Create, Read, Update, Delete 
 CRUDN: Create, Retrieve, Update, Delete and Notify
-CS: Circuit Switch
+CS: Capability Set | Circuit Switched | Crypto Session
 CS-RNTI: Configured Scheduling RNTI
-CSA: Capability Set supported by the AAS BS
+CSA: Capability Set supported by the AAS BS | Common Subframe Allocation
 CSB-ID: Crypto Session Bundle Identifier
-CSC: Communication Service Customer 
-CSC : Communication Service Customer
-CSCF: Call Session Control Function (I-Interrogating; E-Emergency; P-Proxy; and S-Serving)
+CSC: Communication Service Customer
+CSCF: Call Server Control Function | Call Session Control Function (I-Interrogating; E-Emergency; P-Proxy; and S-Serving) | Call Session Control Function (I-Interrogating; P-Proxy; and S-Serving)
 CSE: CAMEL Service Environment
 CSFB: CS fallback
 CSG: Closed Subscriber Group
 CSG ID: Closed Subscriber Group Identity
-CSI: Channel state information 
-CSI-IM: CSI Interference Measurement
-CSI-RS: Channel state information reference signal
+CSI: Cell Supplemental Information | Channel State Indicator | Channel State Information 
+CSI-IM: CSI interference measurement
+CSI-RS: CSI Reference Signal  | Channel State Information Reference Signal
 CSI-RSRP: CSI Reference Signal Received Power
 CSI-RSRQ: CSI Reference Signal Received Quality
 CSI-SINR: CSI Signal-to-Interference-plus-Noise Ratio
@@ -504,20 +511,19 @@ CSIF: Communication Service Interface
 CSK: Client-Server Key
 CSK-ID: Client-Server Key Identifier 
 CSMA/CD: Carrier Sense Multiple Access/Collision Detection 
-CSP: Communication Service Provider
-CSP : Communication Service Provider
-CSR: Certificate Signing Request 
-CSS: CSG Subscriber Server
-CSV: Comma Separated Values
+CSP: Communications Service Provider
+CSR: Cell Site Report | Certificate Signing Request 
+CSS: CSG Subscriber Server | Common Search Space | Composite Source Signal
+CSV: Comma Separated Values | Comma Separated Version
 CTA: Consumer Technology Association
 CTC: Call for TeChnologies
-CTF: Charging Trigger Function
+CTF: Charging Trigger Function 
 CTF (ADF): Charging Trigger Function (Accounting Data Forwarding)
 CTM: Cellular Text telephone Modem
 CTR: Counter (mode)
-CTS: Cordless Telephony System
+CTS: Charging Trigger Function | Cordless Telephony System
 CTU: Coding Tree Unit
-CU: Coding Unit
+CU: Central Unit | Coding Unit
 CUC: Centralized User Configuration
 CUG: Closed User Group 
 CUO: Certificate Update Orchestrator
@@ -525,13 +531,13 @@ CUPS: Control and User Plane Separation
 CVE: Common Vulnerabilities and Exposures
 CVO: Coordination of Video Orientation
 CVSS: Common Vulnerability Scoring System
-CW: Continuous Wave
+CW: Codeword | Communication Waiting | Continuous Wave (unmodulated carrier wave) | Continuous Wave (unmodulated signal) 
 CWE: Common Weakness Enumeration
 CeEF: Certificate Enrolment Function
 CeMF: CEMAF Management Function
-Cell-ID: Cell Identity as used in TS 38.331 [22]
+Cell-ID: Cell Identity
 CoA: Care of Address
-CoAP: Constrained Application Protocol
+CoAP: Constrained Application Protocol 
 CoM: Centre of Mass
 CoMP: Coordinated Multi Point
 CoT: Chain of Trust
@@ -539,17 +545,17 @@ Conv: Conversational
 D-CPICH: Demodulation Common Pilot Channel
 D2D: Device to Device
 DA: Distribution Automation
-DAA: Detect And Avoid
-DAC: Digital to Analogue Converter
+DAA: Detect and Avoid
+DAC: Digital to Analogue Converter | Digital-to-Analog Converter
 DAG: Directed Acyclic Graph
-DAI: Digital Audio Interface
+DAI: Digital Audio Interface | Downlink Assignment Index 
 DAP: Data Application Provider
 DAPS: Dual Active Protocol Stacks
 DAR: DAmage Rate
-DASH: Dynamic Adaptive Streaming over HTTP
+DASH: Dynamic Adaptive Streaming over HTTP | Dynamic and Adaptive Streaming over HTTP
 DB-DC-HSDPA: Dual Band Dual Cell HSDPA 
 DBI: Delay Budget Information
-DC: Dual Connectivity
+DC: Data Channel | Direct Current | Domain Component | Intra-E-UTRA Dual Connectivity
 DC-AF: Data Collection AF
 DC-Client: Data Collection Client
 DC-HSDPA: Dual Cell HSDPA
@@ -557,22 +563,22 @@ DC-HSUPA: Dual Cell HSUPA
 DCA: Direct Communication Accept
 DCAR: Data Channel Application Repository
 DCCA: Diameter Credit Control Application
-DCCF: Data Collection Coordination Function
+DCCF: Data Collection Coordination Function  | Data Collection and Coordination Function
 DCCH: Dedicated Control Channel
 DCH: Dedicated CHannel
-DCI: Downlink control information
+DCI: Downlink Control Information
 DCK: Depersonalisation Control Keys
-DCMF: Data Channel Media Function
-DCMTSI: Data Channel Multimedia Telephony Service for IMS
-DCN: Dedicated Core Network
+DCMF: Data Channel Media Function | Media Function of Data Channel Server
+DCMTSI: Data Channel Multimedia Telephony Service for IMS | Data Channel Multimedia Telephony Service over IMS
+DCN: Dedicated Core Networks
 DCP: DCI with CRC scrambled by PS-RNTI
 DCQR: Downlink Channel Quality Report
 DCR: Direct Communication Request
-DCS: Default Credentials Server
+DCS: Data Channel Server | Default Credentials Server 
 DCS-C: Control Function of Data Channel Server
 DCS-M: Media Function of Data Channel Server
-DCSF: Data Channel Signalling Function
-DD: Data Delivery
+DCSF: Control Function of Data Channel Server | Data Channel Signalling Function
+DD: Data Delivery | Double Differential 
 DDAA: Direct Detect And Avoid
 DDD: Downlink Data Delivery
 DDDS: Downlink Data Delivery Status notification with UPF buffering
@@ -580,31 +586,31 @@ DDF: Device Description Framework
 DDN: Downlink Data Notification
 DDNMF: Direct Discovery Name Management Function
 DDX: Downlink Data Expected
-DDoS: Distributed Denial of Service
+DDoS: Distributed Denial of Service | Distributed DoS
 DEI: Drop Eligible Indicator
-DENM: Decentralized Environmental Notification Message
-DER: Distinguished Encoding Rule
+DENM: Decentralized environmental notification message
+DER: Distinquished Encoding Rules
 DF: Dedicated File
 DFF: Direct Far Field
 DFN: Direct Frame Number
 DFT: Discrete Fourier Transformation
 DFT-S-OFDMA: Discrete Fourier Transform-Spread-Orthogonal Frequency-Division Multiple Access
-DFT-s-OFDM: Discrete Fourier Transform-spread-OFDM
+DFT-s-OFDM: Discrete Fourier Transform-spread-OFDM | Discrete Fourier Transform-spread-Orthogonal Frequency Division Multiplexing
 DFTS: DFT Spread OFDM
 DHCP: Dynamic Host Configuration Protocol
 DHCPv4: Dynamic Host Configuration Protocol version 4
 DHCPv6: Dynamic Host Configuration Protocol version 6
 DIP: Dominant Interferer Proportion
 DIS: Draft International Standard
-DL: Downlink
+DL: Down Link (From BTS to UE) | Downlink (network to mobile)
 DL TFT: DownLink Traffic Flow Template
 DL-AoD: Downlink Angle-of-Departure
 DL-PRS: Downlink Positioning Reference Signal 
 DL-RSCP: Downlink Reference Signal Carrier Phase
 DL-RSCPD: Downlink Reference Signal Carrier Phase Difference
-DL-SCH: Downlink - Shared Channel
+DL-SCH: Downlink Shared channel
 DL-TDOA: Downlink Time Difference Of Arrival
-DM: Domain Manager 
+DM: Device Management | Domain Manager 
 DM-RS: Demodulation Reference Signal
 DML: Data Mode Landscape
 DMNP: Delegated Mobile Network Prefix
@@ -617,10 +623,10 @@ DN-AAA: Data Network Authentication, Authorization and Accounting
 DNAI: Data Network Access Identifier
 DNF: Disjunctive Normal Form
 DNLA: Digital Living Network Alliance
-DNN: Deep Neural Network
+DNN: Data Network Name
 DNS: Domain Name Service
 DNU: Do Not Use
-DO: Data Object
+DO: Data Object | Device-originated
 DO-A: Device-originated – autonomous
 DO-DTT: Device-originated – device-terminated triggered
 DOCSIS: Data Over Cable Service Interface Specification
@@ -636,18 +642,18 @@ DPPK: MCData Payload Protection Key
 DPPK-ID: MCData Payload Protection Key Identifier
 DR: Designated Router
 DRA: Diameter Routing Agent
-DRB: Data Radio Bearers
+DRB: (user) Data Radio Bearer | Data Radio Bearer carrying user plane data | Data Radio Bearers
 DRC: Dynamic Range Control
 DRM: Digital Rights Management
 DRMP: Diameter Routing Message Priority
 DRP: Eardrum Reference Point
 DRS: Discovery Reference Signal
 DRVCC: Dual Radio Voice Call Continuity
-DRX: Discontinuous Reception
-DS: Differentiated Service
-DS-TT: Device-Side TSN Translator
+DRX: Discontinous Receive | Discontinuous Reception
+DS: Data Streaming | Differentiated Service
+DS-TT: Device-side TSN translator
 DSCP: Differentiated Services Code Point
-DSL: Digital Subscriber Line
+DSL: Digital Subscriber Line 
 DSMIPv6: Dual-Stack MIPv6
 DSO: Distribution System Operator
 DSR: Delay Status Report
@@ -657,13 +663,12 @@ DTD: Document Type Definition
 DTLS: Datagram Transport Layer Security
 DTLS-SRTP: DTLS Extension to Establish Keys for SRTP
 DTMB: Digital Terrestrial Multimedia Broadcast
-DTMF: Dual Tone Multi Frequency
+DTMF: Dual Tone Multi-Frequency
 DTS: Data Transport Service
-DTS : Data Transport Service
 DTT: Digital Terrestrial Television
 DTTB: Digital Terrestrial Television Broadcasting
 DTV: Digital Television
-DTX: Discontinuous Transmission
+DTX: Discontinuous Transmission *)
 DU: Distributed Unit
 DUCK: Discovery User Confidentiality Key
 DUIK: Discovery User Integrity Key
@@ -675,77 +680,73 @@ DVB-RCS2: Second Generation DVB Interactive Satellite System
 DVB-T: Digital Video Broadcasting – Terrestrial
 DVD: Digital Video Disk
 DVMRP: Distance Vector Multicast Routing Protocol
-DeNB: Donor eNodeB
+DeNB: Donor eNB | Donor eNode B
 DetNet: Deterministic Networking
 DoF: Degrees of Freedom
 DoNAS: Data over NAS
 DoS: Denial of Service
-DoS : Denial of Service
-DwPTS: Downlink part of the special subframe (for TDD operation)
+DwPTS: Downlink Pilot Time Slot | Downlink part of the special subframe (for TDD operation)
 E-CID: Enhanced Cell-ID (positioning method)
-E-CSCF: Emergency CSCF
+E-CSCF: Emergency CSCF | Emergency – Call Session Control Function
 E-DCH: Enhanced Uplink DCH
 E-MMSE-IRC: Enhanced Minimum mean square error - interference rejection combining
 E-RAB: E-UTRAN Radio Access Bearer
 E-RUCCH: E-DCH Random Access Uplink Control CHannel
-E-SMLC: Evolved Serving Mobile Location Centre
+E-SMLC: Enhanced Serving Mobile Location Centre | Evolved Serving Mobile Location Centre
 E-SR-VCC: Emergency Single Radio Voice Call Continuity
 E-STN-SR: Emergency Call Session Transfer Number – Single Radio
 E-TM: E-UTRA Test Model
-E-UTRA: Evolved UTRA
-E-UTRA : Evolved UMTS Terrestrial Radio Access
+E-UTRA: Evolved Universal Terrestrial Radio Access 
 E-UTRA/5GC: E-UTRA connected to 5GC
 E-UTRA/EPC: E-UTRA connected to EPC
-E-UTRAN: Evolved UTRAN
+E-UTRAN: Evolved UMTS Terrestrial Radio Access Network | Evolved UTRAN | Evolved Universal Terrestrial Radio Access Network
 E1AP: E1 Application Protocol
 E2E: End-to-End
 E2EE: End to End Encryption
 EAB: Extended Access Barring
-EAC: Early Admission Control
+EAC: Early Admission Control | Ericsson Alpha Compression
 EACI: ECS Address Configuration Information
 EAP: Extensible Authentication Protocol
-EAP : Extensible Authentication Protocol 
 EAP-AKA': Improved Extensible Authentication Protocol method for 3rd generation Authentication and Key Agreement
-EARFCN: E-UTRA Absolute Radio Frequency Channel Number
-EARFCN : E-UTRA Absolute Radio Frequency Channel Number
-EAS: Edge Application Server
+EARFCN: E-UTRA Absolute Radio Frequency Channel Number  | Evolved Absolute Radio Frequency Channel Number
+EAS: Edge Application Server 
 EASDF: Edge Application Server Discovery Function
 EASID: Edge Application Server Identification
 EATF: Emergency Access Transfer Function
 EBCF: Event Based Charging Function
-EBI: EPS Bearer ID
-EBNF: Extended BNF
-EC: Energy Consumption
+EBI: EPS Bearer Identity
+EBNF: Extended BNF | Extended Backus-Naur Form
+EC: Emergency Centre | Energy Consumption | Energy Cost
 EC-GSM-IoT: Extended coverage in GSM for IoT
 ECCSI: Elliptic Curve-based Certificateless Signatures for Identity-based Encryption
 ECEF: Earth-Centered, Earth-Fixed
 ECF: Event Charging Function
-ECGI: E-UTRAN Cell Global Identifier
-ECI: E-UTRAN Cell Identity
+ECGI: E-UTRAN Cell Global Identification | E-UTRAN Cell Global Identifier | Evolved Cell Global Identifier
+ECI: E-UTRAN Cell Identity | Earth-Centered-Inertial | Edge and Cloud Interworking
 ECIES: Elliptic Curve Integrated Encryption Scheme
 ECM: EPS Connection Management
 ECMA: European Computer Manufacturers Association
 ECN: Explicit Congestion Notification
 ECN-CE: ECN Congestion Experienced
 ECRP: Ear Cap Reference Point
-ECS: Edge Configuration Server
+ECS: EDNS Client Subnet | Edge Configuration Server | Emergency Call Server
 ECS-ER: Edge Configuration Server – Edge Repository
 ECSP: Edge Computing Service Provider
-ECT: Explicit Communication Transfer
+ECT: ECN Capable Transport | Explicit Communication Transfer
 ECUR: Event Charging with Unit Reservation
 EDB: End of Data Burst
 EDC: Edge DNS Client
 EDGAR: EDGe-Dependent AR
-EDGE: Enhanced Data for GSM Evolution
+EDGE: Enhanced Data for GSM Evolution | Enhanced Data rates for GSM Evolution
 EDGEAPP: Edge Application
 EDI: Edge Deployment Information
 EDN: Edge Data Network
 EDNS: Extension mechanisms for DNS
 EDT: Early Data Transmission
-EE: Energy Efficiency
-EEC: Edge Enabler Client
-EECID: Edge Enabler Client Identification
-EEL: Edge Enabler layer
+EE: End Entity | Energy Efficiency
+EEC: Edge Enabler Client | Electrical Echo Control
+EECID: Edge Enabler Client IDentifier | Edge Enabler Client Identification
+EEL: Edge Enabler Layer | End-to-End Latency
 EENLV: Extended Emergency Number List Validity
 EEP: Ear Entrance Point
 EES: Edge Enabler Server
@@ -757,15 +758,13 @@ EGPRS: EDGE General Packet Radio Service
 EGQM: Enhanced Goal, Question, Metric
 EHC: Ethernet Header Compression
 EHE: Edge Hosting Environment
-EHPLMN: Equivalent Home Public Land Mobile Network
+EHPLMN: Equivalent Home PLMN | Equivalent Home Public Land Mobile Network
 EIR: Equipment Identity Register
 EIRP: Equivalent Isotropic Radiated Power
-EIRP : Effective Isotropic Radiated Power
-EIS: Equivalent Isotropic Sensitivity
-EIS : Equivalent Isotropic Sensitivity
+EIS: Effective Isotropic Sensitivity
 EKU: Extended Key Usage
 EL: Echo Loss
-EM: Element Manager
+EM: (Network) Element Manager | Element Management
 EMC: Electromagnetic Compatibility
 EME: Encrypted Media Extension
 EMM: EPS Mobility Management
@@ -775,59 +774,58 @@ EMSK: Extended Master Session Key
 EN-DC: E-UTRA-NR Dual Connectivity
 ENB: Evolved Node B
 ENBW: The aggregated bandwidth of an E-UTRA sub-block and an adjacent NR sub-block
-ENS: Edge Notification Server
+ENS: Edge Node Sharing  | Edge Notification Server
 ENSI: External Network Slice Information
 ENUM: E.164 Number Mapping
 EOC: Emergency Operations Center
 EOP: Earth Orientation Parameters
 EOTF: Electro-Optical Transfer Function
 EP: Elementary Procedure
-EPA: Extended Pedestrian A model
-EPC: Evolved Packet Core
+EPA: Event Publication Agent | Extended Pedestrian A model
+EPC: Electronic product code | Enhanced Packet Core | Evolved Packet Core Network
 EPD: Extended Protocol Discriminator
-EPDCCH: Enhanced Physical Downlink Control Channel
-EPDU: End PDU of the PDU Set
+EPDCCH: Enhanced Physical Downlink Control channel 
+EPDU: End PDU of the PDU Set | External Protocol Data Unit
 EPLMN: Equivalent PLMN
 EPON: Ethernet Passive Optical Network 
-EPRE: Energy Per Resource Element
-EPS: Evolved Packet System
+EPRE: Energy per resource element
+EPS: Evolved Packet Core System | Evolved Packet System 
 EPS UDR: EPS User Data Repository
 EPS-UPIP: User-plane integrity protection in EPS
-ER: EAP Re-authentication
-ERP: EAP Re-authentication Protocol
-ERP : Effective Radiated Power
+ER: EAP Re-authentication | Edge Repository
+ERP: EAP Re-authentication Protocol | Ear Reference Point | Equi-Rectangular Projection | Effective Radiated Power
 ESC: Event State Compositor
-ESD: Electrostatic discharge
+ESD: Electrostatic Discharge | Equivalent Spatial Domain
 ESM: EPS Session Management
 ESMA: European Securities and Markets Authority
 ESP: Encapsulating Security Payload
 ESQK: Emergency Service Query Key
 ESRK: Emergency Service Routing Key
 ESRN: Emergency Service Routing Number
-ETC: E-UTRA Test Configuration
+ETC: E-UTRA Test Configuration | Extreme Temperature Condition
 ETC2: Ericsson Texture Compression version 2
-ETSI: European Telecommunications Standards Institute
+ETSI: European Telecommunications Standards Institute 
 ETU: Extended Typical Urban model
 ETWS: Earthquake and Tsunami Warning System
 EUI: Extended Unique Identifier
-EUT: Equipment Under Test
-EUTRAN: Evolved UMTS Terrestrial Radio Access Network
-EVA: Extended Vehicular A model
+EUT: Equipment Under Test (UE or UE with ancillaries)
+EUTRAN: Evolved UMTS Terrestrial Radio Access Network | Evolved Universal Terrestrial Radio Access Network
+EVA: Enhanced Vulnerability Analysis | Extended Vehicular A model
 EVC: Essential Video Coding
-EVM: Error Vector Magnitude
+EVM: Error Vector Magnitude | Evaluation Methodology
 EVS: Enhanced Voice Services
 Estab: Establish (ed,ment)
 F-SEID: Fully Qualified SEID
-F-TEID: Fully Qualified TEID
+F-TEID: Fully Qualified TEID (i.e. IP address and TEID) | Fully Qualified Tunnel Endpoint Identifier
 F1-C: F1 Control plane interface
 F1-U: F1 User plane interface
 F1AP: F1 Application Protocol
-FA: Foreign Agent
+FA: Flexible Alerting | Foreign Agent
 FAC: Fully Anechoic Chamber
 FACH: Forward Access CHannel
-FACoA: FA Care-of-Address
+FACoA: FA Care-of-Address | Foreign Agent Care-of-Address
 FAP: cdma2000® 1x Femtocell Access Point
-FAR: Forwarding Action Rule
+FAR: False Alarm Rate | Forward Action Rule | Forwarding Action Rule | Fully-Anechoic Room
 FASMO: Frequent and Serious Misoperation
 FB: Fullband
 FBC: Flow Based Charging
@@ -838,22 +836,22 @@ FCP: File Control Parameters
 FCS: Frame Check Sequence
 FD: File Distribution
 FD-CDM: Frequency division - code division multiple
-FDD: Frequency Division Duplex
+FDD: Frequency Division Duplexing
 FDIS: Final Draft International Standard
 FDM: Frequency Division Multiplexing
 FDMA: Frequency Division Multiple Access
 FDN: Fixed Dialling Number
 FDRA: Frequency domain resource allocation
-FEC: Forward Erasure Correction
+FEC: Forward Erasure Correction | Forward Error Correction | Frame Erasure Concealment
 FECC: Far End Camera Control
-FF: Far Field
-FFS: For Further Study
-FFT: Fast Fourier Transform
-FIFO: First In First Out
+FF: Far-Field
+FFS: For Further Study | For Future Study
+FFT: Fast Fourier Transformation
+FIFO: First In, First Out  | First Input First Output
 FIPS: Federal Information Processing Standard
-FIR: Finite Impulse Response
+FIR: Finite Impulse Response | Full Intra Request
 FIRST: Forum for Incident Response and Security Team
-FKP: Flächenkorrekturparameter (Engl: Area Correction Parameters)
+FKP: (German) Flächen-Korrektur-Parameter (area correction parameter) | Flächenkorrekturparameter (Engl: Area Correction Parameters)
 FL: Federated Learning
 FLL: Frequency Locked Loop
 FLOP: Floating point Operation*
@@ -861,28 +859,28 @@ FLR: Frame Loss Rate
 FLS: Fused Location Server
 FLUS: Framework for Live Uplink Streaming
 FLUTE: File Delivery over Unidirectional Transport 
-FM: Fault Management
+FM: Fault Management
 FMSS: Flexible Mobile Service Steering
 FN-BRG: Fixed Network Broadband Residential Gateway
-FN-CRG: Fixed Network Cable Residential Gateway 
+FN-CRG: Fixed Network Cable RG | Fixed Network Cable Residential Gateway 
 FN-RG: Fixed Network Residential Gateway 
 FOA: First Order Ambisonics
-FOSS: Free and Open Source Software
-FOV: Field-Of-View
+FOSS: Free Open-Source Software
+FOV: Field Of View
 FPACH: Fast Physical Access CHannel
-FPS: Frames Per Second
-FQDN: Fully Qualified Domain Name
+FPS: First Person Shooter | Frames Per Second
+FQDN: Fully Qualified Domain Name 
 FQPC: Fully Qualified Partial CDR
 FR: Frequency Range
-FR1: Frequency range 1
-FR2: Frequency range 2
+FR1: Frequency Range 1
+FR2: Frequency Range 2
 FRC: Fixed Reference Channel
 FRER: Frame Replication and Elimination for Reliability
 FRF: Frequency Reuse Factor
-FS: Feature Set
+FS: Fault Supervision | Feature Set | Free Space
 FSA: Frequency Selection Area
-FSA ID: Frequency Selection Area Identity
-FSK: Frequency Shift Keying
+FSA ID: Frequency Selection Area Identity | MBS Frequency Selection Area (FSA) ID
+FSK: Frequency-shift keying
 FSOATS: Free Space OATS
 FSPC: Feature Set Per Component-carrier
 FSS: Fixed Satellite Services
@@ -893,16 +891,16 @@ FTM: Frame Tunnelling Mode (refer 3GPP TS 27.001 [41] and 3GPP TS 29.007 [
 FTP: File Transfer Protocol
 FWA: Fixed Wireless Access
 FoIP: Facsimile over IP
-FoV: Field of View
+FoV: Field of view
 G-CS-RNTI: Group Configured Scheduling RNTI
-G-MOS-LQOfb: Global (Overall) Mean Opinion Score - Listening Quality Objective - Fullband
-G-MOS-LQOn: Global (Overall) Mean Opinion Score - Listening Quality Objective - Narrowband
-G-MOS-LQOw: Global (Overall) Mean Opinion Score - Listening Quality Objective - Wideband
+G-MOS-LQOfb: Global (Overall) - Mean Opinion Score - Listening Quality Objective - Fullband
+G-MOS-LQOn: Global (Overall) - Mean Opinion Score - Listening Quality Objective - Narrowband
+G-MOS-LQOw: Global (Overall) - Mean Opinion Score - Listening Quality Objective - Wideband
 G-PCC: Geometry-based Point Cloud Compression
-G-PDU: GTP encapsulated user Plane Data Unit
+G-PDU: GTP encapsulated user Plane Data Unit | GTP-U non-signalling PDU
 G-RNTI: Group RNTI
 GAA: Generic Authentication Architecture
-GAD: Geographical Area Description
+GAD: Universal Geographical Area Description
 GAGAN: GPS Aided Geo Augmented Navigation
 GBA: Generic Bootstrapping Architecture
 GBA_ME: ME-based GBA
@@ -911,76 +909,75 @@ GBR: Guaranteed Bit Rate
 GC: General Client
 GCI: Global Cable Identifier
 GCID: GPRS Charging Identifier
-GCS: Group Communication Service
+GCS: Generalized Cosine Similarity | Group Communication Service
 GCS AS: Group Communication Service Application Server
-GCSE_LTE: Group Communication System Enablers for LTE
+GCSE_LTE: Group Communication Service Enabler over LTE | Group Communication System Enablers for LTE
 GDPR: General Data Protection Directive
 GDR: Gradual Decoder Refresh
-GEO: Geostationary Earth Orbiting
-GEO : Geostationary satellite Orbit
-GERAN: GSM/EDGE Radio Access Network
+GEO: Geostationary Earth Orbiting | Geostationary Orbit | Geostationary satellite Earth Orbit | Geosynchronous Earth Orbit | Geosynchronous Orbit
+GERAN: GSM EDGE Radio Access Network
 GF: Grant-Free
 GFBR: Guaranteed Flow Bit Rate
 GGSN: Gateway GPRS Support Node
 GIBA: GPRS-IMS-Bundled-Authentication
-GIN: Group ID for Network selection
+GIN: Group ID for Network Selection
 GIP: Generic IP access
 GKTP: Group Key Transport Payload
 GLI: Global Line Identifier
 GLMS: Group and List Management Server
-GLONASS: GLObal'naya NAvigatsionnaya Sputnikovaya Sistema (Engl.: Global Navigation Satellite System
+GLONASS: GLObal'naya NAvigatsionnaya Sputnikovaya Sistema (Engl.: Global Navigation Satellite System)
 GMC: Group Management Client
 GMD: Group Message Delivery
-GMK: Group Master Key
+GMK: Group Management Key  | Group Master Key
 GMK-ID: Group Master Key Identifier
-GMLC: Gateway Mobile Location Centre
+GMLC: Gateway MLC | Gateway Mobile Location Centre
 GMM: GPRS Mobility Management
 GMOP: Group Management OPeration
 GMS: Group Management Server
 GMSC: Gateway MSC
 GNP: Generic Network Product
-GNSS: Global Navigation Satellite System
+GNSS: Global Navigation Satellite Systems
 GOB: Group Of Blocks
 GOOSE: Generic Object-Oriented Substation Event 
-GP: Guard Period
-GPI: GBA Push Info
+GP: Guard Period (for E-UTRA TDD operation) | Guard Period (for TDD operation)
+GPI: GBA Push Information
 GPON: Gigabit-capable Passive Optical Networks
-GPRS: General Packet Radio Service
+GPRS: General Packet Radio Service 
 GPS: Global Positioning System
-GPSI: Generic Public Subscription Identifier
+GPSI: Generic Public Subscription Identifier 
 GPU: Graphics Processing Units
 GRE: Generic Routing Encapsulation
 GRS80: Geodetic Reference System 1980
-GRUU: Globally Routable User Agent URI
+GRUU: Globally Routable User agent URIs
 GS: Group Specification
 GSCN: Global Synchronization Channel Number
 GSF: Generic Security Functionality
-GSM: Global System for  communication
+GSM: Global System for  communications | Global System for Mobile Communications
 GSMA: GSM Association
 GSN: GPRS Support Node (either SGSN or GGSN)
-GSO: Geosynchronous Orbit
-GST: Generic Slice Template
+GSO: Geostationary-Satellite Orbit | Geosynchronous Orbit
+GST: Generic Network Slice Template | Generic Slice Template
 GTP: GPRS Tunnelling Protocol
-GTP-C: GTP Control
+GTP-C: GPRS Tunnelling Protocol for Control Plane | GTP Control
 GTP-PDU: GTP-C PDU or GTP-U PDU
-GTP-U: GPRS Tunnelling Protocol 
+GTP-U: GPRS Tunnelling Protocol for user plane | GTP User plane
 GTPv2-C: GTP version 2, control plane
 GTPv2-U: GTP version 2, user plane
 GUAMI: Globally Unique AMF Identifier
 GUI: Graphical User Interface
 GUID: Globally Unique Identifer
-GUK-ID: Group User Key Identifier
+GUK-ID: Group User Key Identifier 
 GUMMEI: Globally Unique MME Identifier
 GUP: Generic User Profile
 GUSS: GBA User Security Settings
-GUTI: Globally Unique Temporary UE Identity
+GUTI: Globally Unique Temporary Identifier | Globally Unique Temporary Identity | Globally Unique Temporary UE Identity
 GVNP: Generic Virtualized Network Product
 GW: Gateway
-GWCN: Gateway Core Network
+GWCN: GateWay Core Network
 GWUS: Group Wake Up Signal
 GZIP: GNU ZIP
 Gbps: Gigabits per second
-H(e)NB: Home Node B or Home evolved Node B
+H(e)NB: HNB and HeNB | Home Node B or Home evolved Node B
 H-AF: Home AF
 H-ANDSF: Home-ANDSF
 H-ARQ: Hybrid - ARQ
@@ -988,25 +985,25 @@ H-CHF: A CHF in HPLMN
 H-DRA: Home DRA
 H-ECS: Home Edge Configuration Server
 H-EES: Home Edge Enabler Server
-H-PCF: Home Policy Control Function
+H-PCF: A PCF in the HPLMN | Home Policy Control Function
 H-PCRF: Home PCRF
-H-SFN: Hyper SFN
+H-SFN: Hyper SFN | Hyper System Frame Number
 H-SMF: Home SMF
 H-UDR: A UDR in the HPLMN
 HA: Home Agent
 HA GNSS: High-Accuracy GNSS (RTK, PPP)
 HAAT: Height Above Average Terrain
 HAL: Hypertext Application Language
-HAPS: High Altitude Platform Station
-HARQ: Hybrid Automatic Repeat Request
-HARQ-ACK: Hybrid Automatic repeat Request - Acknowledgement
+HAPS: High Altitude Platform Station | High Altitude Platform System
+HARQ: Hybrid ARQ | Hybrid automatic repeat request
+HARQ-ACK: Hybrid Automatic Repeat reQuest Acknowledgement 
 HATEOAS: Hypermedia as the Engine of Application State
 HATS: Head and Torso Simulator
-HBM: Host Based Mobility
+HBM: Host-based Mobility
 HBRT: Hardware Based Root of Trust
 HCL: Higher Communication Layer
 HCP: Horizontal Coupling Plane
-HD: Half Duplex
+HD: Half Duplex | High Definition
 HD-FDD: Half- Duplex FDD
 HD-HDR: High Definition and High Dynamic Range
 HDCA: High Density Camera Array
@@ -1015,58 +1012,58 @@ HDTV: High Definition TeleVision
 HE: Home Environment
 HEO: Highly-Eccentric Orbiting satellites
 HESSID: Homogenous Extended Service Set Identifier
-HEVC: High-Efficiency Video Coding
-HFC: Hybrid Fiber-Coax
+HEVC: High Efficiency Video Coding
+HFC: Hybrid Fiber Coax | Hybrid Fiber-Coaxial
 HFN: Hyper Frame Number
 HGMLC: Home GMLC
 HHO: Hard Handover
 HI: HARQ indicator 
-HL: Hand Left (Hand Phantom Only)
+HL: Hand Left (Hand Phantom Only) | header list
 HLG: Hybrid Log-Gamma
 HLR: Home Location Register
 HLS: HTTP Live Streaming
 HMD: Head-Mounted Display
-HMEE: Hardware Mediated Execution Environment
+HMEE: Hardware Mediated Execution Enclave | Hardware Mediated Execution Environment
 HMI: Human Machine Interface
 HMTC: High-Performance Machine-Type Communications
 HN: Home Network
 HNB: Home NodeB
 HO: Handover
-HOA: Higher-Order Ambisonics
+HOA: High Order Ambisonics | Higher-Order Ambisonics
 HOF: Handover Failure
-HOLD: communication HOLD
+HOLD: Communication Hold
 HONTRA: HOme Network TRiggered Authentication
 HPL: Horizontal Protection Level
-HPLMN: Home PLMN
+HPLMN: Home PLMN | Home Public Land Mobile Network
 HPSIM: Hosting Party Subscription Identity Module
-HR: Hand Right (Hand Phantom Only)
+HR: Hand Right (Hand Phantom Only) | Home Routed (roaming)
 HR-SBO: Home Routed Session BreakOut
 HRD: Hypothetical Reference Decoder
 HRES: Hash RESponse
 HRIR: Head-Related Impulse Responses
-HRNN: Human Readable Network Name
-HRPD: High Rate Packet Data
-HRTF: Head-Related Transfer Function
+HRNN: Human-Readable Network Name
+HRPD: CDMA2000 High Rate Packet Data
+HRTF: Head Related Transfer Function
 HS-DSCH: High Speed Downlink Shared Channel
-HS-GW: HRPD Serving Gateway
+HS-GW: HRPD Serving GW | HRPD Serving Gateway
 HSCSD: High Speed Circuit Switched Data
 HSDN: High Speed Dedicated Network
 HSDPA: High Speed Downlink Packet Access
 HSGW: eHRPD Serving Gateway
 HSM: Hardware Security Module
-HSS: Home Subscriber System
+HSS: Home Subscriber Server | Home Subscriber System
 HST: High Speed Train
 HSUPA: High Speed Uplink Packet Access
 HTML: HyperText Markup Language
-HTTP: Hypertext Transfer Protocol
-HTTPS: HyperText Transfer Protocol Secure
+HTTP: Hypertext Transfer Protocol 
+HTTPS: HTTP over TLS | HyperText Transfer Protocol Secure
 HUD: Heads-Up Display
 HW: HardWare
 HXRES: Hash eXpected RESponse
 HaNTE: Handsets featuring Non-Traditional Handsets
-HeNB: Home eNode B
+HeNB: Home eNodeB
 HeNB GW: Home eNode B Gateway
-I-CSCF: Interrogating-CSCF
+I-CSCF: Interrogating CSCF
 I-RNTI: Inactive RNTI
 I-SMF: Intermediate SMF
 I-UPF: Intermediate UPF
@@ -1091,31 +1088,30 @@ IC: Integrated Circuit
 ICB: Incoming Communication Barring
 ICC: Integrated Circuit Card
 ICD: Interface Control Document
-ICE: Interactive Connectivity Establishment
+ICE: In Case of Emergency | Interactive Connectivity Establishment  | Interactivity Connectivity Establishment
 ICF: Identity Caching Function
 ICI: Incoming Call Information
 ICIC: Inter-Cell Interference Coordination
-ICID: IM CN subsystem Charging Identifier
+ICID: IM CN subsystem Charging Identifier | IMS Charging Identifier
 ICM: Initial Codec Mode
 ICMP: Internet Control Message Protocol
 ICP: Internet Content Provider
-ICS: In-Channel Selectivity
+ICS: Implementation Conformance Statement | In-Channel Selectivity
 ICSI: IMS Communication Service Identifier
 ICT: Incoming Call Timer
-ID: Identifier
-IDC: In-Device Coexistence
-IDC : Internet Data Center
+ID: Identification | Identifier
+IDC: In-Device Coexistence | Internet Data Center
 IDFT: Inverse Discrete Fourier Transformation
-IDL: Interface Definition Language (OMG)
+IDL: Interface Definition Language (OMG) | Interface Description Language
 IDMS: Inter-destination Multimedia Synchronization
 IDP: Initial Detection Point
-IDR: Instantaneous Decoding Refresh
+IDR: Instantaneous Decoding Refresh | Instantenous Decoder Refresh
 IE: Information Element
 IEC: Immediate Event Charging
 IEEE: Institute of Electrical and Electronics Engineers
 IEF: Identity Event Function
 IEI: Information Element Identifier 
-IETF: Internet Engineering Task Force
+IETF: Internet Engineering Task Force 
 IF: Intermediate Frequency
 IFC: Initial Filter Criteria
 IFF: Indirect Far Field
@@ -1130,55 +1126,54 @@ II-NNI: Inter-IMS Network to Network Interface
 IIoT: Industrial Internet of Things
 IK: Integrity Key
 IKE: Internet Key Exchange
-IKEv2: Internet Key Exchange Protocol Version 2
+IKEv2: Internet Key Exchange Protocol Version 2 | Internet Key Exchange Version 2
 IKSRVCC: Integrity Key for Single Radio Voice Continuity 
-IM: IP Multimedia
+IM: IP Multimedia  | Implementation Margin | Instant Messaging | Inter-Modulation
 IM CN: IP Multimedia Core Network
 IM CN SS: IP Multimedia Core Network Subsystem
 IM-MGW: IM Media Gateway
 IMC: IMS Credentials
-IMD: Inter-modulation
-IMEI: International  Equipment Identity
-IMEI-SV: IMEI-SoftwareVersion
-IMEI-TAC: Type Allocation Code part of an IMEI
+IMD: Inter-Modulation Distortion
+IMEI: International  Equipment Identity | International Mobile Equipment Identity | International Mobile station Equipment Identity
+IMEI-SV: IMEI-SoftwareVersion | International Mobile Equipment Identity Software Version
+IMEI-TAC: IMEI Type Allocation Code | Type Allocation Code part of an IMEI
 IMEI/TAC: IMEI Type Allocation Code
 IMEISV: International Mobile station Equipment Identity and Software Version number
 IMPI: IP Multimedia Private Identity
-IMPU: IP Multimedia PUblic identity
+IMPU: IMS Public User Identity | IP Multimedia PUblic identity | P Multimedia Public User identity
 IMR: Interference Measurement Resource
 IMRN: IP Multimedia Routing Number
-IMS: IP Multimedia Subsystem
+IMS: IM CN subsystem | IM Subsystem | IP Multimedia Subsystem | IP Multimedia core network Subsystem
 IMS ALG: IMS Application Level Gateway
-IMS AS: IMS Application Server
+IMS AS: IMS Application Server | IP Multimedia Subsystem Application Server
 IMS GWF: IMS GateWay Function
 IMS UE: IMS User Equipment
 IMS-: IMS Application Level Gateway
-IMS-AGW: IMS Access Media Gateway
-IMS-ALG: IMS Application Level Gateway
+IMS-AGW: IMS Access Gateway | IMS Access Media Gateway
+IMS-ALG: IMS - Application Level Gateway
 IMS-GWF: IMS Gateway Function
 IMSC: Internet Media Subtitles and Captions
-IMSI: International  Subscriber Identity
+IMSI: International  Subscriber Identity | International Mobile Subscriber Identifier | International Mobile Subscriber Identity
 IMSVoPS: IMS Voice over PS Session
-IMU: Inertial Measurement Unit
+IMU: Inertial Measurement Unit 
 IN: Intelligent Network
 INT-RNTI: Interruption RNTI
 IOC: Information Object Class
-IOC : Information Object Class
-IOD: Inter-aural Output Difference
-IOI: Inter Operator Identifier
+IOD: Inter-aural Output Difference | Issue of Data
+IOI: Inter Operator Identifier 
 IOPS: Isolated E-UTRAN Operation for Public Safety
-IP: Internet Protocol
+IP: Interception Product | Internet Protocol
 IP-CAN: IP-Connectivity Access Network
-IP-SM-GW: IP Short Message Gateway
+IP-SM-GW: IP Short Message Gateway | IP-Short-Message-Gateway
 IPCP: IP Control Protocol (PPP NCP for IPv4)
 IPEG: In-Progress Emergency Group
 IPEPC: In-Progress Emergency Private Call
 IPIG: In-Progress Imminent peril Group
-IPMS: IP Mobility management Selection
-IPUPS: Inter-PLMN User Plane Security
+IPMS: IP Mobility Mode Selection | IP Mobility management Selection
+IPUPS: Inter PLMN UP Security | Inter-PLMN User Plane Security
 IPV6CP: IPv6 Control Protocol (PPP NCP for IPv6)
-IPX: IP eXchange service
-IPsec: Internet Protocol Security
+IPX: IP exchange service
+IPsec: IP security protocols, algorithms, and key management methods | Internet Protocol Security
 IPv4: Internet Protocol version 4
 IPv6: Internet Protocol version 6
 IQ: In-phase - Quadrature phase
@@ -1187,41 +1182,41 @@ IRA: International Reference Alphabet (ITU-T Recommendation T.50 [13])
 IRAP: Intra Random Access Point
 IRC: Interference Rejection Combining
 IRFFT: Inverse RFFT
-IRI: Intercept Related Information
+IRI: Intercept Related Information 
 IRNSS: Indian Regional Navigation Satellite System
 IRP: Integration Reference Point
-IS: Information Service
-ISC: IMS Service Control
+IS: Information Service  | Initialization Segment | Interface Specification
+ISC: IMS Service Control  | IP Multimedia Subsystem Service Control
 ISCP: Interference on Signal Code Power
 ISD: Intersite Distance
 ISDB-T: Integrated Services Digital Broadcasting – Terrestrial
-ISDN: Integrated Service Data Network
+ISDN: Integrated Service Data Network | Integrated Services Digital Network
 ISG: Industry Specification Group
-ISIM: IMS SIM
+ISIM: IM Services Identity Module | IM Subscriber Identity Module | IMS SIM
 ISL: Inter-Satellite Links
-ISM: Industrial, Scientific and Medical
+ISM: Independent Stream with Metadata | Industrial, Scientific and Medical
 ISMP: Inter-system Mobility Policy
-ISO: International Organisation for Standardisation
+ISO: International Organization for Standardization | International Standards Organization
 ISO BMFF: ISO Based Media File Format
 ISOBMFF: ISO Based Media File Format
 ISP: Internet Service Provider
 ISR: Idle mode Signalling Reduction
 ISRP: Inter-system Routing Policy
-ISUP: ISDN User Part
+ISUP: ISDN User Part | Integrated Service digital network User Part
 IT: Information Technology
-ITS: Intelligent Transportation System
+ITS: Intelligent Transport Systems | Intelligent Transportation Systems
 ITS-AID: ITS Application Identifier
 ITSI: Individual TETRA Subscriber Identity
 ITT4RT: Immersive Teleconferencing and Telepresence for Remote Terminals
 ITU: International Telecommunication Union
-ITU-R: Radio communication Sector of the ITU
-ITU-T: International Telecommunication Union - Telecommunications standardization sector
+ITU-R: Radiocommunication Sector of the ITU | Radiocommunication Sector of the International Telecommunication Union
+ITU-T: International Telecommunication  - Telecommunications Standardisation Sector | International Telecommunication Union - Telecommunications Standardization Sector | International Telecommunications Union - Telecommunications
 IUT: Inter UE Transfer
 IVAS: Immersive Voice and Audio Services
 IVS: In Vehicle System (eCall terminal and associated sub-systems in vehicle)
 IWF: InterWorking Function
-IWK-SCEF: Interworking SCEF
-IXIT: Implementation eXtra Information for Testing
+IWK-SCEF: Interworking - SCEF
+IXIT: Implementation extra Information for Testing
 IdM: Identity Management
 IdMS: Identity Management Server 
 IdP: Identity Provider
@@ -1235,14 +1230,13 @@ InterKMRec-ID: Interworking Key Management Record Identifier
 InterSD: Interworking Security Data
 Intra: Intra
 IoT: Internet of Things
-IoT : Internet of Things
 IoT-NTN: Internet of Things Non-Terrestrial Networks
 IrDA: Infrared Data Association
 Iuant: E-Node B internal logical interface between the implementation specific O&M function and the RET antennas and TMAs control unit function of the E-Node B
 JBM: Jitter Buffer Management
 JOSE: Javascript Object Signing and Encryption
 JPEG: Joint Photographic Experts Group
-JSON: JavaScript Object Notation
+JSON: JavaScript Object Notation 
 JVET: Joint Video Exploration Team
 JWE: JSON Web Encryption
 JWS: JSON Web Signature
@@ -1258,7 +1252,7 @@ KI: Key Issue
 KID: Key IDentifier
 KISS: Key Indicator for Service Selection
 KLI: Decryption key(s) for services encrypted by CSP-provided keys
-KMS: Key Management Server
+KMS: Key Management Server | Key Management Service
 KPAK: KMS Public Authentication Key
 KPAS: Korean Public Alert System
 KPI: Key Performance Indicator
@@ -1275,33 +1269,32 @@ Ks_ext_NAF: Derived key in GBA_U
 Ks_int_NAF: Derived key in GBA_U which remains on UICC
 L-DN: Local part of DN
 L-DNS: Local DNS
-L-GW: Local GateWay
-L-NEF: Local NEF
+L-GW: Local Gateway | Local PDN Gateway
+L-NEF: Local NEF | Local Network Exposure Function
 L-PSA UPF: Local PSA UPF
 L-UPF: Local User Plane Function
 L-W-CP: Legacy Wireless access Control Plane Protocol
 L-W-UP: Legacy Wireless access User Plane Protocol
 L1: Layer 1
 L1 SL-RSRP: Layer 1 Sidelink RSRP which corresponds to PSCCH-RSRP and/or PSSCH-RSRP
-L1-RSRP: Layer 1 reference signal received power
+L1-RSRP: Layer 1 RSRP | Layer 1 Reference Signal Received Power
 L2: Layer-2
-L2TP: Layer 2 Tunneling Protocol
-L3: Layer-3
+L2TP: Layer 2 Tunneling Protocol | Layer Two Tunneling Protocol
+L3: Layer 3
 L3G: Legacy 3GPP Message Gateway
-L4S: Low Latency, Low Loss and Scalable Throughput
-LA: Local Area
+L4S: Low Latency Low Loss Scalable Throughput | Low Latency, Low Loss and Scalable Throughput
+LA: Local Area | Location Area
 LAA: Licensed-Assisted Access
-LAC: L2TP Access Concentrator
-LADN: Local Area Data Network
+LAC: L2TP Access Concentrator | Location Area Code
+LADN: Local Area Data Network 
 LAF: Location Acquisition Function
 LALS: Lawful Access Location Services
-LALS : Lawful Access Location Services
-LAN: Local Area Network
+LAN: Local Area Network 
 LARF: Location Acquisition Requesting Function
 LB: Load Balancing
-LBI: Linked EPS Bearer Id
-LBO: Local Break Out (roaming) 
-LBT: Listen before Talk
+LBI: Linked EPS Bearer ID
+LBO: Local Break Out (roaming)  | Local Breakout
+LBT: Listen Before Talk 
 LC: Load Control
 LC-H: Load Control based on LCI Header
 LCG: Logical Channel Group
@@ -1311,37 +1304,36 @@ LCL: Lower Communication Layer
 LCM: Lifecycle Management
 LCP: Logical Channel Prioritization
 LCR: Low Chip Rate
-LCS: Location Services
+LCS: Location Services 
 LCS-AP: LCS Application Protocol
 LCS-UPP: Location Services User Plane Protocol
 LCUP: LCs User Plane
 LDN: Local Distinguished Name
 LDPC: Low Density Parity Check
-LDR: Location Deferred Request
+LDR: Location Deferred Request | Loss and Damage Rate
 LEA: Law Enforcement Agency
 LEMF: Law Enforcement Monitoring Facility
-LEO: Low Earth Orbiting
-LEO : Low-Earth Orbiting satellites
+LEO: Low-Earth Orbit
 LFE: Low Frequency Enhancement
 LGW: Local Gateway
 LHN: Local Home Network
 LHN ID: Local Home Network ID
 LHN-ID: Local Home Network Identifier
 LHO: Legacy Handover
-LI: Layer Indicator
+LI: Language Indication | Lawful Interception  | Layer Indicator
 LI CA: Lawful Interception Certificate Authority
 LICF: Lawful Interception Control Function
-LIDAR: Light Detection and Ranging
+LIDAR: LIght Detection And Ranging
 LIID: Lawful Interception Identifier
 LIPA: Local IP Access 
 LIPF: Lawful Interception Provisioning Function
 LIR: Location Immediate Request
-LISN: Line Impedance Stabilising Networks
+LISN: Line Impedance Stabilizing Network
 LISSF: Lawful Interception State Storage Function
-LI_HI1: Lawful Interception Handover Interface 1
-LI_HI2: Lawful Interception Handover Interface 2
-LI_HI3: Lawful Interception Handover Interface 3
-LI_HI4: Lawful Interception Handover Interface 4
+LI_HI1: LI_Handover Interface 1 | Lawful Interception Handover Interface 1
+LI_HI2: LI_Handover Interface 2 | Lawful Interception Handover Interface 2
+LI_HI3: LI_Handover Interface 3 | Lawful Interception Handover Interface 3
+LI_HI4: LI_Handover Interface 4 | Lawful Interception Handover Interface 4
 LI_HILA: Lawful Interception Handover Interface Location Acquisition
 LI_HIQR: Lawful Interception Handover Interface Query Response
 LI_SI: Lawful Interception System Information Interface
@@ -1363,7 +1355,7 @@ LL SSM: Lower Layer SSM
 LLA: Latitude Longitude Altitude
 LLC SM: Low Layer Source Specific Multicast (address)
 LLDP: Local Loop Demarcation Protocol
-LLS: Link Level Simulations
+LLS: Link-level Simulation
 LMA: Local Mobility Anchor
 LMC: Location Management Client
 LMF: Location Management Function
@@ -1374,28 +1366,26 @@ LMR: Land Mobile Radio
 LMS: Location Management Server
 LMU: Location Measurement Unit
 LNA: Low Noise Amplifier
-LNA : Low Noise Amplifier
 LNS: L2TP Network Server
 LO: Local Oscillator
-LO : Local Oscillator
 LOS: Line-of-Sight
 LP-SS: Low Power- Synchronization Signal
 LP-WUR: Low Power-Wake Up Receiver
 LP-WUS: Low Power-Wake Up Signal
-LPF : Low Pass Filter
-LPHAP: Low Power and High Accuracy Positioning
+LPF: Low Pass Filter
+LPHAP: Low Power High Accuracy Positioning | Low Power and High Accuracy Positioning
 LPI: LCS Privacy Indicator
 LPP: LTE Positioning Protocol
 LPPa: LTE Positioning Protocol Annex
 LPPe: LPP extension
 LPTV: Low Power TeleVision
 LPWA: Low-power, wide-area
-LR: LP-WUR
+LR: LP-WUR | Location Registration
 LRF: Location Retrieval Function
 LRO: Last Routing Option
-LS: Liaison Statement
+LS: Liaison Statement | Location Server
 LSA: Localised Service Areas
-LSB: Least Significant 8 Bits
+LSB: Least Significant 8 Bits | Least Significant Bit
 LSR: Late Stage Reprojection
 LSTR: Listener Sidetone Rating
 LTCC: Low Temperature Co-fired Ceramic
@@ -1404,7 +1394,7 @@ LTE-MTC: Long Term Evolution – Machine Type Communication
 LTF: Location Triggering Function
 LTM: L1/L2 Triggered Mobility
 LUN: Local USS Network
-LWA: LTE-WLAN Aggregation
+LWA: LTE-WLAN Aggregation | LTE-WLAN Radio Level Aggregation
 LWAAP: LTE-WLAN Aggregation Adaptation Protocol
 LWIP: LTE WLAN Radio Level Integration with IPsec Tunnel
 LWIP-SeGW: LWIP Security Gateway
@@ -1416,66 +1406,66 @@ M-RNTI: MBMS RNTI
 M-TMSI: M-Temporary Mobile Subscriber Identity
 MA: Multi-Access
 MA PDU: Multi-Access PDU
-MAC: Medium Access Control
+MAC: Master Auxiliary Concept | Medium Access Control | Message authentication code
 MAC-A: MAC used for authentication and key agreement
-MAC-I: Message Authentication Code for Integrity
+MAC-I: MAC used for data integrity of signalling messages | Message Authentication Code for Integrity
 MACN: Multi Access Core Network
-MAE: Mean Absolute Error
+MAE: MPEG-H Audio Metadata information | Mean Absolute Error
 MAF: Media Access Function
 MAG: Mobile Access Gateway
 MAI: Measurement Assistance Information
 MANO: Management and Orchestration
-MAP:  Application Part 
+MAP:  Application Part  | Mobile Application Part
 MAPCON: Multi Access PDN Connectivity
 MAR: Multi-Access Rule
 MASA: Metadata-Assisted Spatial Audio
 MASC: MIMO Average Spherical Coverage
 MAX: Maximum volume setting
 MB-MSR: Multi-Band Multi-Standard Radio
-MB-SMF: Multicast/Broadcast Session Management Function
-MB-UPF: Multicast/Broadcast User Plane Function
+MB-SMF: Multicast/Broadcast Session Management Function.
+MB-UPF: Multicast Broadcast User Plane Function
 MBCP: Media Burst Control Protocol
-MBMS: Multimedia Broadcast and Multicast Service
-MBR: Maximum Bit Rate
-MBS: Multicast/Broadcast Service
+MBMS: Multimedia Broadcast Multicast Services | Multimedia Broadcast Multicast System | Multimedia Broadcast and Multicast Service
+MBR: Maximum Bit Rate | Maximum guaranteed Bit Rate
+MBS: Metropolitan Beacon System | Multicast Broadcast Services | Multicast and Broadcast Services
 MBS FSAI: MBS Frequency Selection Area Identity
-MBSF: Multicast/Broadcast Service Function
-MBSFN: Multimedia Broadcast multicast service Single Frequency Network
+MBSF: Multicast/Broadcast Service Function.
+MBSFN: MBMS Single Frequency Network | Multicast-broadcast single-frequency network | Multimedia Broadcast multicast service Single Frequency Network
 MBSR: Mobile Base Station Relay
 MBSSF: Multicast/Broadcast Service Security Function
-MBSTF: Multicast/Broadcast Service Transport Function
+MBSTF: Multicast/Broadcast Service Transport Function.
 MBT: Multi-Band Testing
-MBW: Maximum Bandwidth
-MC: Multi-Carrier in a Single RAT
+MBW: Maximum Bandwidth | Measurement bandwidth defined for the protected band
+MC: Mission Critical | Multi-Carrier in a Single RAT | Multi-channel
 MC ID: Mission Critical user identity
 MC-ASK: Multiple Carrier-Amplitude Shift Keying
 MC-FSK: Multiple Carrier-Frequency Shift Keying
-MCC: Mobile Country Code
-MCCH: MBS Control Channel
+MCC: Metrics Collection and Computation | Mobile Country Code | Multiple Content Capture
+MCCH: MBS Control Channel | Multicast Control Channel
 MCCH-RNTI: MBS Control Channel RNTI
 MCCoRe: Mission Critical Services Common Requirements
 MCData: Mission Critical Data
 MCData ID: MCData user identity
 MCData group ID: MCData group Identity
-MCE: Measurement Collection Entity
+MCE: Measurement Collector Entity | Multi-cell/multicast Coordination Entity
 MCG: Master Cell Group
-MCH: Multicast channel
-MCID: Malicious Communication IDentification
+MCH: Multicast Channel
+MCID: Malicious Call IDentification | Malicious Communication IDentification
 MCL: Minimum Coupling Loss
 MCM: Multi-connection mode
 MCMC: Mission Critical MBMS subchannel Control Protocol
 MCOT: Maximum Channel Occupancy Time
-MCPTT: Mission Critical Push To Talk
+MCPTT: Mission Critical Push to Talk Service
 MCPTT AS: MCPTT Application Server
 MCPTT ID: MCPTT user identity
-MCPTT group ID: MCPTT group Identity
-MCS: Modulation and Coding Scheme
+MCPTT group ID: MCPTT group identity
+MCS: Mission Critical Services | Modulation and Coding Scheme
 MCSC: Mission Critical MBS subchannel Control Protocol
 MCSs: Mission Critical Services
-MCU: Multi-point Control Unit
+MCU: Multipoint Control Unit
 MCVideo: Mission Critical Video
 MCVideo group ID: MCVideo group Identity
-MCX: Mission Critical X, with X = PTT or X= Video or X= Data
+MCX: Mission Critical Services | Mission Critical X, with X = PTT or X = Video or X = Data
 MCX Service: Mission Critical Service
 MDA: Management Data Analytics
 MDA MnS: MDA Management service
@@ -1497,25 +1487,24 @@ MDIG: MCData Imminent peril Group
 MDIGC: MCData Imminent peril Group Communication
 MDPEA: MCData Private (one-to-one) Emergency Alert
 MDR: Miss Detection Rate
-MDT: Minimization of Drive Tests
+MDT: (DNS Query or DNS Response) Message Detection Template | Minimization of Drive Tests
 ME: Mobile Equipment
 MEA: MCPTT Emergency Alert
 MEAO: MEC Application Orchestrator
 MEC: Multi-access Edge Computing 
 MECAPP: MEC Application
-MECRP: Manufacturer-defined Ear Cap Reference Point
+MECRP: Manufacturer Ear Cap Reference Point | Manufacturer-defined Ear Cap Reference Point
 MEF: MEC Federator
 MEG: MCPTT Emergency Group
 MEGC: MCPTT Emergency Group Call
 MEI: Mobile Equipment Identity
 MEID: Mobile Equipment IDentity
-MEO: Medium Earth Orbit
-MEO : Medium-Earth Orbiting satellites
-MEP: Multi-access Edge Platform
+MEO: Medium Earth Orbiting | Medium-Earth Orbit
+MEP: MEC Platform | Multi-access Edge Platform
 MEPC: MCPTT Emergency Private Call
 MEPP: MCPTT Emergency Private Priority
 MES: MCPTT Emergency State
-MF: Media Function
+MF: Master File | Media Function 
 MFAF: Messaging Framework Adaptor Function
 MFBR: Maximum Flow Bit Rate
 MFCN: Mobile/Fixed Communications Network
@@ -1524,7 +1513,7 @@ MGCF: Media Gateway Control Function
 MGF: Media Gateway Function
 MGRP: Measurement Gap Repetition Period
 MGV-F: MTK Generation and Validation Function
-MGW: Media GateWay
+MGW: Media Gateway
 MHAS: MPEG-H Audio Stream
 MHI: Mobility History Information
 MIB: Master Information Block
@@ -1534,29 +1523,29 @@ MIG: MCPTT Imminent peril Group
 MIGC: MCPTT Imminent peril Group Call
 MIKEY: Multimedia Internet KEYing
 MIME: Multipurpose Internet Mail Extensions
-MIMO: Multiple Input Multiple Output
+MIMO: Multiple Input Multiple Output | Multiple-Input-Multiple-Output
 MINT: Minimization of Service Interruption
 MIP: Mobile IP
 MIPv4: Mobile IP version 4
 MIPv6: Mobile IP version 6
-MIoT: Massive Internet of Things
+MIoT: Massive Internet of Things | Massive IoT | Mobile Internet of Things
 MKFC: Multicast Key for Floor Control
 MKFC-ID: Identifier of Multicast Key for Floor Control (MKFC-ID)
 MKI: Master Key Identifier 
-ML: Machine Learning
+ML: Machine Learning 
 MLC: Mobile Location Center 
 MLD: Multicast Listener Discovery
-MM: Mobility Management
-MME: Mobility Management Entity
+MM: Mobility Management | Multimedia Message
+MME: Mobility Management Entity 
 MME NP: MME Network Product
 MME NPC: MME Network Product Class
 MMEC: MME Code
 MME_SRVCC: MME Supporting 5G-SRVCC
-MMI: Man-Machine Interface
+MMI: Man Machine Interface
 MMO: Massive Multiplayer Online
-MMS: Multimedia Messaging Service
+MMS: Multimedia Message Service | Multimedia Messaging Service
 MMS R/S: Multimedia Messaging Relay/Server
-MMSE: Multimedia Messaging Service Environment 
+MMSE: Minimum Mean Squared Error | Multimedia Messaging Service Element  | Multimedia Messaging Service Environment 
 MMSE-IRC: Minimum mean square error - interference rejection combining
 MMSNA: Multimedia Messaging Service Network Architecture
 MMSO: Multimedia Messaging Service Originator
@@ -1564,98 +1553,96 @@ MMSR: Multimedia Messaging Service Recipient
 MMSS: MultiMode System Selection
 MMT: MPEG Media Transport
 MMTEL: MultiMedia Telephony 
-MMTEL : Multimedia Telephony
 MMTel: MultiMedia Telephony
-MN: Master Node
-MNC: Mobile Network Code
+MN: Master Node. | Mobile Node
+MNC: Mobile Network Code (part of IMSI)
 MNO: Mobile Network Operator
 MNPF: Mobile Number Portability Function
 MNS:  Network Signalling 
-MO: Managed Object
+MO: Managed Object | Management Object | Mobile Originated | Mobile Originating
 MO SMS: Mobile Originated Short Message Service
 MO-EDT: Mobile Originated Early Data Transmission
-MO-LR:  Originated Location Request
-MO-SDT: Mobile Originated Small Data Transmission
+MO-LR: Mobile Originated Location Request
+MO-SDT: Mobile Originated SDT | Mobile Originated Small Data Transmission
 MOAT: Mobile-Originated AS-Terminated
 MOBA: Multiplayer Online Battle Arena
-MOBIKE : IKEv2 Mobility and Multihoming Protocol
-MOC: Managed Object Class
-MOCN: Multiple Operator Core Network
+MOBIKE: IKEv2 Mobility and Multihoming Protocol
+MOC: MO Call | Managed Object Class
+MOCN: Multi-Operator Core Network | Multiple Operator Core Network
 MODE: Indication packet switched/circuit switched mode
 MOI: Managed Object Instance
 MOMT: Mobile-Originated Mobile-Terminated
 MONP: MCPTT Off-Network Protocol
-MOP: Master Operator
+MOP: Master Operator | Maximum Output Power
 MOP-NM: Master Operator Network Manager 
 MOP–SC-DM: Master Operator Shared CN DM
 MOP–SR-DM: Master Operator Shared RAN DM
-MOS : Mean Opinion Score
+MOS: Mean Opinion Score
 MOS-LQO: Mean Opinion Score – Listening Quality Objective 
 MOSPF: Multicast Open Shortest Path First
-MP: Multi-Path
+MP: Multi-path
 MPAC: Multi-Probe Anechoic Chamber
 MPC:  Positioning Centre
 MPD: Media Presentation Description
-MPDCCH: MTC Physical Downlink Control Channel
+MPDCCH: MTC Physical Downlink Control Channel 
 MPE: Maximum Permissible Exposure
 MPEA: MCPTT Private Emergency Alert
 MPEG: Moving Pictures Expert Group
 MPQUIC: Multi-Path QUIC
 MPR: Allowed maximum power reduction
 MPS: Multimedia Priority Service
-MPS : Multimedia Priority Service 
 MPTCP: Multi-Path TCP Protocol
-MR: Main Radio
-MR-DC: Multi-Radio Dual Connectivity
-MRB: MBS Radio Bearer
+MR: Main Radio | Medium Range | Mixed Reality
+MR-DC: Multi-RAT Dual Connectivity | Multi-Radio Dual Connectivity  | Multi-radio DC
+MRB: MBMS Point to Multipoint Radio Bearer | MBS Radio Bearer | Media Resource Broker
 MRC: Maximum Ratio Combining
 MRDC: Multi-Radio Dual Connectivity
-MRF: Media Resource Function
-MRFC: MRF Controller
-MRFP: Multimedia Resource Function Processor
+MRF: Multimedia Resource Function
+MRFC: MRF Controller | Multimedia Resource Function Controller
+MRFP: Multimedia Resource Function Processor 
 MRO: Mobility Robustness Optimisation
-MRP: Mouth Reference Point
-MS:  Station
-MSA: MBMS Service Area 
+MRP: Market Representation Partner | Mouth Reference Point (artificial head)
+MS: Mobile Services | Mobile Station
+MSA: MBMS Service Area  | MCH Subframe Allocation
 MSAS: Multi-functional Satellite Augmentation System
-MSB: Most Significant 8 Bits
-MSC:  Services Switching Centre
-MSCCK: MBMS subchannel control key
+MSB: Most Significant 8 Bits | Most Significant Bit
+MSC:  Services Switching Centre | Mobile Switching Centre
+MSCCK: MBMS SubChannel Control Key
 MSCCK-ID: MBMS SubChannel Control Key Identifier
 MSCF: Messaging Service Control Function
-MSD: Maximum Sensitivity Degradation
-MSE: Mean Squared Error
+MSD: Maximum Sensitivity Deduction | Maximum Sensitivity Degradation | Minimum Set of Data | Minimum Set of emergency related Data
+MSE: Mean Squared Error | Media Service Enabler
 MSGin5G: Message Service Within the 5G System
 MSH: Media Session Handler
 MSI: MCH Scheduling Information
-MSISDN: Mobile Station ISDN number
-MSK: Master Session Key
+MSISDN: MS international PSTN/ISDN number | Mobile Station ISDN number | Mobile Station International Subscriber Directory Number | Mobile Subscriber ISDN Number
+MSK: MBMS Service Key | Master Session Key
 MSMTSI: Multi-Stream Multimedia Telephony Service for IMS
 MSP: MCH Scheduling Period
 MSR: Multi-Standard Radio
 MSRP: Message Session Relay Protocol 
 MSS: Mobile Satellite Services
-MT: Mobile Terminated
+MT: Mobile Terminal | Mobile Terminated | Mobile Termination
 MT SMS: Mobile Terminated Short Message Service
 MT-EDT: Mobile Terminated Early Data Transmission
 MT-LR: Mobile Terminated Location Request
-MT-SDT: Mobile Terminated Small Data Transmission
-MTC: Machine Type Communication
-MTC-IWF: Machine Type Communications-InterWorking Function
-MTCH: MBS Traffic Channel
+MT-SDT: Mobile Terminated SDT | Mobile Terminated Small Data Transmission 
+MTC: Machine-Type Communications 
+MTC-IWF: MTC Interworking Function | Machine Type Communications-InterWorking Function
+MTCH: MBS Traffic Channel | Multicast Traffic Channel
 MTHR: Medium-to-High Ratio
-MTK: MBS Traffic Key
+MTK: MBMS Traffic Key
 MTLF: Model Training Logical Function
 MTRP: Multiple Transmission and Reception Point
-MTSI: Multimedia Telephony Service for IMS
-MTU: Maximum Transmission Unit
+MTSI: Multimedia Telephony Service for IMS | Multimedia Telephony Service over IMS
+MTU: Maximum Transfer Unit | Maximum Transmission Unit
 MU: Measurement Uncertainty
-MU-MIMO: Multi-user-Multiple Input Multiple Output
+MU-MIMO: Multi User MIMO | Multi-user-Multiple Input Multiple Output
 MUA: Modify UE context Answer
 MUK: MBMS User Key
 MUR: Modify UE context Request
-MUSIM: Multi-Universal Subscriber Identity Module
-MUST: MultiUser Superposition Transmission
+MUSIM: Multi-USIM | Multi-Universal Subscriber Identity Module
+MUST: Multiuser Superposition Transmission 
 MVEA: MCVideo Emergency Alert
 MVEG: MCVideo Emergency Group
 MVEGC: MCVideo Emergency Group Call
@@ -1669,12 +1656,12 @@ MVPEA: MCVideo Private Emergency Alert
 MWD: Message Waiting Data
 MWI: Message Waiting Indication
 Max: Maximum
-Mbps: Megabits per second
+Mbps: Mega bit per second
 MeNB: Master eNB
 MexE:  Execution Environment
 MgNB: Master gNB
 MiD: Multi-iDentity
-MiFID II : Markets in Financial Instruments Directive II
+MiFID II: Markets in Financial Instruments Directive II
 MiFIR: Markets in Financial Instruments Regulation
 MnF: Management Function
 MnS: Management Service
@@ -1682,10 +1669,10 @@ MoU: Memorandum of Understanding (GSM operator joint)
 MuD: Multi-Device
 MuSiK: Multicast Signalling Key
 MuSiK-ID: Multicast Signalling Key Identifier
-Multi-RTT: Multi-Round Trip Time
-N-MOS-LQOfb: Noise (Background) Mean Opinion Score - Listening Quality Objective - Fullband
-N-MOS-LQOn: Noise (Background) Mean Opinion Score - Listening Quality Objective - Narrowband
-N-MOS-LQOw: Noise (Background) Mean Opinion Score - Listening Quality Objective - Wideband
+Multi-RTT: Multi-Round Trip Time | Multiple-Round Trip Time
+N-MOS-LQOfb: Noise (Background) - Mean Opinion Score Listening Quality Objective - Fullband | Noise (Background) Mean Opinion Score - Listening Quality Objective - Fullband
+N-MOS-LQOn: Noise (Background) - Mean Opinion Score Listening Quality Objective - Narrowband | Noise (Background) Mean Opinion Score - Listening Quality Objective - Narrowband
+N-MOS-LQOw: Noise (Background) - Mean Opinion Score Listening Quality Objective - Wideband | Noise (Background) Mean Opinion Score - Listening Quality Objective - Wideband
 N-PDU: Network-Protocol Data Unit
 N-RTK: Network – Real-Time Kinematic
 N-TM: NB-IoT Test Model
@@ -1695,46 +1682,46 @@ N2: Reference point between the NG-RAN and the AMF
 N3A: Non-3GPP Access
 N3AEC: Non-3GPP Access Establishment Cause
 N3AF: Non-3GPP Access Function
-N3AN: Non-3GPP access network
-N3C: Non-3GPP Connection
-N3G: Non-3GPP Message Gateway
-N3IWF: Non 3GPP InterWorking Function
+N3AN: Non-3GPP Access Network
+N3C: Non-3GPP Connection | Non-3GPP Connectivity
+N3G: Non-3GPP Access | Non-3GPP Message Gateway
+N3IWF: Non-3GPP InterWorking Function  | Non-3GPP access InterWorking Function
 N3QAI: Non-3GPP QoS Assistance Information
-N5CW: Non 5G Capable over WLAN
-N5GC: Non-5G-Capable
+N5CW: Non-5G-Capable over WLAN 
+N5GC: Non-5G Capable
 N9HR: N9 Home Routed
-NA: Naming Authority
+NA: Naming Authority | Network Assistance | No Audio-alerting capability
 NA(P)T-PT: Network Address (Port-Multiplexing) Translation-Protocol Translation
 NAAS: Network As A Service
 NACC: Network Assisted Cell Change
-NACK: Negative ACKnowledgment
+NACK: Negation ACKnowledgement message | Negative Acknowledgement
 NAF: Network Application Function
 NAI: Network Access Identifier
-NAICS: Network Assisted Interference Cancellation/Suppression
+NAICS: Network Assisted Interference Cancellation/Suppression | Network-Assisted Interference Cancellation and Suppression
 NAL: Network Abstraction Layer
 NAP: Network Access Provider
 NAPT: Network Address Port Translation
 NAPTR: Naming Authority Pointer
-NAS: Non Access Stratum
+NAS: Network Access Server | Non-Access Stratum
 NASS: Network Attachment Subsystem
-NAT: Network Address Translation
+NAT: Network Address Translation | Network Address Translators
 NAV: Navigation
-NB: Narrowband
-NB-IoT: Narrow Band Internet of Things
+NB: Narrowband | NodeB
+NB-IoT: Narrow Band Internet of Things | Narrowband IoT  | Narrowband – Internet of Things
 NBIFOM: Network-based IP flow mobility
-NBM: Network Based Mobility
+NBM: Network based mobility management | Network-based Mobility
 NBMP: Network-Based Media Processing
-NC: Non-Contiguous
+NC: Non Contiguous
 NCC: Next Hop Chaining Counter
 NCD-SSB: Non Cell Defining SSB
-NCGI: NR Cell Global Identity
+NCGI: NG-RAN Cell Global ID | NR Cell Global Identifier | NR Cell Global Identity
 NCI: NR Cell Identity
 NCIS: Network Controlled Interactive Service
 NCJT: Non-Coherent Joint Transmission
 NCL: Neighbour Cell List
-NCR: Network Controlled Repeater
-NCR-Fwd: NCR-Forwarding
-NCR-MT: NCR Mobile Termination
+NCR: Neighbour Cell Relationship | Network-Controlled Repeater
+NCR-Fwd: NCR Forwarding
+NCR-MT: NCR Mobile Termination | Network controlled repeater – Mobile Termination
 NCRT: Neighbour Cell Relation Table
 NCSG: Network Controlled Small Gap
 ND: No Display capability
@@ -1742,82 +1729,82 @@ NDI: New Data Indicator
 NDPP: Network Device Protection Profile
 NDS: Network Domain Security
 NDS/IP: NDS for IP based protocols
-NE: Network Element
-NE-DC: NR E-UTRA Dual Connectivity
+NE: Network Element 
+NE-DC: NR E-UTRA Dual Connectivity with MCG using NR and SCG using E-UTRA | NR-E-UTRA Dual Connectivity | NR/E-UTRA DC
 NEA: Encryption Algorithm for 5G
 NEAF: Non-EPS Alert Flag
 NEF: Network Exposure Function
 NES: Network Energy Savings
 NESAG: Network Equipment Security Assurance Group
-NEST: Network Slice Type
+NEST: Network Slice Template | Network Slice Types
 NEV: NEVer
-NF: Network Function
-NFTF: Near Field To Far-field
-NFV: Network Functions Virtualisation
+NF: Near-Field | Network Function | Noise Figure
+NFTF: Near Field to Far-field
+NFV: Network Functions Virtualization
 NFV-MANO: Network Functions Virtualisation Management and Orchestration
-NFVI: Network Functions Virtualisation Infrastructure
+NFVI: Network Function Virtualisation Infrastructure
 NFVO: Network Functions Virtualization Orchestrator 
-NFc : NF service consumer
-NFp : NF service producer
-NG: Networks Group (GSMA WG)
+NFc: NF service consumer
+NFp: NF service producer
+NG: Networks Group (GSMA WG) | Next Generation
 NG-AP: NG Application Protocol
 NG-C: NG Control plane
-NG-RAN: Next Generation (5G) RAN
+NG-RAN: NG Radio Access Network | Next Generation (5G) RAN | Next Generation RAN | Next Generation – Radio Access Network
 NG-U: NG User plane interface
-NGAP: NG Application Protocol
+NGAP: NG Application Protocol | Next Generation Application Protocol
 NGC: Next Generation Core
 NGCOR: Next Generation Converged Operations Requirements
-NGEN-DC: E-UTRA NR Dual Connectivity with E-UTRAN connected to 5GC
+NGEN-DC: E-UTRA NR Dual Connectivity with E-UTRA connected to 5GC | NG-RAN E-UTRA-NR Dual Connectivity
 NGEO: Non-Geostationary Earth Orbiting
 NGN: Next Generation Network
 NGSI: Next Generation Service Interfaces 
-NGSO: Non-Geosynchronous Orbit
+NGSO: Non-Geostationary-Satellite Orbit | Non-Geosynchronous Orbit
 NH: Next Hop key
-NI-LR: Network Induced Location Request
+NI-LR: Network Induced Location Request 
 NIA: Integrity Algorithm for 5G
 NICT: National Institute of Information and Communications Technology
-NID: Network Identifier
+NID: Network ID  | Network Identifier for SNPN
 NIDD: Non-IP Data Delivery
 NITZ: Network Identity and Time Zone
 NK: No Keypad capability
 NL: No support of multiple Languages
-NLOS: Non-Line-of-Sight
+NLOS: Non Line Of Sight | Non-LOS | Non-Line-of-Sight
 NLSP: Network local switch for PIN
 NLoS: Non-Line of Sight 
 NM: Network Manager 
 NMS: National Market Systems
 NMSE: Normalized Mean Square Error
-NNI: Network to Network Interface
+NNI: Network to Network Interface 
 NNSF: NAS Node Selection Function 
 NOM: Nominal volume setting
-NOP: Network Operator
-NP: Number Portability
+NOP: Network Operator 
+NP: Network Parameter | Network Product | Number Portability
 NPBCH: Narrowband Physical Broadcast channel
 NPC: Network Product Class
 NPCD: Network Product Class Description
-NPDCCH: Narrowband Physical Downlink Control Channel
-NPDSCH: Narrowband Physical Downlink Shared Channel
+NPDCCH: Narrowband Physical Downlink Control channel
+NPDSCH: Narrowband Physical Downlink Shared channel
 NPI: Numbering Plan Identifier
 NPLI: Network Provided Location Information
 NPN: Non-Public Network
 NPN-OP: NPN Operator
 NPN-SC: NPN Service Customer
 NPN-SP: NPN Service Provider
-NPRACH: Narrowband Physical Random Access Control Channel
+NPRACH: Narrowband Physical Random Access Control Channel | Narrowband Physical Random Access channel
 NPRS: Narrowband Positioning Reference Signals
 NPSS: Narrowband Primary Synchronization Signal
-NPUSCH: Narrowband Physical Uplink Shared Channel
-NR: New Radio
+NPUSCH: Narrowband Physical Uplink Shared channel
+NR: NR Radio Access | Network Resource | New Radio (the radio interface of 5G)
 NR-ARFCN: NR Absolute Radio Frequency Channel Number
-NR-DC: NR NR Dual Connectivity
+NR-DC: NR-NR Dual Connectivity
 NR-MIB: NR-Master Information Block
 NR-U: New Radio Unlicensed
 NR/5GC: NR connected to 5GC
 NRA: Non-Aggregated RUCI Report Answer
 NRAO: National Radio Astronomy Observatory
-NRF: Network Repository Function
+NRF: NF Repository Function | Network Repository Function 
 NRID: Networked Remote Identification
-NRM: Network Resource Management
+NRM: Network Resource Management | Network Resource Model
 NRPEK: NR PC5 Encryption Key
 NRPIK: NR PC5 Integrity Key
 NRPPa: NR Positioning Protocol Annex
@@ -1827,71 +1814,70 @@ NRSRP: Narrowband Reference Signal Received Power
 NRSRQ: Narrowband Reference Signal Received Quality
 NRT: Neighbour Relation Table
 NRTC: NR Test Configuration
-NS: Network Slice
-NS-AoS: Network slice area of service
-NSA: Non-Standalone, a mode of operation where operation of an other radio is assisted with an other radio 
+NS: Network Service | Network Signalling | Network Slice | No Speech-call capability
+NS-AoS: Network Slice Area of Service
+NSA: Non-Standalone, a mode of operation where operation of a radio is assisted with another radio | Non-Standalone, a mode of operation where operation of an other radio is assisted with an other radio
 NSAC: Network Slice Admission Control
 NSACF: Network Slice Admission Control Function
 NSAG: Network Slice AS Group
-NSC: Network Slice Customer
+NSC: Network Slice Customer  | Network Slice consumer
 NSCE: Network Slice Capability Enablement
 NSCI: New Security Context Indicator
 NSCOF: Network Slice Certificate Orchestration Function
 NSF: National Science Foundation
-NSI: Network Specific Identifier
+NSI: Network Slice Instance | Network Specific Identifier
 NSI ID: Network Slice Instance Identifier
 NSLPI: NAS Signalling Low Priority Indication
 NSM: Network Slice Management
 NSMF: Network Slice Management Function
-NSP: Network Slice Provider
+NSP: Network Service Provider | Network Slice Provider
 NSPA: Network Slice Performance and Analytics
 NSS: Network Slice Specific
-NSSAA: Network slice-specific authentication and authorization
-NSSAAF: Network Slice-specific and SNPN Authentication and Authorization Function
-NSSAAF : Network Slice-Specific Authentication and Authorization Function
+NSSAA: Network Slice-Specific Authentication and Authorization
+NSSAAF: Network Slice-Specific Authentication and Authorization Function | Network Slice-specific and SNPN Authentication and Authorization Function
 NSSAI: Network Slice Selection Assistance Information
 NSSF: Network Slice Selection Function
 NSSI: Network Slice Subnet Instance
 NSSP: Network Slice Selection Policy
 NSSRG: Network Slice Simultaneous Registration Group
 NSSS: Narrowband Secondary Synchronization Signal
-NSWO: Non-Seamless WLAN Offload
+NSWO: Non-Seamless WLAN Offload   
 NSWOF: Non-Seamless WLAN offload Function
-NSaaS: Network Slice as a Service
+NSaaS: Network Slice as a Service | Network Slice-as-as-Service
 NSaaSP: Network Slice as a Service Provider
 NSaasC: Network Slice as a Service Customer
 NTC: Test Configuration for Non-contiguous operation
-NTN: Non-Terrestrial Network
+NTN: Non-Terrestrial Networks
 NTP: Network Time Protocol
 NTP-UTC: Network Time Protocol – Coordinated Universal Time
 NTSC: National Time Service Center of Chinese Academy of Sciences
 NUL: Normal Uplink
 NW: Network
-NW-TT: Network-Side TSN Translator
-NWDAF: Network Data Analytics Function
+NW-TT: Network-side TSN translator
+NWDAF: Network Data Analytics Function 
 NZP: Non-zero-power
 NZP CSI-RS: Non-Zero Power CSI-RS
 NaaS: Network-as-a-Service
 NavIC: NAVigation with Indian Constellation
 NetLoc: Network provided Location information
-O&M: Operation and Maintenance
+O&M: Operation and Maintenance | Operations and Management
 O2I: Outdoor-to-Indoor
 O2O: Outdoor-to-Outdoor
 OA: Outgoing Access
 OA&M: Operation, Administration and Maintenance
-OAM: Operation, Administration, and Maintenance
+OAM: Operation Administration and Maintenance | Operation and Maintenance | Operation and Management | Operations, Administration and Management
 OAM&P: Operations, Administration, Maintenance and Provisioning
 OATP: On-board Automatic Train Protection
 OATS: Open Area Test Site 
 OBA: Object Based Audio
-OBUE: Operating Band Unwanted Emission
+OBUE: Operating Band Unwanted Emissions
 OBW: Occupied Band Width
 OCB: Outgoing Communication Barring 
 OCC: Orthogonal Covering Code
 OCF: Online Charging Function
-OCI: Overload Control Information
+OCI: Outgoing Call Information | Overload Control Information
 OCNG: OFDMA Channel Noise Generator
-OCS: Online Charging System
+OCS: Online Charging System 
 OCSP: Online Certificate Status Protocol
 OCST: Operator Contolled Signal Threshold per Access Technology
 OCT: Outgoing Call Timer
@@ -1902,28 +1888,28 @@ OFDMA: Orthogonal Frequency Division Multiple Access
 OHMD: Optical Head Mount Display
 OIDC: OpenID Connect
 OIP: Originating Identification Presentation
-OIR: Originating Identification Restriction
+OIR: Originating Identification Restriction | Originating Identification presentation Restriction
 OLC: OverLoad Control
 OLC-H: Overload Control based on OCI Header
 OLI: Originating Line Information
 OLPC: Open Loop Power Control
 OLR: Overall Loudness Rating
 OMA: Open Mobile Alliance
-OMAF: Omnidirectional MediA Format
+OMAF: Omnidirectional MediA Format | Omnidirectional Media Application Format
 OMC-ID: Operation and Maintenance Centre Identity
 OMG: Object Management Group
-OMR: Optimal Media Routing
+OMR: Optimal Media Routing 
 ON-SNPN: Onboarding Standalone Non-Public Network
 ONN: Onboarding Network
 OOB: Out-of-band
 OOBE: Out-of-band Emissions
 OOC: Out Of Coverage 
-OOK: On-Off keying
+OOK: On-off keying
 OP: Operator Platform
 OPEX: Operating Expenses
 OPG: Operator Platform Group
 OPI: Offload Preference Indicator
-OS: Operating System
+OS: OFDM Symbol | Operating System | Operations System (EM, NM)
 OS Id: OS Identity
 OSA: Open Services Architecture
 OSCORE: Object Security for Constrained RESTful Environments 
@@ -1933,18 +1919,17 @@ OSPP: Operating System Protection Profile
 OSR: Observation Space Representation
 OSS: Operations Support System
 OT: Operation Technology
-OTA: Over-The-Air
+OTA: Over The Air 
 OTAK: Over-The-Air-Key Management (TETRA)
 OTAR: Over-The-Air Rekeying (P25)
-OTDOA: Observed Time Difference of Arrival
-OTT: Over The Top
-OTT : Over-The-Top
+OTDOA: Observed Time Difference Of Arrival (positioning method)
+OTT: Over-The-Top
 OVSF: Orthogonal variable spreading factor
 OWSER: OMA Web Services 
 OpenGL: Open Graphics Library
 Out: Outgoing
 P-CCPCH: Primary Physical Common Control CHannel
-P-CSCF: Proxy CSCF
+P-CSCF: Proxy - Call Session Control Function | Proxy – CSCF | Proxy-CSCF
 P-CSI: Periodic CSI
 P-GRUU: Public Globally Routable User Agent URI
 P-GW: PDN GateWay 
@@ -1955,78 +1940,75 @@ P-UE: Pedestrian UE
 P25: Project 25 
 P2A: Person to Application
 P2N: PINE-to-Network
-P2P: Person to Person
+P2P: PINE-to-PINE | Person to Person
 P2X: Pedestrian-to-Everything
-PA: Paging Area
-PA : Power Amplifier
+PA: Paging Area | Power Amplifier | Proxy Agent
 PAA: PDN Address Allocation
 PAE: Power Added Efficiency
 PAG: POI Aggregator
 PAKE: Password-based key establishment
 PAP: Password Authentication Protocol
-PAPR: Peak to Average Power Ratio
+PAPR: Peak-to-Average Power Ratio
 PAS: Power Angular Spectrum
 PASSporT: Personal Assertion Token
 PAnF: Prose Anchor Function
 PB: Power Boosting
-PBCH: Physical Broadcast Channel
+PBCH: Physical Broadcast CHannel
 PBID: Phonebook Identifier
 PBPS: Periodic-based partial sensing
-PBR: Physically-Based Rendering
+PBR: Physically-Based Rendering | Prioritised Bit Rate
 PBU: Proxy Binding Update
 PBW: Percentage Bandwidth
-PC: Power Control
+PC: Personal Computer | Power Control | Protocol Converter
 PC5 LINK-AMBR: PC5 Link Aggregated Bit Rate
-PCC: Policy and Charging Control
+PCC: Point Cloud Compression | Policy Control and Charging | Policy and Charging Control | Primary Component Carrier
 PCCA: Portable Computer and Communications Association
 PCCB: Private Call Call-Back
 PCCH: Paging Control Channel
-PCCPCH: Primary Common Control Physical CHannel
-PCEF: Policy and Charging Enforcement Function
-PCF: Policy Control Function
-PCFICH: Physical control format indicator channel
+PCCPCH: Primary Common Control Physical Channel
+PCEF: Policy and Charging Enforcement Function 
+PCF: Policy Control Function | Policy and Charging Function
+PCFICH: Physical Control Format Indicator CHannel
 PCH: Paging Channel
 PCI: Physical Cell Identifier
-PCK: Private Call Key
-PCK-ID: Private Call Key Identifier
+PCK: Private Call Key 
+PCK-ID: Private Call Identifier | Private Call Key Identifier
 PCM: Pulse Code Modulation
 PCN: Packet switched Core network Node (SGSN, S–GW, P–GW, TDF)
-PCO: Protocol Configuration Option
+PCO: Phase Center Offset | Protocol Configuration Options
 PCP: Priority Code Point
-PCRF: Policy and Charging Rule Function
+PCRF: Policy and Charging Rules Function
 PCV: Phase Center Variation
 PCell: Primary Cell
 PD: Protocol Discriminator
 PDA: Personal Digital Assistant
 PDB: Packet Delay Budget
 PDC: Propagation Delay Compensation
-PDCCH: Physical Downlink Control Channel
+PDCCH: Physical Downlink Control CHannel
 PDCP: Packet Data Convergence Protocol
 PDF: Policy Decision Function
 PDG: Packet Data Gateway
 PDI: Packet Detection Information
-PDN: Packet Data Network
-PDN GW: PDN Gateway
-PDP: Packet Data Protocol, e.g. IP 
+PDN: Packet Data Network or Public Data Network
+PDN GW: PDN Gateway | Packet Data Network Gateway
+PDP: Packet Data Protocol
 PDR: Packet Detection Rule
 PDS: Packet Data Subsystem
-PDSCH: Physical Downlink Shared Channel
+PDSCH: Physical Downlink Shared CHannel
 PDTQ: Planned Data Transfer with QoS requirements
-PDU: Packet Data Unit
-PDUID: ProSe Discovery UE ID
+PDU: Packet Data Unit | Protocol Data Unit
+PDUID: ProSe Discovery UE ID 
 PDV: Packet Delay Variation
 PEC: Post Event Charging
 PEE: Power, Energy and Environmental
-PEGC: PIN Elements with Gateway Capability
-PEGC : PIN Element with Gateway Capability 
-PEI: Permanent Equipment Identifier
+PEGC: PIN Element Gateway Capability | PIN Element with Gateway Capability
+PEI: Paging Early Indication | Permanent Equipment Identifier
 PEI-O: Paging Early Indication-Occasion
 PEI-RNTI: Paging Early Indication RNTI
 PEIPS: Paging Early Indication with Paging Subgrouping
 PEM: Privacy-Enhanced Mail
 PEMC: PIN Element with Management Capability
-PEMC : PIN Element with Management Capability
-PER: Packed Encoding Rules
+PER: Packed Encoding Rules | Packet Error Rate
 PESQ: Perceptual Evaluation of Speech Quality
 PF: Paging Frame
 PFCP: Packet Forwarding Control Protocol
@@ -2036,199 +2018,197 @@ PFI: PC5 QoS Flow Identifier
 PFL: Positioning Frequency Layer
 PG: PLMN Generic
 PGK: ProSe Group Key
-PGW: PDN Gateway
+PGW: PDN Gateway, the abbreviation of PDN GW
 PGW-C: PDN Gateway Control plane function
 PGW-U: PDN Gateway User plane function
-PH: Paging Hyperframes
+PH: Paging Hyperframes | Power Headroom
 PHB: Per-Hop Behaviour
-PHICH: Physical hybrid-ARQ indicator channel
+PHICH: Physical HARQ indicator channel | Physical Hybrid ARQ Indicator CHannel
 PHP: Hypertext Preprocessor
-PHR: Power Headroom Report
+PHR: Power Headroom Reporting
 PHS: Personal Handyphone System
 PHY: Physical layer
-PI: Performance Indicator
+PI: Performance Indicator | Preemption Indication
 PICS: Protocol Implementation Conformance Statement
 PIDF: Presence Information Data Format
 PIDF-LO: Presence Information Data Format Location Object
 PIM: Protocol-Independent Multicast
 PIM-DM: Protocol-Independent Multicast- Dense Mode
-PIM-SM: Protocol Independent Multicast – Sparse Mode
-PIN: Personal IoT Networks
-PIN : Personal IoT Network
+PIM-SM: Protocol Independent Multicast – Sparse Mode | Protocol-Independent Multicast- Sparse Mode
+PIN: Personal Identification Number | Personal IoT Networks
 PINAPP: Personal IoT Network Application 
-PINAPP : Personal IoT Network Application
 PINE: PIN Element
-PIXIT: Protocol Implementation eXtra Information for Testing
+PIXIT: Protocol Implementation extra Information for Testing
 PKCE: Proof Key for Code Exchange
-PKCS: Public Key Cryptography Standards
+PKCS: Public-Key Cryptography Standards
 PKI: Public Key Infrastructure
 PKMF: ProSe Key Management Function
-PL: Priority Level
+PL: Preferred Languages | Priority Level | Protection Level
 PLC: Programmable Logic Controller
 PLI: Picture Loss Indication
 PLL: Phase Locked Loop
-PLMN: Public Land Mobile Network
+PLMN:    Network | Public Land Mobile Network
 PLR: Packet Loss Rate
-PLY: PoLYgon
+PLY: PoLYgon file format
 PM: Performance Management
-PMCH: Physical Multicast Channel
+PMCH: Physical Multicast CHannel
 PMD: Pseudonym mediation device functionality
 PMF: Performance Measurement Function
-PMI: Precoding Matrix Indicator
+PMI: Precoding Matrix Index | Precoding Matrix Indicator
 PMIC: Port Management Information Container
 PMIP: Proxy Mobile IP
-PMIP/PMIPv6: Proxy Mobile IP version 6
+PMIP/PMIPv6: Proxy Mobile IP version 6 
 PMK: Pairwise Master Key
 PMS: Port management service
 PMU: Phasor Measurement Unit
 PN: Personal Network
 PNA: Presence Network Agent
 PNE: Personal Network Element
-PNF: Physical Network Function
+PNF: Physical Network function
 PNG: Portable Network Graphics
-PNI-NPN: Public Network Integrated Non-Public Network
+PNI-NPN: Public Network Integrated NPN | Public Network Integrated Non-Public Network
 PNM: Personal Network Management
-PO: Paging Occasion
-POI: Point Of Interconnect
+PO: Paging Occasion | Participating Operator
+POI: Point Of Interception | Point of Interconnection (with PSTN) | Privacy Override Indicator
 POLQA: Perceptual Objective Listening Quality Assessment
 PON: Passive Optical Network
-POP: Proof Of Possession
+POP: Participating Operator | Proof of Possession
 POP-CORE-DM: Participating Operator CN DM
 POP-NM: Participating Operator Network Manager 
 POP-RAN-DM: Participating Operator RAN DM 
 PP: Protection Profile
 PPD: Paging Policy Differentiation
 PPF: Paging Proceed Flag
-PPI: Pixels Per Inch
-PPP: Point-to-Point Protocol
+PPI: Paging Policy Indicator | Pixels Per Inch
+PPP: Paging Policy Presence | Point-to-Point Protocol | Precise Point Positioning
 PPP-RTK: Precise Point Positioning – Real-Time Kinematic
 PPPP: ProSe Per-Packet Priority
-PPPR: ProSe per-packet reliability
+PPPR: ProSe Per-Packet Reliability
 PPS: Picture Parameter Set
 PPW: PRS Processing Window
 PQFI: PC5 QoS Flow ID
-PQI: PC5 QoS Identifier
+PQI: PC5 5QI | PC5 QoS Identifier
 PRA: Presence Reporting Area 
-PRACH: Physical Random Access Channel
+PRACH: Physical RACH | Physical Random Access CHannel
 PRACK: Provisional Response Acknowledgement
 PRAS: Premises Radio Access Station
 PRB: Physical Resource Block 
 PRC: Pseudo-Range Correction
 PRES: Presence
-PRG: Precoding resource block group
-PRINS: PRotocol for N32 INterconnect Security
-PRS: Positioning Reference Signal (for E-UTRA)
-PRU: Positioning Reference Unit
-PRUK: Prose Remote User Key
-PS: Packet Switched
+PRG: Physical Resource block Group | Precoding Resource block Group
+PRINS: PRotocol for N32 INterconnect Security 
+PRS: Positioning Reference Signal (for E-UTRA) | Positioning Reference Signals
+PRU: Position Reference Unit | Positioning Reference Unit
+PRUK: ProSe Relay User Key | Prose Remote User Key
+PS: Packet-Switched | Presence Server | Provisioning Server | Public Safety (in context of sidelink), Packet Switched (otherwise)
 PS-RNTI: Power Saving RNTI
 PSA: PDU Session Anchor
-PSAP: Public Safety Answering Point
+PSAP: Public Safety Access Point | Public Safety Answering Point
 PSBCH: Physical Sidelink Broadcast CHannel
 PSC: Packet Scheduling
 PSCCH: Physical Sidelink Control CHannel
-PSCell: Primary SCG Cell
+PSCell: Primary SCG (Secondary Cell Group) Cell | Primary SCG Cell | Primary SCell | Primary Secondary Cell
 PSD: Power Spectral Density
 PSDB: PDU Set Delay Budget
-PSDCH: Physical Sidelink Discovery Channel
+PSDCH: Physical Sidelink Discovery CHannel
 PSDK: Public Safety Discovery Key
 PSER: PDU Set Error Rate
 PSFCH: Physical Sidelink Feedback Channel
-PSI: PDU Set Importance
+PSI: PDU Set Importance | Provide Subscriber Information | Public Service Identity
 PSID: Provider Service Identifier
-PSIHI: PDU Set Integrated Handling Information
-PSK: Pre-Shared Key
+PSIHI: PDU Set Integrated Handling Information | PDU-Set Integrated Handling Indication
+PSK: Pre-Shared Key  | Pre-Shared Secret
 PSM: Power Saving Mode
 PSN: PDU Sequence Number within a PDU Set
 PSNR: Peak Signal to Noise Ratio
-PSP: PIN Service Provider
+PSP: PAS Similarity Percentage | PIN Service Provider
 PSPDN: Packet-Switched Public Data Network
 PSPL: Preferred Service Provider List
-PSS: Primary synchronization signal
-PSSCH: Physical Sidelink Shared Channel
+PSS: Packet Switched Streaming | Packet-switched Streaming Service | Primary Synchronization Signal
+PSSCH: Physical Sidelink Shared Channel 
 PSSN: PDU Set Sequence Number
 PSSS, S-PSS: Primary sidelink synchronization signal (LTE), sidelink primary synchronization signal (NR)
 PSSize: PDU Set Size
 PSTN: Public Switched Telephone Network
 PS_DO: PIN Status Data Object
-PT-RS: Phase Tracking Reference Signal
+PT-RS: Phase-tracking reference signal
 PTAG: Primary Timing Advance Group
 PTC: Push to Talk over Cellular
-PTI: Procedure Transaction Identity
+PTI: Precoding Type Indicator | Procedure Transaction Identity
 PTK: ProSe Traffic Key
 PTM: Point to Multipoint
-PTP: Point to Point
+PTP: Point to Point | Precision Time Protocol
 PTRS: Phase-Tracking Reference Signal
-PTT: Push To Talk
-PTW: Paging Time Window
+PTT: Push-To-Talk
+PTW: Paging Time Window | Paging Transmission Window
 PTZF: Pan, Tilt, Zoom and Focus
 PUA: Presence User Agent
-PUCCH: Physical Uplink Control Channel
+PUCCH: Physical Uplink Control CHannel
 PUCCH-SCell: PUCCH SCell
 PUCCH-sSCell: PUCCH switching SCell
 PUR: Preconfigured Uplink Resource
 PUR-RNTI: Preconfigured Uplink Resource RNTI
-PUSCH: Physical Uplink Shared Channel
+PUSCH: Physical Uplink Shared Channel 
 PVRTC: PowerVR Texture Compression
 PVS: Provisioning Server
 PVT: Public Validation Token
-PWS: Public Warning System 
+PWS: Plane Wave Synthesizer | Public Warning System 
 PZ-90: Parametry Zemli 1990 Goda – Parameters of the Earth Year 1990
 PoC: Push-to-talk over Cellular
-ProSe: Proximity Services 
+ProSe: Proximity Services  | Proximity based Services
 ProSeP: 5G ProSe Policy
 PtP: Point-to-Point
 QAM: Quadrature Amplitude Modulation
 QBC: QoS flow Based Charging
-QCI: QoS Class Identifier
-QCL: Quasi co-location
+QCI: QoS Class Identifier | Quality of Service Class Indicator
+QCL: Quasi Co-Location
 QER: QoS Enforcement Rule
-QFI: QoS Flow Identifier
+QFI: QoS Flow Identifier | QoS Flow Indicator
 QLOG: QUIC Logging
 QMC: QoE Measurement Collection
 QMS: Quality Management System
 QNC: QoS Notification Control
 QP: Quantization Parameter
-QPSK: Quadrature Phase-Shift Keying
+QPSK: Quadrature Phase Shift Keying
 QRI: QoS Rule Identifier
 QUIC: Quick UDP Internet Connections
 QZ: Quiet Zone
 QZS: Quasi Zenith Satellite
 QZSS: Quasi-Zenith Satellite System
 QZST: Quasi-Zenith System Time
-QoE: Quality of Experience
-QoS: Quality of Service
+QoE: Quality of Experience 
+QoS: Quality of Service 
 R-ML: Reduced complexity Maximum likelihood
 R-PDCCH: Relay Physical Downlink Control CHannel
-RA: Registration Authority
+RA: Random Access | Registration Area | Registration Authority | Routing Area
 RA-RNTI: Random Access RNTI
 RA-SDT: Random Access-based SDT
 RAB: Radio Access Bearer
 RAC: Radio Admission Control
 RACH: Random Access Channel
-RACS: Radio Capability Signalling Optimisation
+RACS: Radio Capabilities Signalling optimisation | Radio Capability Signalling Optimisation | UE Radio Capability Signalling optimization
 RADIUS: Remote Authentication Dial In User Service
 RAI: Release Assistance Indication
 RAM: Random Access Memory
 RAN: Radio Access Network
-RANAC: RAN Area Code
+RANAC: RAN Area Code | RAN-based Notification Area code
 RANAP: Radio Access Network Application Part
-RAND: RANDom challenge
+RAND: Random challenge
 RANDMS: Random challenge stored in the USIM
 RAP: Random Access Point
 RAR: Random Access Response
 RAS: Radio Astronomy Service
-RAT: Radio Access Technology
-RB: Resource Block
+RAT: Radio Access Technology  | Radio Access Type
+RB: Radio Bearer | Resource Block (for E-UTRA and NR) | Resource Block (for E-UTRA)
 RBAC: Role Based Access Control
-RBC: Radio Block Centre
+RBC: Radio Bearer Control | Radio Block Centre
 RBG: Resource Block Group
 RCAF: RAN Congestion Awareness Function
 RCD: Rich Call Data
 RCEF: RRC Connection Establishment Failure
-RCLWI: RAN Controlled WLAN Interworking
-RCP : Remote Copy Program
-RCS: Return Channel via Satellite
+RCLWI: RAN Controlled LTE-WLAN Integration | RAN Controlled LTE-WLAN Interworking | RAN Controlled WLAN Interworking
+RCP: Remote Copy Program
+RCS: Return Channel via Satellite | Rich Communication Service | Rich Communication Suite
 RCSA: Radiated Capability Set supported by the AAS BS
 RCST: Return Channel via Satellite Terminal
 RDF: Routing Determination Function
@@ -2236,34 +2216,34 @@ RDI: Restricted Digital Information
 RDN: Radio Distribution Network
 RDP: Remote Delete Program
 RDS: Reliable Data Service
-RE: Resource Element
+RE: Resource Element 
 RE-NWDAF: Roaming Exchange NWDAF
 REC: Railway Emergency Communication
-REFSENS: Reference Sensitivity
+REFSENS: Reference Sensitivity power level
 REG: Resource Element Group
 REL: Release
-RES: authentication Response
-REST: Representational State Transfer
+RES: User response | authentication Response
+REST: REpresentational State Transfer
 RET: Remote Electrical Tilting 
-RF: Radio Frequency
-RFC: Request For Comment
+RF: Radio Frequency | Rating Function
+RFC: Request For Comments
 RFFT: Real FFT
 RFID: Radio-frequency identification
 RFR: Receive Frequency Response 
 RFSP: RAT Frequency Selection Priority 
-RFSS: Radio Frequency (RF) Subsystem as defined in the TIA-102 specifications (P25)
+RFSS: Radio Frequency (RF) Subsystem
 RFU: Reserved for Future Use
 RG: Residential Gateway
 RG-LWAC: RG Level Wireline Access Characteristics
-RGB: Red-Green-Blue
+RGB: Red-Green-Blue colour space
 RGBA: Red-Green-Blue-Alpha
 RGBD: Red-Green-Blue-Depth
-RI: Rank Indicator
+RI: Rank Indication 
 RIB: Radiated Interface Boundary
 RIBS: Radio-interface based synchronization
-RID: Remote Identification
-RIM: Remote Interference Management
-RIM-RS: RIM Reference Signal
+RID: Remote Identification | Routing InDicator
+RIM: RAN Information Management | Remote Interference Management
+RIM-RS: RIM Reference Signal | Remote Interference Management Reference Signal
 RIV: Resource Indicator Value
 RLC: Radio Link Control
 RLF: Radio Link Failure
@@ -2275,60 +2255,59 @@ RLP: Radio Link Protocol
 RLR: Receive Loudness Rating
 RLS: Resource List Server
 RMC: Reference Measurement Channel
-RMS: Root Mean Square (value)
+RMS: Root Mean Square (value) | Root Mean Squared
 RMSI: Remaining Minimum SI
 RMTC: RSSI Measurement Timing Configuration
 RMa: Rural Macro
 RN: Relay Node
 RNA: RAN-based Notification Area
-RNAA: Resource owner-aware northbound API access
+RNAA: Resource owner-aware Northbound API Access
 RNAU: RAN-based Notification Area Update
-RNC: Radio Network Controller
+RNC: RNC | Radio Network Controller
 RNIS: Radio Network Information Service
 RNL: Radio Network Layer
 RNN: Recurrent Neural Network
 RNS: Radio Network Subsystem
 RNTI: Radio Network Temporary Identifier
 RO: RACH Occasion
-ROHC: RObust Header Compression
+ROHC: Robust Header Compression
 ROI: Region of Interest
 ROM: Receive Only Mode
-RP: Relay layer Protocol
+RP: Reception Point | Reference point (electrical or acoustical) | Relay layer Protocol | Rendezvous Point 
 RP-MTI: RP Message Type Indicator
 RP-SMEA: RP SME-Address
 RP-UI: RP User Information
 RPAUID: Restricted ProSe Application User ID 
-RPC: Reduced Partial CDR
-RPG: Role Playing Game
+RPC: Reduced Partial CDR | Remote Procedure Call
+RPG: Role Playing Game | Role-Player Game
 RPH: Reverse Path Filter
 RPID: Rich Presence Information Data
-RPLMN: Registered PLMN
-RPOA : Recognized Private Operating Agency
+RPLMN: Registered PLMN | Registered Public Land Mobile Network
+RPOA: Recognized Private Operating Agency
 RPSNR: Recovered PSNR
 RQA: Reflective QoS Attribute
-RQI: Reflective QoS Indicator
+RQI: Reflective QoS Indication
 RQoS: Reflective Quality of Service
 RR: Receiver Report
-RRC: Radio Resource Control
+RRC: Radio Resource Control | Range-Rate Correction | Root Raised Cosine
 RRH: Remote Radio Head
 RRM: Radio Resource Management
 RRP: MIPv4 Registration Reply
 RRQ: MIPv4 Registration Request
-RS: Reference Signal 
+RS: Reference Signal  | Reference Symbol
 RS-EPRE: Reference Signal-Energy Per Resource Element
 RSC: Relay Service Code
-RSCP: Received Signal Code Power
+RSCP: Received Signal Code Power | Reference Signal Carrier Phase
 RSCPD: Reference Signal Carrier Phase Difference
 RSD: Rule Selection Descriptor
 RSH: Remote shell
-RSI: Radio Set Identity
-RSI : Ratio of self-interference
-RSLPP: Ranging and Sidelink Positioning Policy
+RSI: Radio Set Identity | Ratio of self-interference
+RSLPP: Ranging and sidelink positioning policy
 RSM: Reference Site Method
-RSN: Redundancy Sequence Number
+RSN: Redundancy Sequence Number | Redundancy Session Number
 RSNPN: Registered SNPN
 RSPP: Ranging/SL Positioning Protocol
-RSRP: Reference signal received power
+RSRP: Reference Signal Received Power | Reference Signal Receiving Power
 RSRPP: Reference Signal Received Path Power
 RSRQ: Reference Signal Received Quality
 RSS: Resynchronisation signal
@@ -2336,18 +2315,18 @@ RSSI: Received Signal Strength Indicator
 RST: Reset
 RSTD: Reference Signal Time Difference
 RSTP: Rapid Spanning Tree Protocol
-RSU: Road Side Unit
-RTC: Real Time Clock
-RTCP: RTP Control Protocol
+RSU: Roadside unit
+RTC: Real Time Clock | Real-Time Communication | Real-Time Media Communication
+RTCP: RTP Control Protocol | Real-Time Control Protocol | Real-time Transport Control Protocol
 RTK: Real-Time Kinematic
-RTP: Real-time Transport Protocol
-RTS: Real-time Strategy
+RTP: Real-Time Protocol | Real-time Transport Protocol
+RTS: Real-Time Strategy
 RTS 25: Regulatory Technical Standard 25
 RTT: Round Trip Time
 RTTI: Real-time Transfer of Tariff Information
 RTU: Remote Terminal Unit
 RTWP: Received Total Wideband Power
-RU: Resource Utilization 
+RU: Radio Unit | Resource Unit | Resource Utilization 
 RUCI: RAN User Plane Congestion Information
 RV: Redundancy Version
 RVQoE: RAN visible QoE
@@ -2362,122 +2341,120 @@ RoT: Root of Trust
 Rx: Receiver
 S-CORE: Shared CN
 S-CPAC: Subsequent CPAC
-S-CSCF: Serving-CSCF
+S-CSCF: Server-Call Session Control Function | Serving - Call Session Control Function | Serving CSCF
 S-EAS: Source Edge Application Server
 S-EES: Source Edge Enabler Server
-S-GW: Serving GateWay
-S-MOS-LQOfb: Speech Signal Quality Mean Opinion Score - Listening Quality Objective - Fullband
-S-MOS-LQOn: Speech Signal Quality Mean Opinion Score - Listening Quality Objective - Narrowband
-S-MOS-LQOw: Speech Signal Quality Mean Opinion Score - Listening Quality Objective - Wideband
+S-GW: Serving GW | Serving Gateway | Signalling Gateway
+S-MOS-LQOfb: Speech Signal Quality - Mean Opinion Score - Listening Quality Objective - Fullband
+S-MOS-LQOn: Speech Signal Quality - Mean Opinion Score - Listening Quality Objective - Narrowband
+S-MOS-LQOw: Speech Signal Quality - Mean Opinion Score - Listening Quality Objective - Wideband
 S-NEST: Standardized NEST
 S-NG-RAN node: Secondary NG-RAN node
-S-NSSAI: Single Network Slice Selection Assistance Information
+S-NSSAI: Single NSSAI | Single Network Slice Selection Assistance Information 
 S-RAN: Shared RAN 
 S-RSRP: Sidelink Reference Signal Received Power
 S-RSSI: Sidelink received signal strength indicator
 S-SSB: Sidelink synchronization signal block 
-S-TMSI: S-Temporary Mobile Subscriber Identity
+S-TMSI: S-Temporary Mobile Subscriber Identity | SAE Temporary Mobile Station Identifier
 S1-MME: S1 for the control plane
 S1-U: S1 for the user plane
 S101-AP: S101 Application Protocol
 S1AP: S1 Application Protocol
 S8HR: S8 Home Routed
-SA: Security Association
-SA : Security Association 
+SA: Scheduling assignment | Security Association | Standalone
 SA NR: Standalone New Radio
 SA PDU: Single-Access PDU
-SAC: Service Area Code
+SAC: Semi Anechoic Chamber | Service Area Code | Service Area Coverage
 SACH: Service Announcement Channel
-SAE: System Architecture Evolution
+SAE: Society of Automotive Engineers | System Architecture Evolution
 SAF: Service Announcement Function
-SAI: Service Area Identifier as defined in TS 25.413 [11] and TS 23.003 [27]
+SAI: Service Area Identifier
 SAKKE: Sakai-Kasahara Key Encryption
-SAN: Subject Alt Name
-SAN : Satellite Access Node
+SAN: Satellite Access Node | Subject Alt Name
 SAP: Service Access Point
 SARI: Service Area Restriction Information
 SB-ADPCM: Sub-Band Adaptive Differential PCM
-SBA: Service Based Architecture
-SBAS: Space Based Augmentation System
+SBA: Scene Based Audio | Service Based Architecture
+SBAS: Satellite Based Augmentation System | Space Based Augmentation System
 SBCCH: Sidelink Broadcast Control Channel
 SBCF: Session Based Charging Function
 SBFD: Subband non-overlapping Full Duplex
-SBI: Service Based Interface
+SBI: Service Based Interfaces
 SBI-NR: Southbound Interface-Network Resources
 SBMA: Service Based Management Architecture
 SBR: Spectral Band Replication
 SBT: Single Band Testing
-SC: Single-Carrier
+SC: Service Continuity | Sidelink Control | Single Carrier | Subcarrier
 SC-FDM: Single-Carrier Frequency Division Multiplexing
 SC-FDMA: Single Carrier – Frequency Division Multiple Access
 SC-MCCH: Single Cell Multicast Control Channel
 SC-MRB: Single Cell MRB
 SC-MTCH: Single Cell Multicast Transport Channel
 SC-N-RNTI: Single Cell Notification RNTI
-SC-PTM: Single Cell Point to Multipoint
+SC-PTM: Single Cell Point To Multiploint | Single-cell point-to-multipoint
 SC-RNTI: Single Cell RNTI
 SC-VBR: Source Controlled VBR
-SCADA: Supervisory control and data acquisition
+SCADA: Supervisory Control And Data Acquisition
 SCAS: Security Assurance Specification
 SCBW: Smaller Channel Bandwidth (Existing immediate lower channel bandwidth)
-SCC: Secondary Component Carrier
+SCC: Satellite Communication Customer | Secondary Component Carrier | Service Centralization and Continuity
 SCCF: Subscriber Content Charging Function
 SCCH: Sidelink Control Channel
 SCCP: Signalling Connection Control Part
-SCEF: Service Capability Exposure Function
+SCEF: Service Capability Exposure Function 
 SCG: Secondary Cell Group
 SCGF: Second Cell Group Failure
-SCH: Shared Channel
+SCH: Shared Channel | Synchronization Channel
 SCI: Sidelink Control Information
 SCM: Single-connection mode
 SCM-C: SEAL Configuration Management Client
 SCM-S: SEAL Configuration Management Server
 SCP: Service Communication Proxy
-SCS: Sub-Carrier Spacing
+SCS: Service Capability Server  | Spatial Compute Server | Sub-Carrier Spacing | System Conformance Statement / Subcarrier Spacing
 SCT: Security Compliance Testing
 SCTP: Stream Control Transmission Protocol
 SCUDIF: Service Change and UDI/RDI Fallback 
 SCUR: Session Charging with Unit Reservation
 SCell: Secondary Cell
-SD: Slice Differentiator
-SD-RSRP: Sidelink Discovery RSRP
+SD: Single Differential | Slice Differentiator
+SD-RSRP: Sidelink Discovery RSRP | Sidelink Discovery Reference Signal Received Power
 SDAP: Service Data Adaptation Protocol
 SDES: Session Description Protocol Security Descriptions for Media Streams
 SDF: Service Data Flow
 SDK: Software Development Kit
 SDL: Supplementary Downlink
 SDMA: Spatial Division Multiple Access
-SDN: Software Defined Network
+SDN: Service dialling number | Software Defined Network
 SDNAEPC: Secondary DN authentication and authorization over EPC
 SDO: Standalone Downlink Only
 SDP: Session Description Protocol
 SDPCapNeg: SDP Capability Negotiation
-SDR: Sustained Data Rate
+SDR: Standard Dynamic Range | Sustained Data Rate
 SDS: Short Data Service
 SDT: Small Data Transmission
 SDU: Service Data Unit
 SE: Security Environment
-SEAF: SEcurity Anchor Function
-SEAL: Service Enabler Architecture Layer for verticals
+SEAF: Security Anchor Functionality
+SEAL: Service Enablement Application Layer | Service Enabler Architecture Layer for Verticals | Service Enabler Layer Architecture
 SEAL-UU: Service Enabler Architecture Layer for Verticals, Universal UE-network interface
-SEALDD: SEAL Data Delivery
+SEALDD: SEAL Data Delivery | Service Enabler Architecture Layer – Data Delivery
 SECAM: Security Assurance Methodology
 SEES: Service Exposure and Enablement S 
 SEG: Security Gateway
 SEI: Supplemental Enhancement Information
 SEID: Session Endpoint Identifier
 SEM: Spectrum emission mask 
-SENSE: Signal level Enhanced Network SElection
-SEPP: Security and Edge Protection Proxy
+SENSE: Signal level Enhanced Network Selection
+SEPP: Security Edge Protection Proxy
 SEQp: Sequence number for MGV-F stored in the USIM
 SET: SUPL Enabled Terminal
 SF: Service Function
-SFC: Service Function Chain
-SFCI: Sidelink Feedback Control Information
+SFC: Service Function Chaining
+SFCI: Sidelink Feedback Control Information 
 SFD: Start Frame Delimiter
 SFI: Short EF Identifier
 SFI-RNTI: Slot Format Indication RNTI
-SFN: System Frame Number
+SFN: Single Frequency Network | System Frame Number
 SFR: Security Functional Requirement
 SFTD: SFN and Frame Timing Difference
 SFTP: Secure File Transfer Protocol
@@ -2488,7 +2465,7 @@ SGH: Standard Gain Horn
 SGID: Special Group Identification
 SGM-C: SEAL Group Management Client
 SGM-S: SEAL Group Management Server
-SGSN: Serving GPRS Support Node
+SGSN: SGSN | Serving GPRS Support Node
 SGW: Serving Gateway
 SGW-C: Serving Gateway Control plane function
 SGW-U: Serving Gateway User plane function
@@ -2496,7 +2473,7 @@ SGsAP: SGs Application Part
 SHA: Secure Hash Algorithm
 SHAKEN: Signature-based Handling of Asserted information using toKENs
 SHR: Successful Handover Report
-SI: Self-Interference
+SI: Self-Interference | Study Item | System Information
 SI-RNTI: System Information RNTI
 SIB: System Information Block
 SIB1: System Information Block 1
@@ -2508,14 +2485,14 @@ SIB15: System Information Block 15
 SIB17: System Information Block 17
 SIB18: System Information Block 18
 SIBX: SystemInformationBlockTypeX
-SID: Study Item Description
+SID: SIlence Descriptor | Silence Insertion Descriptor | Study Item Description
 SIDF: Subscription Identifier De-concealing Function 
 SIFT: Scale Invariant Feature Transform
 SIM: Subscriber Identity Module
 SIM-C: SEAL Identity Management Client
 SIM-S: SEAL Identity Management Server 
-SINR: Signal-to-noise and interference ratio
-SIP: Session Initiation Protocol
+SINR: Signal to Interference plus Noise Ratio | Signal to Noise plus Interference Ratio | Signal-to-Interference-and-Noise Ratio | Signal-to-Interference-plus-Noise Ratio | Signal-to-noise and interference ratio
+SIP: Session Initiated Protocol | Session Initiation Protocol
 SIPTO: Selected IP Traffic Offload
 SIPTO@LN: Selected IP Traffic Offload at the Local Network
 SIR: Signal to Interference Ratio
@@ -2525,17 +2502,17 @@ SKM-S: SEAL Key Management Server
 SL: Sidelink
 SL PRS: Sidelink Positioning Reference Signal
 SL-AoA: Sidelink Angle-of-Arrival
-SL-BCH: Sidelink - Broadcast Channel
+SL-BCH: Sidelink Broadcast Channel
 SL-CS-RNTI: Sidelink Configured Scheduling RNTI
-SL-DCH: Sidelink Discovery CHannel
+SL-DCH: Sidelink Discovery Channel
 SL-MIMO: Sidelink-Multiple Antenna Transmission
 SL-MO-LR: Sidelink Mobile Originating Location Request
 SL-MT-LR: Sidelink Mobile Terminating Location Request
-SL-PRS: Sidelink Positioning Reference Signals
+SL-PRS: Sidelink PRS | Sidelink Positioning Reference Signals
 SL-PRS-CS-RNTI: SL-PRS Configured Scheduling RNTI
 SL-PRS-RNTI: SL-PRS RNTI
-SL-PRS-RSRP: Sidelink Positioning Reference Signals based Reference Signal Received Power
-SL-PRS-RSRPP: Sidelink Positioning Reference Signals based Reference Signal Received Path Power
+SL-PRS-RSRP: Sidelink PRS Reference Signal Received Power | Sidelink Positioning Reference Signals based Reference Signal Received Power
+SL-PRS-RSRPP: Sidelink PRS Reference Signal Received Path Power | Sidelink Positioning Reference Signals based Reference Signal Received Path Power
 SL-PRS-RSTD: Sidelink Positioning Reference Signals based Reference Signal Time Difference
 SL-PRS-RTOA: Sidelink Positioning Reference Signals based Relative Time of Arrival
 SL-RNTI: Sidelink RNTI
@@ -2543,14 +2520,14 @@ SL-RSRP: Sidelink RSRP
 SL-RSTD: Sidelink Reference Signal Time Difference
 SL-RTOA: Sidelink Relative Time of Arrival
 SL-RTT: Sidelink Round Trip Time
-SL-SCH: Sidelink - Shared Channel
+SL-SCH: Sidelink Shared Channel
 SL-TDOA: Sidelink Time Difference Of Arrival
 SL-TOA: Sidelink Time Of Arrival
 SL-U: Sidelink at unlicensed band
 SL-V-RNTI: Sidelink V2X RNTI
-SLA: Spending Limit Answer
-SLAM: Simultaneous Localization and Mapping
-SLF: Subscription Locator Function
+SLA: Service Level Agreement | Spending Limit Answer
+SLAM: Simultaneous Localization And Mapping
+SLF: Subscriber Locator Function  | Subscription Locator Function
 SLIV: Start and Length Indicator Value 
 SLM-C: SEAL Location Management Client
 SLM-S: SEAL Location Management Server
@@ -2563,41 +2540,41 @@ SLPK: SideLink Positioning Key
 SLPKMF: SideLink Positioning Key Management Function
 SLPP: Sidelink Positioning Protocol
 SLPTK: Sidelink Positioning Traffic Key
-SLR: Spending Limit Request
+SLR: Send Loudness Rating | Slice Loss Rate | Spending Limit Request
 SLRB: Sidelink Radio Bearer carrying NR sidelink communication or NR sidelink discovery
-SLS: System Level Simulation
-SLSS: Sidelink Synchronisation Signal
-SM: Session Management
+SLS: Service Level Specification | System-level Simulation
+SLSS: Sidelink synchronization signal
+SM: Session Management  | ShangMi
 SM MO: Short Message Mobile Originated
 SM MT: Short Message Mobile Terminated
 SM RL: Short Message Relay Layer
-SMC: Security Mode Command
+SMC: Security Mode Command | Security Mode Control
 SMCC: Session Management Congestion Control
 SMCCE: Session Management Congestion Control Experience
 SMDS: Switched Multimegabit Data Service
 SME: Short Message Entities
-SMF: Session Management Function
+SMF: Session Management Function 
 SMNO: Satellite Mobile network Operator
 SMP: SBI Message Priority
-SMS: Short Message Service
+SMS: Short Message Service 
 SMS-GMSC: Gateway MSC for SMS
 SMS-IWMSC: Interworking MSC for SMS
 SMS-SC: Short Message Service-Service Centre
 SMSC: Short Message Service Center
-SMSF: Short Message Service Function
+SMSF: SMS-Function | Short Message Service Function
 SMSMI: SMS without MSISDN in IMS
 SMSoNAS: SMS over NAS
-SMTC: SSB-based Measurement Timing configuration
-SN: Sequence Number
+SMTC: SS/PBCH block Measurement Timing Configuration | SSB-based Measurement Timing configuration
+SN: Secondary Node  | Sequence Number | Serving Network
 SN Id: Serving Network Identifier
 SN3D: Schmidt semi-normalisation
-SNA: Spending-Status Notification Answer
+SNA: Spending-Status Notification Answer | Subscriber-aware northbound API access
 SNM-C: SEAL Notification Management Client
 SNMP: Stand-Alone Non-Public Network
 SNN: Serving Network Name
-SNPN: Stand-alone Non-Public Network
+SNPN: Stand-alone NPN | Stand-alone Non-Public Network
 SNPN ID: Stand-alone Non-Public Network Identity
-SNR: Signal to Noise Ratio
+SNR: Serial Number | Signal-to-Noise Ratio | Spending-Status Notification Request
 SNRM-C: SEAL Network Resource Management Client
 SNRM-S: SEAL Network Resource Management Server
 SNSCE-C: SEAL Network Slice Capability Enablement Client
@@ -2606,114 +2583,111 @@ SNTP: Simple Network Time Protocol
 SO: Security Objective
 SO-SNPN: Subscription Owner Standalone Non-Public Network
 SOFA: Spatially Oriented Format for Acoustics
-SOI: Silicon On Insulator
-SON: Self Organizing Networks
+SOI: Silicon On Insulator | Start Of Interception
+SON: Self Organizing/Optimizing Network | Self-Configuring and self-Optimizing network | Self-Organizing Networks | Self-organized Network
 SOR: Steering of Roaming
 SOR-AF: Steering Of Roaming Application Function
-SOR-CMCI: Steering of Roaming Connected Mode Control Information
+SOR-CMCI: Steering of roaming connected mode control information
 SP: Semi-Persistent
 SP-AF: Secured Packet Application Function
 SP-CSI-RNTI: Semi-Persistent CSI RNTI
 SPD: Security Problem Definition
-SPDCCH: Short PDCCH
+SPDCCH: Short PDCCH | Short Physical Downlink Control channel
 SPI: Security Parameters Index
 SPID: Subscriber Profile ID for RAT/Frequency Priority
 SPK: Signalling Protection Key
 SPK-ID: Signalling Protection Key Identifier
 SPL: Sound Pressure Level
-SPR: Successful PSCell Addition/Change Report
-SPRF : Satellite Payload RF
-SPS: Semi-Persistent Scheduling
-SPT: Short Processing Time
-SPUCCH: Short PUCCH
+SPR: Subscriber Profile Repository | Successful PSCell Addition/Change Report | Successful PSCell change Report
+SPRF: Satellite Payload RF
+SPS: Semi-Persistent Scheduling | Sequence Parameter Set 
+SPT: Service Point Trigger | Short Processing Time
+SPUCCH: Short PUCCH | Short Physical Uplink Control channel
 SQ: Scalar Quantization
-SQN: SeQuence Number
+SQN: Sequence number
 SQRT: SQuare RooT
-SR: Scheduling Request
+SR: Scheduling Request | Security Requirement | Sender Report
 SRAP: Sidelink Relay Adaptation Protocol
-SRB: Signalling Radio Bearers
+SRB: Signalling Radio Bearer carrying control plane data | Signalling Radio Bearers
 SRES: Signed RESponse calculated by a USIM
-SRI: Send Routing Information
+SRI: SRS Resource Indicator | Send Routing Information
 SRM: Service Resource Manager
 SRNC: Serving RNC
 SRQR: Spherical Region-wise Quality Ranking
 SRR: Session Reporting Rule
-SRS: Sounding Reference Signal
+SRS: Sounding Reference Signals | Sounding Reference Symbols
 SRS-RSRP: Sounding Reference Signal based Reference Signal Received Power
 SRS-TPC-RNTI: Sounding Reference Symbols-Transmit Power Control-RNTI
-SRTCP: Secure Real-Time Transport Control Protocol
-SRTP: Secure Real-Time Transport Protocol
-SRTP : Secure RTP
+SRTCP: Secure RTCP | Secure Real-time Transport Control Protocol
+SRTP: Secure RTP | Secure Real-time Transport Protocol
+SRTP: Secure RTP
 SRTP-MK: SRTP master key
 SRTP-MKI: SRTP master key identifier
 SRTP-MS: SRTP master salt
 SRV: service request verification
 SRVCC: Single Radio Voice Call Continuity
-SS: System Simulator
-SS : System Simulator
-SS-RSRP: Synchronization Signal based Reference Signal Received Power
+SS: Solution Set | Supplementary Services | Synchronization Signals | Synchronization Symbol / System Simulator
+SS-RSRP: SS Reference Signal Received Power | Synchronization Signal Reference Signal Received Power | Synchronization Signal based RSRP | Synchronization Signal based Reference Signal Received Power
 SS-RSRPB: SS reference signal received power per branch
-SS-RSRQ: Synchronization Signal Reference Signal Received Quality
-SS-SINR: SS Signal-to-Interference-plus-Noise Ratio
+SS-RSRQ: SS Reference Signal Received Quality | Synchronization Signal Reference Signal Received Quality | Synchronization Signal based RSRQ
+SS-SINR: SS Signal-to-Interference-plus-Noise Ratio | Synchronization Signal based SINR
 SS7: Signalling System 7
 SSAC: Service Specific Access Control
-SSB: Synchronization Signal Block
-SSB_RP: Received (linear) average power of the resource elements that carry NR SSB signals and channels, measured at the IAB-MT TAB connector or RIB.
-SSC: Service and Session Continuity
+SSB: Synchronization Signal Block, SS/PBCH Block
+SSB_RP: Received (linear) average power of the resource elements that carry NR SSB signals and channels, measured at the IAB-MT TAB connector or RIB. | Received (linear) average power of the resource elements that carry NR SSB signals and channels, measured at the UE antenna connector.
+SSC: Satellite Service Customer | Service and Session Continuity | Session and Service Continuity  | Supplementary Service Control string
 SSCMSP: Session and Service Continuity Mode Selection Policy
 SSD: Source Statistics Descriptor
 SSE: Server-Sent Events
 SSF: Service Switching Function
 SSH: Secure Shell
-SSH : Secure Shell
 SSI: Server Side Includes
 SSID: Service Set Identifier
-SSIM: Structural Similarity Index Measure
+SSIM: Slice Subscriber Identity Module | Structural Similarity Index Measure
 SSK: Secret Signing Key
 SSL: Secure Sockets Layer
-SSM: Source Specific IP Multicast address.
+SSM: Source Specific IP Multicast (address)
 SSO: Single Sign-On
 SSP: Satellite Service Provider
 SSR: State Space Representation
-SSRC: Synchronization Source
-SSS: Secondary synchronization signal
+SSRC: Synchronization Source Identifier
+SSS: Secondary Synchronization Signal 
 SSSG: Search Space Set Group
 SSSS, S-SSS: Secondary sidelink synchronization signal (LTE), sidelink secondary synchronization signal (NR)
 SST: Slice/Service Type
 SSTD: SFN and Subframe Timing Difference
 STA: Session Termination Answer
 STAG: Secondary Timing Advance Group
-STAR: Short Term Automatically Renewed
+STAR: Short Term Automatically Renewed | Standalone AR glasses
 STB: Set-Top-Box
 STCH: Sidelink Traffic Channel
 STD: Standard Deviation
 STEC: Slant TEC
 STF: Security Terminating Function
-STI: Session Transfer Identifier
+STI: Secure Telephone Identity | Session Transfer Identifier
 STI-AS: Secure Telephone Identity Authentication Service
 STI-VS: Secure Telephone Identity Verification Service
 STI-rSR: Session Transfer Identifier for reverse SRVCC
 STIR: Secure Telephone Identity Revisited
-STIR : Secure Telephony Identity Revisited
 STMR: Sidetone Masking Rating
 STN: Session Transfer Number
-STN-SR: Session Transfer Number - Single Radio
+STN-SR: Session Transfer Number - Single Radio | Session Transfer Number for SRVCC
 STR: Session Termination Request
 STTI: Short TTI
 STUN: Session Traversal Utilities for NAT
 SU: Scheduling Unit
 SU-MIMO: Single User MIMO
-SUCI: Subscription Concealed Identifier
+SUCI: Subscriber Concealed Identifier | Subscription Concealed Identifier 
 SUID: Set owner User Idenification
-SUL: Supplementary Uplink
-SUPI: SUbscription Permanent Identifier
-SUPL: Secure User Plane Location
+SUL: Supplementary uplink
+SUPI: Subscriber Permanent Identifier | Subscription Permanent Identifier 
+SUPL: Secure User Plane Location | Secure User Plane for Location
 SURF: Speeded Up Robust Features 
-SV: Software Version
+SV: Software Version | Space Vehicle
 SVN: Satellite Virtual Network
 SVN-: SVN Medium Access Control label
 SW: Status Word
-SWB: Super WideBand
+SWB: Super Wideband
 SX3LIF: Split X3 LI Interworking Function
 SYN: Synchrounous Transmission
 SeGW: Security Gateway
@@ -2728,84 +2702,84 @@ Sub: Subscriber
 Succ: Success(es,ful)
 T(R)x RU: Transmitter(receiver) Radio Unit
 T-EAS: Target Edge Application Server
-T-EES: Target Edge Enabler Server
+T-EES: Target Edge Enabler Server 
 T-GRUU: Temporary Globally Routable User Agent URI
 T-PDU: Transport PDU
 T-RPT: Time Resource Pattern of Transmission
-TA: Timing Advance
+TA: Terminal Adaptor, e.g. a GSM data card (equal to DCE; Data Circuit terminating Equipment) | Timing Advance | Tracking Area
 TAA: Time-Averaging Algorithm
 TAB: Transceiver Array Boundary
-TAC: Tracking Area Code
+TAC: Tracking Area Code  | Type Allocation Code
 TAD: Traffic Aggregate Description
 TADV: Timing Advance
-TAE: Time Alignment Error
-TAG: Timing Advance Group
+TAE: Time Alignment Error 
+TAG: Timing Advance Group 
 TAI: Tracking Area Identity
 TAP: Transferred Account Procedure 
-TAS: Tx Antenna Switching
+TAS: Telephony Application Server | Tx Antenna Switching
 TAU: Tracking Area Update
-TB: Transport Block
+TB: Terrestrial Beacon | Transport Block
 TBCP: Talk Burst Control Protocol
 TBG: Transport Block Group
-TBS: Transport block size
+TBS: Terrestrial Beacon System | Transport block size
 TBoMS: TB processing over multi-slot PUSCH
-TC: Test Configuration
+TC: Test Case | Test Configuration | Transparent Clock
 TCE: Trace Collection Entity
 TCG: Trusted Computing Group
 TCH: Traffic channel
-TCI: Transmission configuration indicator
+TCI: Transmission Configuration Indicator
 TCL: Terminal coupling loss
 TCLw: Terminal coupling loss (weighted)
 TCP: Transmission Control Protocol
-TDCP: Time Domain Channel Properties
-TDD: Time Division Duplex
+TDCP: Time Domain Channel Properties | Time Domain Channel Property
+TDD: Time Division Duplex  | Time Division Duplexing
 TDF: Traffic Detection Function
 TDF-C: Traffic Detection Function Control plane function
 TDF-U: Traffic Detection Function User plane function
-TDL: Tapped delay line
+TDL: Tapped Delay Line
 TDM: Time Division Multiplexing
 TDR: Traffic Duplication Resume
 TDRA: Time domain resource allocation
 TDS: Traffic Duplication Suspend
-TE: Terminal Equipment
+TE: Terminal Equipment, e.g. a computer (equal to DTE; Data Terminal Equipment)
 TEC: Total Electron Content
 TECU: TEC Units
-TEG: Timing Error group
+TEG: Timing Error Group
 TEID: Tunnel Endpoint Identifier
 TEID-C: Tunnel Endpoint Identifier, control plane
 TEID-U: Tunnel Endpoint Identifier, user plane
-TEK: Traffic-Encrypting Key
-TETRA: Terrestrial Trunked Radio
-TF: Transit Functions
+TEK: Traffic Encryption Key | Traffic-Encrypting Key
+TETRA: TErrestrial Trunked Radio
+TF: Transit Functions | Triggering Function
 TFO: Tandem-Free Operation
 TFT: Traffic Flow Template
 TFTP: Trivial File Transfer Protocol
-TGI: Temporary MCVideo Group Identity
-TGK: Traffic Generating Key
+TGI: Temporary MCPTT Group Identity | Temporary MCVideo Group Identity
+TGK: TEK Generation Key  | Traffic Generating Key
 THIG: Topology Hiding Inter-network Gateway
 TI: Transaction Identifier
 TIA: Telecommunications Industry Association 
 TIN: Temporary Identity used in Next update
-TIP: Terminating Identification Presentation
-TIR: Terminating Identification Restriction
+TIP: Terminating Identification Presentation | Terminating Identity Presentation
+TIR: Target Integrity Risk | Terminating Identification Restriction | Terminating Identification presentation Restriction | Terminating Identity Restriction 
 TISPAN: Telecoms and Internet converged Services and Protocols for Advanced Network
 TL: Talker Listener
 TLE: Two-Line Element
 TLIV: Type Length Instance Value
 TLM: Telemetry
-TLS: Transport Layer Security
+TLS: Transport Layer Protocol | Transport Layer Security 
 TLTRI: T8 Long Term Transaction Reference ID
 TLV: Tag Length Value
-TM: Transmission mode
+TM: Transmission mode | Transparent Mode
 TMA: Tower Mounted Amplifier
 TMD: TM Data
 TMGI: Temporary Mobile Group Identity
 TMMBN: Temporary Maximum Media Bit-rate Notification
 TMMBR: Temporary Maximum Media Bit-rate Request
 TMPI: Temporary IP Multimedia Private Identity
-TN: Terrestrial Network
+TN: Telephone Number | Terrestrial Network | Transport Network
 TNAN: Trusted Non-3GPP Access Network
-TNAP: Trusted Non-3GPP Access Point
+TNAP: Trusted Network Access Point | Trusted Non-3GPP Access Point
 TNGF: Trusted Non-3GPP Gateway Function
 TNL: Transport Network Layer
 TNLA: Transport Network Layer Association
@@ -2813,10 +2787,10 @@ TO: Transmission Occasion
 TOA: Time Of Arrival
 TOD: Time Of Day
 TOW: Time Of Week
-TP: Telepresence
+TP: Telepresence | Transmission Point
 TP UE: TelePresence User Equipment
 TPAE: Third Party Authorized Entity
-TPC: Transmit Power Control
+TPC: Transimission Power Control | Transmit Power Control
 TPC-PUCCH-RNTI: Transmit Power Control-Physical Uplink Control Channel-RNTI
 TPC-PUSCH-RNTI: Transmit Power Control-Physical Uplink Shared Channel-RNTI
 TPC-RNTI: Transmit Power Control RNTI
@@ -2824,52 +2798,52 @@ TPC-SRS-RNTI: Transmit Power Control-Sounding Reference Signal-RNTI
 TPM: Trusted Platform Module
 TPMI: Transmitted Precoding Matrix Indicator
 TPU: Tensor Processing Unit
-TR: Technical Report 
+TR: Technical Report  | Trace Reference
 TRF: Transit and Roaming Function
 TRIV: Time Resource Indicator Value
 TRMS: Total Radiated Multi-antenna Sensitivity
-TRP: Total Radiated Power
-TRS: Total Radiated Sensitivity
+TRP: Total Radiated Power | Transmission/reception Point | Transmit/Receive Point
+TRS: CSI-RS for tracking | Total Radiated Sensitivity | Tracking Reference Signal | Trunked Radio System
 TRSR: Trace Recording Session Reference
 TRX: Transceiver
-TS: Time Synchronization
+TS: Technical Specification  | Time Synchronization
 TS-SP: Time Sensitive Service Provider
 TSC: Time Sensitive Communications
-TSCAI: Time Sensitive Communication Assistance Information
+TSCAI: TSC Assistance Information | Time Sensitive Communication Assistance Information
 TSCM: Transparent single-connection mode
 TSCTS: Time Sensitive Communication and Time Synchronization
-TSCTSF: Time Sensitive Communication and Time Synchronization function
+TSCTSF: Time Sensitive Communication and Time Synchronization Function
 TSI: Transport Session Identifier
-TSN: Time-Sensitive Networking
+TSN: Time Sensitive Networking
 TSN AF: Time Sensitive Networking Application Function
 TSN GM: TSN Grand Master
 TSN-SC: TSN Service Customer 
-TSN-SP: TSN Service Provider
+TSN-SP: TSN Service Provider | Time Sensitive Networking Service Provider
 TSP: Traffic Steering Policy
-TSS: Timing Synchronisation Status
+TSS: Timing Synchronization Status
 TSSF: Traffic Steering Support Function
-TT: Test Tolerance
+TT: TSN Translator | Test Tolerance
 TTA: Time To Alert
 TTFF: Time To First Fix
 TTI: Transmission Time Interval
-TTL: Time-To-Live
+TTL: Time To Live
 TTML: Timed Text Markup Language
 TTT: Time To Trigger
 TTTP: Transfer To Third Party
-TURN: Traversal Using Relays around NAT
+TURN: Traversal Using Relay NAT | Traversal Using Relays around NAT
 TV: Television
 TVE: Total Vector Error
 TWAG: Trusted WLAN Access Gateway
 TWAN: Trusted WLAN Access Network
-TWAP: Trusted WLAN Access Point
+TWAP: Trusted WLAN AAA Proxy | Trusted WLAN Access Point
 TWIF: Trusted WLAN Interworking Function
-TX: Transmitter
+TX: Transmission | Transmitter 
 Tbps: Terabits per second
 ToF: Time of Flight
 ToS: Type of Service
 TrCH: Transport Channel
 TrFO: Transcoder-Free Operation
-TrGW: Transition GateWay
+TrGW: Transit Gateway | Transition GateWay
 TrK: KMS Transport Key
 TrK-ID: KMS Transport Key Identifier
 Tx: Transmitter
@@ -2878,35 +2852,34 @@ TxRU: Transceiver Unit
 TxTEG: Tx Timing Error Group
 U-plane: User plane
 U2N: UE-to-Network
-U2N : UE-to-Network
 U2U: UE-to-UE
 U2X: UAV to everything
 U2XP: U2X Policy
 UA: User Agent
-UAC: User Agent Client
+UAC: Unified Access Control | User Agent Client
 UAD: UE Assistance Data
 UAE: UAS Application Enabler
 UAM: Urban Air Mobility
 UARFCN: UTRA Absolute Radio Frequency Channel Number
-UAS: Uncrewed Arial System
+UAS: UAS Application System | Uncrewed Arial System | User Agent Server
 UAS NF: Uncrewed Aerial System Network Function
 UAS-NF: Uncrewed Aerial System Network Function
 UASS: UAS Application Specific Server
 UAT: UE Assistance data Termination
-UAV: Uncrewed Aerial Vehicle
-UAV-C: Unmanned Aerial Vehicle-Controller
+UAV: UAS Application Vehicle | Uncrewed Aerial Vehicle
+UAV-C: Uncrewed Aerial Vehicle – Controller | Uncrewed Aerial Vehicle-Controller | Unmanned Aerial Vehicle-Controller
 UAV-C/UAVC: Uncrewed Aerial Vehicle Controller
 UBF: UE beam lock function
 UC: User Client
 UCI: Uplink Control Information
 UCMF: UE radio Capability Management Function
-UDC: Uplink Data Compression
+UDC: Uplink Data Compression | User Data Convergence
 UDDI: Universal Description, Discovery and Integration 
 UDI: Unrestricted Digital Information
-UDM: Unified Data Management
+UDM: Unified Data Management Function | User Data Management
 UDP: User Datagram Protocol
-UDPTL: UDP Transport Layer
-UDR: Unified Data Repository
+UDPTL: Facsimile UDP Transport Layer (protocol)
+UDR: Unified Data Repository | User Data Repository
 UDRE: User Differential Range Error
 UDSF: Unstructured Data Storage Function
 UDT: User Data Transfer
@@ -2915,17 +2888,16 @@ UE: User Equipment
 UE-AMBR: UE-Aggregate Maximum Bitrate
 UE-Slice-MBR: UE Slice Maximum Bit Rate
 UEA: UMTS Encryption Algorithm
-UEM: Unwanted Emissions Mask
+UEM: operating band Unwanted Emissions Mask
 UEUT: User Equipment Under Test
 UHD: Ultra High Definition
-UHF: Ultra High Frequency
+UHF: Ultra-high frequency
 UIA: UMTS Integrity Algorithm
 UIC: Union Internationale des Chemins de Fer
 UICC: Universal Integrated Circuit Card
 UID: User Identifier for MIKEY-SAKKE (referred to as the 'Identifier' in RFC 6509 [11])
 UKEK: Unique Key Encryption Key (P25)
 UL: Uplink
-UL : Uplink
 UL CL: Uplink Classifier
 UL MIMO: Uplink Multiple Antenna transmission
 UL SRS-RSRPP: UL SRS reference signal received path power
@@ -2933,7 +2905,7 @@ UL TFT: UpLink Traffic Flow Template
 UL-AoA: Uplink Angle of Arrival 
 UL-RSCP: Uplink Reference Signal Carrier Phase
 UL-RTOA: Uplink Relative Time of Arrival
-UL-SCH: Uplink Shared Channel
+UL-SCH: Uplink Shared Channel 
 UL-SRS: Uplink Sounding Reference Signal
 UL-TDOA: Uplink Time Difference of Arrival
 ULA: Uniform Linear Array
@@ -2945,9 +2917,9 @@ ULR-Flags: Update Location Request Flags
 ULSUP: Uplink sharing from UE perspective
 UM: Unacknowledged Mode
 UMD: UM Data
-UMIC: User Plane Node Management Information Container
+UMIC: User plane node Management Information Container
 UMS: User plane node Management Service
-UMTS: Universal Mobile Telecommunications System
+UMTS: Universal Mobile Telecommunication System
 UMa: Urban Macro
 UMi: Urban Micro
 UNAN: Untrusted Non-3GPP Access Network
@@ -2961,44 +2933,42 @@ UPF: User Plane Function
 UPH: Uplink PH
 UPP-CM: User Plane Positioning Connection Management
 UPS: Uninterruptable Power Supply 
-UPSC: UE policy section code
-UPSI: UE policy section identifier
+UPSC: UE Policy Section Code
+UPSI: UE Policy Section Identifier 
 UPT: User Perceived Throughput
 UPU: UE Parameters Update
 UPnP: Universal Plug and Play
-URA: User Range Accuracy
-URI: Uniform Resource Locator
-URI : Uniform Resource Identifier
-URL: Universal Resource Locator
-URLLC: Ultra Reliable and Low Latency Communications
-URN: Uniform Resource Name
+URA: UTRAN Registration Area | User Range Accuracy
+URI: Uniform Resource Identifier
+URL: Uniform Resource Locator | Unique Resource Identifier | Universal Resource Locator
+URLLC: Ultra Reliable Low Latency Communication
+URN: Uniform Resource Name | Universal Resource Name
 URPP-SGSN: User Reachability Request Parameter for SGSN
 URR: Usage Reporting Rule
 URRP-AMF: UE Reachability Request Parameter for AMF
-URRP-MME: User Reachability Request Parameter for MME
-URSP: UE Route Selection Policy
+URRP-MME: UE Reachability Request Parameter for MME
+URSP: UE Route Selection Policy 
 US: Universal  Telecommunications System
 USAT: Universal Subscriber Identity Module Application Toolkit
-USB: Universal Serial Bus
+USB: Universal Serial Bus 
 USB-C: USB Type-C connector/socket
 USD: User Service Description
-USIM: Universal SIM
+USIM: Universal Subscriber Identity Module
 USNO: US Naval Observatory
 USP: User Services Platform
-USS: UAS Service Supplier
+USS: UAS Service Supplier | UE-specific Search Space | User Security Settings
 USSD: Unstructured Supplementary Service Data
 UT1: Universal Time No.1
-UTC: Universal Time Coordinated
-UTC : Coordinated Universal Time
+UTC: Coordinated Universal Time
 UTDOA: Uplink Time Difference of Arrival
-UTM: UAS Traffic Management
-UTO-UCI: Unused Transmission Occasion - Uplink Control Information
-UTRA: UMTS Terrestrial Radio Access
-UTRAN: UMTS Terrestrial Radio Access Network
+UTM: UAS Traffic Management | Uncrewed Aerial System Traffic Management [2]
+UTO-UCI: Unused Transmission Occasion - UCI | Unused Transmission Occasion - Uplink Control Information
+UTRA: UMTS Terrestrial Radio Access | Universal Terrestrial Radio Access network
+UTRAN: UMTS Terrestrial Radio Access Network | UTRAN | Universal Terrestrial Radio Access Network
 UTW: Uplink Time Window
-UUAA: USS UAV AA
-UUID: Universally Unique Identifier
-UWAN: Untrusted Wireless Access Network
+UUAA: USS UAV AA | USS UAV Authorization and Authentication  | USS UAV Authorization/Authentication
+UUID: Universally Unique IDentifier
+UWAN: Untrusted WLAN Access Network | Untrusted Wireless Access Network
 UpPTS: Uplink Pilot Time Slot
 V-AF: Visited AF
 V-ANDSF: Visited-ANDSF
@@ -3007,16 +2977,16 @@ V-DRA: Visited DRA
 V-ECS: Visited Edge Configuration Server
 V-EES: Visited Edge Enabler Server
 V-PCC: Video-based Point Cloud Compression
-V-PCF: Visited Policy Control Function 
+V-PCF: A PCF in the VPLMN | Visited Policy Control Function 
 V-PCRF: Visited PCRF
 V-SMF: Visited SMF
 V-UDR: A UDR in the VPLMN
 V2I: Vehicle-to-Infrastructure
 V2N: Vehicle-to-Network
 V2P: Vehicle-to-Pedestrian
-V2V: Vehicle to Vehicle
+V2V: Vehicle-to-Vehicle
 V2X: Vehicle-to-Everything
-V2XP: Vehicle-to-Everything Policy
+V2XP: V2X Policy | Vehicle-to-Everything Policy
 V3C: Visual Volumetric Video-based Coding
 VAE: V2X Application Enabler
 VAE-C: V2X Application Enabler Client
@@ -3043,12 +3013,12 @@ VIM: Virtualized Infrastructure Manager
 VLAN: Virtual Local Area Network
 VLBA: Very Long Baseline Array
 VLR: Visitor Location Register
-VM: Virtual Machine
+VM: Virtual Machine 
 VMR: Vehicle Mounted Relay
 VMSC: Visited MSC
 VN: Virtual Network 
-VNF: Virtualized Network Function
-VNFC: Virtual Network Function Component
+VNF: Lifecycle Management | Virtual Network Function | Virtualised Network Function
+VNFC: Virtual Network Function Component | Virtualized Network Function Component
 VNFM: Virtualized Network Function Manager
 VNO: Virtual Network Operator
 VOP: Video Object Plane
@@ -3056,8 +3026,7 @@ VPC: VoIP Positioning Centre
 VPL: Vertical Protection Level
 VPLMN: Visited PLMN 
 VPN: Virtual Private Network
-VPN : Virtual Private Network
-VPS: VPLMN Specific
+VPS: VPLMN Specific | Video Parameter Set | Visual Positioning System
 VPU: Vision Processing Unit
 VQ: Vector Quantization
 VR: Virtual Reality
@@ -3070,8 +3039,8 @@ VUI: Video Usability Information
 VVC: Versatile Video Coding
 VoIP: Voice over IP
 VoLTE: Voice over Long Term Evolution
-W-5GAN: Wireline 5G Access Network
-W-5GBAN: Wireline BBF Access Network
+W-5GAN: Wireline 5G Access Network 
+W-5GBAN: Wireline 5G BBF Access Network | Wireline BBF Access Network
 W-5GCAN: Wireline 5G Cable Access Network
 W-AFG: Wireline Access Gateway Function
 W-AGF: Wireline Access Gateway Function
@@ -3085,7 +3054,7 @@ WAN: Wide Area Network
 WAS: Web Application Security
 WATP: Wayside Automatic Train Protection
 WAVE: Web Application Video Ecosystem
-WB: Wide Band
+WB: Wideband
 WB-E-UTRAN: Wide Band E-UTRAN
 WCBW: Wider Channel Bandwidth (Existing immediate wider channel bandwidth)
 WEA: Wireless Emergency Alert
@@ -3094,10 +3063,10 @@ WGS-84: World Geodetic System 1984
 WI: Work Item
 WIC: WebRTC IMS Client
 WIM: Wireless Identity Module
-WLAN: Wireless Local Area Network
+WLAN: Wireless LAN | Wireless Local Area Network
 WLANSP: WLAN Selection Policy
 WLAR: WireLess tethered AR glasses
-WLCP: Wireless LAN Control Plane Protocol
+WLCP: WLAN Control Protocol | Wireless LAN control plane protocol
 WMF: WiMAX Forum
 WMM: Wifi Multimedia
 WMOPS: Weighted Millions of Operations Per Second
@@ -3120,31 +3089,31 @@ X2-C: X2-Control plane
 X2-U: X2-User plane
 XCAP: XML Configuration Access Protocol
 XDM: XML Document Management
-XDMC: XML Document Management Server
+XDMC: XML Document Management Client
 XDMS: XML Document Management Server
 XER: XML Encoding Rules
 XGPON1: 10 Gigabit-capable Passive Optical Networks
 XHR: XML HTTP Request
 XMAC: expected 
-XML: eXtensible Mark-up Language
+XML: EXtensible Markup Language
 XMPP: eXtensible Messaging and Presence Protocol
 XPK: XML Protection Key
 XPR: Cross-Polarization Ratio
-XR: eXtended Reality
-XRES: Expected authentication response
+XR: Extended Reality
+XRES: Expected authentication response | Expected user RESponse | eXpected RESponse
 XSD: XML Schema Definition
-XUI: XCAP User Identifier
-Xn-C: Xn-Control plane
-Xn-U: Xn-User plane
+XUI: XCAP Unique Identifier | XCAP User Identifier
+Xn-C: Xn Control plane
+Xn-U: Xn User plane
 XnAP: Xn Application Protocol
 Xw-C: Xw-Control plane
 Xw-U: Xw-User plane
-YAML: YAML Ain't Markup Language
+YAML: YAML Ain't Markup Language | Yet Another Markup Language
 Z-AoA: Zenith Angles of Arrival
 ZF: Zero Forcing
 ZOA: Zenith angle Of Arrival
 ZOD: Zenith angle Of Departure
-ZP CSI-RS: Zero power CSI-RS
+ZP CSI-RS: Zero Power CSI-RS
 ZSA: Zenith angle Spread of Arrival
 ZSD: Zenith angle Spread of Departure
 Za: Interface between SEGs belonging to different networks/security domains (a Za interface may be an intra or an inter operator interface).
@@ -3165,9 +3134,9 @@ eAN: evolved Access Network
 eAN/PCF: Evolved Access Network Packet Control Function
 eCFR: electronic Code of Federal Regulation
 eCNAM: Enhanced Calling Name
-eDRX: extended Discontinuous Reception
+eDRX: Extended DRX cycle | Extended Discontinuous Reception | Extended idle-mode DRX cycle
 eFMSS: Enhancement to Flexible Mobile Service Steering
-eHRPD: evolved High Rate Packet Data
+eHRPD: enhanced High Rate Packet Data | evolved High Rate Packet Data
 eIMTA: Enhanced Interference Management and Traffic Adaptation
 eIMTA-RNTI: Enhanced Interference Management and Traffic Adaptation - RNTI
 eKSI: Key Set Identifier for E-UTRAN
@@ -3175,20 +3144,20 @@ eMBB: Enhanced Mobile Broadband
 eMLPP: Enhanced Multi-Level Precedence and Pre-emption Service
 eMMTEL: Evolution of IMS Multimedia Telephony Service
 eMPS: enhanced Multimedia Priority Service
-eMTC : enhanced Machine-Type Communication
-eNB: E-UTRAN NodeB
+eMTC: enhanced Machine-Type Communication
+eNB: E-UTRAN NodeB | Evolved NodeB
 eNode B: Evolved Node B
-eNodeB: evolved Node B
+eNodeB: E-UTRAN Node B | Evolved Node B
 eP-CSCF: P-CSCF enhanced for WebRTC
-ePDG: Evolved Packet Data Gateway
+ePDG: evolved Packet Data Gateway
 ePWS: enhancements of Public Warning System
 eRG: Evolved Residential Gateway
 eRedCap: Enhanced Reduced Capability
 eV2X: Enhanced V2X 
-gNB: generic Node B
-gNB-CU: as defined in TS 38.401 [5]
-gNB-CU-CP: as defined in TS 38.401 [5]
-gNB-CU-UP: as defined in TS 38.401 [5]
+gNB: next Generation Node B
+gNB-CU: gNB-Central Unit
+gNB-CU-CP: gNB-Control Unit Control Plane
+gNB-CU-UP: gNB-Control Unit User Plane
 gNB-DU: gNB-Distributed Unit
 glTF: Graphics Library Transmission Format
 gsmSCF: GSM Service Control Function
@@ -3204,14 +3173,14 @@ mTRP: Multiple TRP
 msd: mean solar day
 n/a: not applicable
 ng-eNB: Next Generation Evolved Node-B
-ngKSI: Key Set Identifier for Next Generation Radio Access Network
+ngKSI: Key Set Identifier for Next Generation Radio Access Network | Key Set Identifier in 5G
 pIPX: producer's IPX
 pNRF: producer's NRF
 pPLMN: producer's PLMN 
 pSEPP: producer's SEPP
 pTAG: Primary Timing Advance Group
 posSI: Positioning System Information
-posSIB: Positioning SIB
+posSIB: Positioning SIB | Positioning System Information Block
 rIK: re-authentication Integrity Key
 rMSK: re-authentication Master Session Key
 rRK: re-authentication Root Key
@@ -3226,6 +3195,6 @@ sTRP: Serving TRP
 sTTI: Slot or subslot TTI
 vNSACF: VPLMN NSACF
 vSRVCC: Single Radio Video Call Continuity
-xCC: LI_X3 Content of Communication
+xCC: LI_X3 Communications Content
 xDSL: Digital Subscriber Line (all types)
 xIRI: LI_X2 Intercept Related Information

@@ -11,6 +11,7 @@ import csv
 from tqdm import tqdm
 
 from finetuning.compute_acc import remove_tags
+from data.prepare_docs import find_appearing_abbreviations
 
 def load_model(model_name, local_checkpoint=None, adapter_path=None):
     tokenizer = AutoTokenizer.from_pretrained(model_name,
@@ -46,10 +47,14 @@ def load_model(model_name, local_checkpoint=None, adapter_path=None):
 
     return model, tokenizer
 
-def generate_answer(question, options, model, tokenizer, max_length=512, max_new_tokens=10):
+def generate_answer(question, options, abbrevs_list, model, tokenizer, max_length=512, max_new_tokens=10):
     input_text = f"Instruct: {question}\n"
     for i, option in enumerate(options, 1):
         input_text += f"Option {i}: {option}\n"
+    # add abbreviations to context
+    input_text += "Abbreviations:\n"
+    for abbrev in abbrevs_list:
+        input_text += f"{abbrev}: {abbrevs_list[abbrev]}\n"
     input_text += "Output: "
 
     inputs = tokenizer(input_text, return_tensors="pt", truncation=True, max_length=max_length).to(model.device)
@@ -80,7 +85,8 @@ def process_file(input_file, model, tokenizer):
         option_keys = sorted(key for key in question_data if key.startswith("option "))
         options = [question_data[key] for key in option_keys]
         
-        generated_answer = generate_answer(question, options, model, tokenizer)
+        abbrevs_list = find_appearing_abbreviations(question_data)
+        generated_answer = generate_answer(question, options, abbrevs_list, model, tokenizer)
         
         print(question)
         print(generated_answer)

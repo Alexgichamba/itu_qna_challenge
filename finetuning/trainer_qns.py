@@ -26,6 +26,8 @@ from huggingface_hub import HfApi
 import argparse
 
 from compute_acc import compute_accuracy, remove_tags
+from data.prepare_docs import find_appearing_abbreviations
+
 
 def parse_args():
     parser = argparse.ArgumentParser(description="Train a model with optional resume and epoch settings.")
@@ -79,9 +81,15 @@ class QuestionAnsweringDataset(Dataset):
         return len(self.examples)
 
     def formatting_func(self, example):
+        question_id, question_data = example.question.items()
+        abbrevs_list = find_appearing_abbreviations(question_data)
         prompt = f"Instruct: {example.question}\n"
         for i, option in enumerate(example.options, 1):
             prompt += f"Option {i}: {option}\n"
+        # add abbreviations to context
+        prompt += "Abbreviations:\n"
+        for abbrev in abbrevs_list:
+            prompt += f"{abbrev}: {abbrevs_list[abbrev]}\n"
         prompt += "Output: "
         
         target = f"{example.answer}\nExplanation: {example.explanation}"
