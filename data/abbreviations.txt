@@ -420,7 +420,7 @@ CIF: Carrier Indicator Field
 CIM: Counter-InterModulation
 CIR: Channel Impulse Response
 CIS: Center for Internet Security
-CIoT: Cellular Internet of Things | Cellular IoT
+CIoT: Cellular Internet of Things
 CJT: Coherent Joint Transmission
 CK: Cipher key | Ciphering Key | Confidentiality Key
 CKSRVCC: Cipher Key for Single Radio Voice Continuity
@@ -602,7 +602,7 @@ DHCPv4: Dynamic Host Configuration Protocol version 4
 DHCPv6: Dynamic Host Configuration Protocol version 6
 DIP: Dominant Interferer Proportion
 DIS: Draft International Standard
-DL: Down Link (From BTS to UE) | Downlink (network to mobile)
+DL: Down Link
 DL TFT: DownLink Traffic Flow Template
 DL-AoD: Downlink Angle-of-Departure
 DL-PRS: Downlink Positioning Reference Signal 
@@ -1385,7 +1385,7 @@ LRF: Location Retrieval Function
 LRO: Last Routing Option
 LS: Liaison Statement | Location Server
 LSA: Localised Service Areas
-LSB: Least Significant 8 Bits | Least Significant Bit
+LSB: Least Significant Bit
 LSR: Late Stage Reprojection
 LSTR: Listener Sidetone Rating
 LTCC: Low Temperature Co-fired Ceramic
@@ -1615,33 +1615,33 @@ MSE: Mean Squared Error | Media Service Enabler
 MSGin5G: Message Service Within the 5G System
 MSH: Media Session Handler
 MSI: MCH Scheduling Information
-MSISDN: MS international PSTN/ISDN number | Mobile Station ISDN number | Mobile Station International Subscriber Directory Number | Mobile Subscriber ISDN Number
+MSISDN:  Station International Subscriber Directory Number
 MSK: MBMS Service Key | Master Session Key
 MSMTSI: Multi-Stream Multimedia Telephony Service for IMS
 MSP: MCH Scheduling Period
 MSR: Multi-Standard Radio
 MSRP: Message Session Relay Protocol 
 MSS: Mobile Satellite Services
-MT: Mobile Terminal | Mobile Terminated | Mobile Termination
+MT: Mobile Terminal
 MT SMS: Mobile Terminated Short Message Service
 MT-EDT: Mobile Terminated Early Data Transmission
 MT-LR: Mobile Terminated Location Request
-MT-SDT: Mobile Terminated SDT | Mobile Terminated Small Data Transmission 
+MT-SDT: Mobile Terminated Small Data Transmission 
 MTC: Machine-Type Communications 
-MTC-IWF: MTC Interworking Function | Machine Type Communications-InterWorking Function
+MTC-IWF: Machine Type Communications-InterWorking Function
 MTCH: MBS Traffic Channel | Multicast Traffic Channel
 MTHR: Medium-to-High Ratio
 MTK: MBMS Traffic Key
 MTLF: Model Training Logical Function
 MTRP: Multiple Transmission and Reception Point
-MTSI: Multimedia Telephony Service for IMS | Multimedia Telephony Service over IMS
+MTSI: Multimedia Telephony Service for IMS
 MTU: Maximum Transfer Unit | Maximum Transmission Unit
 MU: Measurement Uncertainty
-MU-MIMO: Multi User MIMO | Multi-user-Multiple Input Multiple Output
+MU-MIMO: Multi-user-Multiple Input Multiple Output
 MUA: Modify UE context Answer
 MUK: MBMS User Key
 MUR: Modify UE context Request
-MUSIM: Multi-USIM | Multi-Universal Subscriber Identity Module
+MUSIM: Multi-Universal Subscriber Identity Module
 MUST: Multiuser Superposition Transmission 
 MVEA: MCVideo Emergency Alert
 MVEG: MCVideo Emergency Group
@@ -1707,14 +1707,14 @@ NASS: Network Attachment Subsystem
 NAT: Network Address Translation | Network Address Translators
 NAV: Navigation
 NB: Narrowband | NodeB
-NB-IoT: Narrow Band Internet of Things | Narrowband IoT  | Narrowband – Internet of Things
+NB-IoT: Narrow Band Internet of Things
 NBIFOM: Network-based IP flow mobility
 NBM: Network based mobility management | Network-based Mobility
 NBMP: Network-Based Media Processing
 NC: Non Contiguous
 NCC: Next Hop Chaining Counter
 NCD-SSB: Non Cell Defining SSB
-NCGI: NG-RAN Cell Global ID | NR Cell Global Identifier | NR Cell Global Identity
+NCGI: NR Cell Global Identifier
 NCI: NR Cell Identity
 NCIS: Network Controlled Interactive Service
 NCJT: Non-Coherent Joint Transmission
@@ -1746,10 +1746,10 @@ NFVI: Network Function Virtualisation Infrastructure
 NFVO: Network Functions Virtualization Orchestrator 
 NFc: NF service consumer
 NFp: NF service producer
-NG: Networks Group (GSMA WG) | Next Generation
+NG: Networks Group | Next Generation
 NG-AP: NG Application Protocol
 NG-C: NG Control plane
-NG-RAN: NG Radio Access Network | Next Generation (5G) RAN | Next Generation RAN | Next Generation – Radio Access Network
+NG-RAN: NG Radio Access Network
 NG-U: NG User plane interface
 NGAP: NG Application Protocol | Next Generation Application Protocol
 NGC: Next Generation Core
@@ -1768,7 +1768,7 @@ NIDD: Non-IP Data Delivery
 NITZ: Network Identity and Time Zone
 NK: No Keypad capability
 NL: No support of multiple Languages
-NLOS: Non Line Of Sight | Non-LOS | Non-Line-of-Sight
+NLOS: Non-Line-of-Sight
 NLSP: Network local switch for PIN
 NLoS: Non-Line of Sight 
 NM: Network Manager 
@@ -2047,7 +2047,7 @@ PL: Preferred Languages | Priority Level | Protection Level
 PLC: Programmable Logic Controller
 PLI: Picture Loss Indication
 PLL: Phase Locked Loop
-PLMN:    Network | Public Land Mobile Network
+PLMN: Public Land Mobile Network
 PLR: Packet Loss Rate
 PLY: PoLYgon file format
 PM: Performance Management
@@ -2089,7 +2089,7 @@ PPW: PRS Processing Window
 PQFI: PC5 QoS Flow ID
 PQI: PC5 5QI | PC5 QoS Identifier
 PRA: Presence Reporting Area 
-PRACH: Physical RACH | Physical Random Access CHannel
+PRACH: Physical Random Access CHannel
 PRACK: Provisional Response Acknowledgement
 PRAS: Premises Radio Access Station
 PRB: Physical Resource Block 
@@ -2307,7 +2307,7 @@ RSM: Reference Site Method
 RSN: Redundancy Sequence Number | Redundancy Session Number
 RSNPN: Registered SNPN
 RSPP: Ranging/SL Positioning Protocol
-RSRP: Reference Signal Received Power | Reference Signal Receiving Power
+RSRP: Reference Signal Received Power
 RSRPP: Reference Signal Received Path Power
 RSRQ: Reference Signal Received Quality
 RSS: Resynchronisation signal
@@ -2572,9 +2572,9 @@ SNA: Spending-Status Notification Answer | Subscriber-aware northbound API acces
 SNM-C: SEAL Notification Management Client
 SNMP: Stand-Alone Non-Public Network
 SNN: Serving Network Name
-SNPN: Stand-alone NPN | Stand-alone Non-Public Network
+SNPN: Stand-alone Non-Public Network
 SNPN ID: Stand-alone Non-Public Network Identity
-SNR: Serial Number | Signal-to-Noise Ratio | Spending-Status Notification Request
+SNR: Signal-to-Noise Ratio
 SNRM-C: SEAL Network Resource Management Client
 SNRM-S: SEAL Network Resource Management Server
 SNSCE-C: SEAL Network Slice Capability Enablement Client
@@ -2964,7 +2964,7 @@ UTDOA: Uplink Time Difference of Arrival
 UTM: UAS Traffic Management | Uncrewed Aerial System Traffic Management [2]
 UTO-UCI: Unused Transmission Occasion - UCI | Unused Transmission Occasion - Uplink Control Information
 UTRA: UMTS Terrestrial Radio Access | Universal Terrestrial Radio Access network
-UTRAN: UMTS Terrestrial Radio Access Network | UTRAN | Universal Terrestrial Radio Access Network
+UTRAN: UMTS Terrestrial Radio Access Network | Universal Terrestrial Radio Access Network
 UTW: Uplink Time Window
 UUAA: USS UAV AA | USS UAV Authorization and Authentication  | USS UAV Authorization/Authentication
 UUID: Universally Unique IDentifier

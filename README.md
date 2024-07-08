@@ -2,7 +2,7 @@
 
 
 ```shell
-conda create -n itu_qna python=3.11
+conda create -n itu_qna python=3.10.13
 conda activate itu_qna
 pip install -r requirements.txt
 ```

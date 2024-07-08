@@ -2,7 +2,9 @@ import json
 import re
 import torch
 from tqdm import tqdm
-from data.prepare_docs import find_appearing_abbreviations
+import sys
+sys.path.append('data/')
+from prepare_docs import find_appearing_abbreviations
 
 def remove_tags(question):
     return (question.split('?')[0] + '?')
@@ -30,10 +32,11 @@ def compute_accuracy(model, tokenizer, dev_file):
             for i, option in enumerate(options, 1):
                 input_text += f"Option {i}: {option}\n"
             # add abbreviations to context
-            input_text += "Abbreviations:\n"
-            for abbrev in abbrevs_list:
-                input_text += f"{abbrev}: {abbrevs_list[abbrev]}\n"
-            input_text += "Output: "
+            input_text += "\nAbbreviations:\n"
+            for abbrev_dict in abbrevs_list:
+                for abbrev, meaning in abbrev_dict.items():
+                    input_text += f"{abbrev}: {meaning}\n"
+            input_text += "\nOutput: "
             
             inputs = tokenizer(input_text, return_tensors="pt", truncation=True, max_length=512).to(model.device)
             

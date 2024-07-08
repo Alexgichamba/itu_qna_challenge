@@ -22,11 +22,11 @@ from transformers import (
 from peft import get_peft_model, LoraConfig, TaskType
 import wandb
 from huggingface_hub import HfApi
-
+from tqdm import tqdm
 import argparse
 
 from compute_acc import compute_accuracy, remove_tags
-from data.prepare_docs import find_appearing_abbreviations
+from prepare_docs import find_appearing_abbreviations
 
 
 def parse_args():
@@ -46,7 +46,7 @@ logging.basicConfig(
 )
 
 # Initialize wandb
-wandb.init(project="phi-2-finetuning")
+wandb.init(project="phi2_finetuning")
 
 @dataclass
 class QuestionAnsweringExample:
@@ -59,14 +59,16 @@ class QuestionAnsweringDataset(Dataset):
     def __init__(self, file_path: str, tokenizer, max_length: int = 512):
         self.tokenizer = tokenizer
         self.max_length = max_length
-        self.examples = self.load_examples(file_path)
-
+        self.examples, self.abbreviations = self.load_examples(file_path)
+        
     def load_examples(self, file_path: str) -> List[QuestionAnsweringExample]:
         with open(file_path, 'r') as f:
             data = json.load(f)
         
         examples = []
-        for item in data.values():
+        all_abbreviations = []
+        for item in tqdm(data.values(), desc="Loading examples"):
+            abbreviations = find_appearing_abbreviations(item)
             option_keys = sorted(key for key in item if key.startswith("option "))
             options = [item[key] for key in option_keys]
             examples.append(QuestionAnsweringExample(
@@ -75,22 +77,22 @@ class QuestionAnsweringDataset(Dataset):
                 answer=item["answer"],
                 explanation=item["explanation"]
             ))
-        return examples
+            all_abbreviations.append(abbreviations)
+        return examples, all_abbreviations
 
     def __len__(self):
         return len(self.examples)
 
-    def formatting_func(self, example):
-        question_id, question_data = example.question.items()
-        abbrevs_list = find_appearing_abbreviations(question_data)
+    def formatting_func(self, example, abbreviations):
         prompt = f"Instruct: {example.question}\n"
         for i, option in enumerate(example.options, 1):
             prompt += f"Option {i}: {option}\n"
         # add abbreviations to context
-        prompt += "Abbreviations:\n"
-        for abbrev in abbrevs_list:
-            prompt += f"{abbrev}: {abbrevs_list[abbrev]}\n"
-        prompt += "Output: "
+        prompt += "\nAbbreviations:\n"
+        for abbrev_dict in abbreviations:
+            for abbrev, meaning in abbrev_dict.items():
+                prompt += f"{abbrev}: {meaning}\n"
+        prompt += "\nOutput: "
         
         target = f"{example.answer}\nExplanation: {example.explanation}"
         
@@ -98,7 +100,8 @@ class QuestionAnsweringDataset(Dataset):
 
     def __getitem__(self, idx):
         example = self.examples[idx]
-        full_text = self.formatting_func(example)
+        abbreviations = self.abbreviations[idx]
+        full_text = self.formatting_func(example, abbreviations)
         
         result = self.tokenizer(
             full_text,
@@ -142,9 +145,9 @@ def main():
     args = parse_args()
     model_name = "microsoft/phi-2"
     train_file = "data/qs_train.txt"
-    dev_file = "data/qs_dev.txt"
+    dev_file = "data/366qs.txt"
     output_dir = "./save_phi2_ft_lora"
-    hf_repo_name = "alexgichamba/phi-2-finetuned-qa-lora-r32-a16_notag"
+    hf_repo_name = "alexgichamba/phi-2-finetuned-qa-lora-r32-a16_notag2"
 
     tokenizer = AutoTokenizer.from_pretrained(model_name,
                                               padding_side="left",

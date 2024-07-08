@@ -113,29 +113,26 @@ def find_appearing_abbreviations(question):
     # sort abbreviations by length in descending order to handle cases
     #  where one abbreviation is a substring of another
     sorted_abbrevs = sorted(abbreviations.items(), key=lambda x: len(x[0]), reverse=True)
-    appearing_abbreviations = []
-    returned_abbreviations = []
-    
-    assert isinstance(question, dict) 
+    assert isinstance(question, dict)
+    appearing_abbreviations = set()  # Use a set to store unique abbreviations
 
     for abbreviation, full_form in sorted_abbrevs:
         # find the abbreviation in the text
         pattern = r'\b' + re.escape(abbreviation) + r'\b'
         # if the abbreviation is found:
-        if re.search(pattern, question['question']):
-            appearing_abbreviations.append(abbreviation)
+        if re.search(pattern, (question['question'].split('?')[0])):
+            appearing_abbreviations.add(abbreviation)
         for key in question:
             if key.startswith('option'):
                 if re.search(pattern, question[key]):
-                    appearing_abbreviations.append(abbreviation)
+                    appearing_abbreviations.add(abbreviation)
         if 'answer' in question:
             if re.search(pattern, question['answer']):
-                appearing_abbreviations.append(abbreviation)
+                appearing_abbreviations.add(abbreviation)
         if 'explanation' in question:
             if re.search(pattern, question['explanation']):
-                appearing_abbreviations.append(abbreviation)
+                appearing_abbreviations.add(abbreviation)
     
     # return a list of dicts with the abbreviation and its full form
-    for abbrev in appearing_abbreviations:
-        returned_abbreviations.append({abbrev: abbreviations[abbrev]})
+    returned_abbreviations = [{abbrev: abbreviations[abbrev]} for abbrev in appearing_abbreviations]
     return returned_abbreviations
