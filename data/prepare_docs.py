@@ -8,6 +8,7 @@ from docx import Document
 import os
 from tqdm import tqdm
 import re
+import json
 from Levenshtein import distance as levenshtein_distance
 
 def extract_text_under_heading(doc_path, target_heading, target_level):
@@ -103,7 +104,7 @@ def make_abbreviations(directory, abbrevs_heading, abbrevs_heading_level):
     
     return abbreviations
 
-def find_appearing_abbreviations(question):
+def find_full_forms():
     # read abbreviations
     with open('data/abbreviations.txt', 'r') as f_abbrevs:
         abbreviations = {}
@@ -113,26 +114,33 @@ def find_appearing_abbreviations(question):
     # sort abbreviations by length in descending order to handle cases
     #  where one abbreviation is a substring of another
     sorted_abbrevs = sorted(abbreviations.items(), key=lambda x: len(x[0]), reverse=True)
-    assert isinstance(question, dict)
-    appearing_abbreviations = set()  # Use a set to store unique abbreviations
-
-    for abbreviation, full_form in sorted_abbrevs:
-        # find the abbreviation in the text
-        pattern = r'\b' + re.escape(abbreviation) + r'\b'
-        # if the abbreviation is found:
-        if re.search(pattern, (question['question'].split('?')[0])):
-            appearing_abbreviations.add(abbreviation)
-        for key in question:
-            if key.startswith('option'):
-                if re.search(pattern, question[key]):
-                    appearing_abbreviations.add(abbreviation)
-        if 'answer' in question:
-            if re.search(pattern, question['answer']):
-                appearing_abbreviations.add(abbreviation)
-        if 'explanation' in question:
-            if re.search(pattern, question['explanation']):
-                appearing_abbreviations.add(abbreviation)
     
-    # return a list of dicts with the abbreviation and its full form
-    returned_abbreviations = [{abbrev: abbreviations[abbrev]} for abbrev in appearing_abbreviations]
-    return returned_abbreviations
+    # for each of the files
+    for filename in ['data/qs_dev.txt', 'data/qs_eval.txt', 'data/qs_train.txt', 'data/366qs.txt']:
+        with open(filename, 'r') as f:
+            questions = json.load(f)
+        
+        # for each question
+        for qid, question_dict in tqdm(questions.items(), desc=f'Processing {filename}'):
+            
+            # find all options
+            options = [k for k in question_dict.keys() if k.startswith("option")]
+            
+            # process question and options
+            for key in ['question'] + options:
+                if key in question_dict and question_dict[key] is not None:
+                    if isinstance(question_dict[key], str):
+                        text = question_dict[key]
+                        for abbrev, full_form in sorted_abbrevs:
+                            # regex to find abbreviation not already in brackets
+                            pattern = r'\b' + re.escape(abbrev) + r'\b(?!\s*\))'
+                            text = re.sub(pattern, f'{full_form} ({abbrev})', text)
+                        question_dict[key] = text
+                    else:
+                        print(f"Warning: {key} is not a string in question {qid}")
+                else:
+                    print(f"Warning: {key} is null or missing in question {qid}")
+    
+        # write updated questions back to file with suffix '_full_forms'
+        with open(filename.replace('.txt', '_full_forms.txt'), 'w') as f:
+            json.dump(questions, f, indent=4)

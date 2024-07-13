@@ -11,3 +11,5 @@ Miniconda3-latest-Linux-x86_64.sh
 data/rel18.rar
 output_results.csv
 failed_questions.txt
+failed_questions_og.txt
+data/*_full_forms.txt

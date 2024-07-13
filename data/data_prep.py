@@ -6,7 +6,7 @@ import numpy as np
 import json
 import random
 
-from prepare_docs import make_abbreviations, find_appearing_abbreviations
+from prepare_docs import make_abbreviations, find_full_forms
 
 # arrange into functions
 def make_question_files():
@@ -65,6 +65,9 @@ if __name__ == '__main__':
     # with open('data/abbreviations.txt', 'w') as f:
     #     for abbreviation, full_form in all_abbreviations.items():
     #         f.write(f"{abbreviation}: {full_form}\n")
+
+    # replace abbreviations with full forms
+    find_full_forms()
 
             
         
