@@ -6,3 +6,8 @@ finetuning/__pycache__/*.pyc
 nohup.out
 preds.csv
 data/__pycache__/*.pyc
+.ragatouille
+Miniconda3-latest-Linux-x86_64.sh
+data/rel18.rar
+output_results.csv
+failed_questions.txt
