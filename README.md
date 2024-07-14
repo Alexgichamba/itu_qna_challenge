@@ -9,14 +9,14 @@ pip install -r requirements.txt
 
 ## Ablations
 ### RAG hyperparams
-when size=50
+when chunk_size=50
 |k   | Acc(%)|
 |----|-------|
 |1   |69.9   |
 |3   |71.3   |
 |10  |73.7   |
 
-when size=100
+when chunk_size=100
 |k   | Acc(%)|
 |----|-------|
 |1   |72.6   |
@@ -24,7 +24,7 @@ when size=100
 |6   |75.4   |
 |7   |75.6   |
 
-when size=150
+when chunk_size=150
 |k   | Acc(%)|
 |----|-------|
 |5   |75.6   |
@@ -35,7 +35,7 @@ when size=150
 |10  |76.7   |
 |12  |75.1   |
 
-when size=180
+when chunk_size=180
 |k   | Acc(%)|
 |----|-------|
 |1   |74.3   |
@@ -43,12 +43,24 @@ when size=180
 |3   |75.6   |
 |4   |75.1   |
 
-when size=250
+when chunk_size=250
 |k   | Acc(%)|
 |----|-------|
 |1   |73.22  |
 |3   |73.22  |
 |5   |71.1   |
+
+# BM25
+chunk_size=150
+|k   | Acc(%)|
+|----|-------|
+|3   |68.3   |
+|10  |67.2   |
+
+chunk_size=300
+|k   | Acc(%)|
+|----|-------|
+|3   |67.2   |
 
 ## Training
 First login to HF

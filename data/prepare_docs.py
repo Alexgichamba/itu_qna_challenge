@@ -104,6 +104,40 @@ def make_abbreviations(directory, abbrevs_heading, abbrevs_heading_level):
     
     return abbreviations
 
+def find_appearing_abbreviations(question):
+    # read abbreviations
+    with open('data/abbreviations.txt', 'r') as f_abbrevs:
+        abbreviations = {}
+        for line in f_abbrevs:
+            abbreviation, full_form = line.split(': ', 1)
+            abbreviations[abbreviation.strip()] = full_form.strip()
+    # sort abbreviations by length in descending order to handle cases
+    #  where one abbreviation is a substring of another
+    sorted_abbrevs = sorted(abbreviations.items(), key=lambda x: len(x[0]), reverse=True)
+    assert isinstance(question, dict)
+    appearing_abbreviations = set()  # Use a set to store unique abbreviations
+
+    for abbreviation, full_form in sorted_abbrevs:
+        # find the abbreviation in the text
+        pattern = r'\b' + re.escape(abbreviation) + r'\b'
+        # if the abbreviation is found:
+        if re.search(pattern, (question['question'].split('?')[0])):
+            appearing_abbreviations.add(abbreviation)
+        for key in question:
+            if key.startswith('option'):
+                if re.search(pattern, question[key]):
+                    appearing_abbreviations.add(abbreviation)
+        if 'answer' in question:
+            if re.search(pattern, question['answer']):
+                appearing_abbreviations.add(abbreviation)
+        if 'explanation' in question:
+            if re.search(pattern, question['explanation']):
+                appearing_abbreviations.add(abbreviation)
+    
+    # return a list of dicts with the abbreviation and its full form
+    returned_abbreviations = [{abbrev: abbreviations[abbrev]} for abbrev in appearing_abbreviations]
+    return returned_abbreviations
+
 def find_full_forms():
     # read abbreviations
     with open('data/abbreviations.txt', 'r') as f_abbrevs:
