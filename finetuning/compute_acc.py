@@ -39,10 +39,10 @@ def compute_accuracy(model, tokenizer, dev_file):
             f"Abbreviations:\n{abbreviations_text}\n\n"
             prompt += f"Question: {question}\n"
             for i, option in enumerate(options, 1):
-                input_text += f"Option {i}: {option}\n"
+                prompt += f"Option {i}: {option}\n"
             prompt += "Answer: Option"
             
-            inputs = tokenizer(input_text, return_tensors="pt", truncation=True, max_length=2048).to(model.device)
+            inputs = tokenizer(prompt, return_tensors="pt", truncation=True, max_length=2048).to(model.device)
             attention_mask = inputs['attention_mask']
             # Generate answer
             outputs = model.generate(
@@ -55,7 +55,7 @@ def compute_accuracy(model, tokenizer, dev_file):
             )
             
             generated_answer = tokenizer.decode(outputs[0][inputs['input_ids'].shape[1]:], skip_special_tokens=True).strip()
-            print(input_text)
+            print(prompt)
             print(generated_answer)
             # Extract the option number from the generated answer
             match = re.search(r'option (\d)', generated_answer.lower())
