@@ -33,7 +33,7 @@ def compute_accuracy(model, tokenizer, dev_file):
             # Prepare input
             # prompt = f"Instruct: You will answer each question correctly by giving only the Option ID, the number that follows each Option.\n"
             # prompt += f"The output should be in the format: Option <Option id>\n"
-            prompt += f"Instruct: Use the context below to correctly answer the following multiple choice question.\n\n"
+            prompt = f"Instruct: Use the context below to correctly answer the following multiple choice question.\n\n"
             prompt += f"Context: {context}\n\n"
             abbreviations_text = "\n".join([f"{list(abbrev.keys())[0]}: {list(abbrev.values())[0]}" for abbrev in abbrevs_list])
             f"Abbreviations:\n{abbreviations_text}\n\n"

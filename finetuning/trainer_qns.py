@@ -88,7 +88,7 @@ class QuestionAnsweringDataset(Dataset):
     def formatting_func(self, example, abbreviations):
         # prompt = f"Instruct: You will answer each question correctly by giving only the Option ID, the number that follows each Option.\n"
         # prompt += f"The output should be in the format: Option <Option id>\n"
-        prompt += f"Instruct: Use the context below to correctly answer the following multiple choice question.\n\n"
+        prompt = f"Instruct: Use the context below to correctly answer the following multiple choice question.\n\n"
         prompt += f"Context: {example.context}\n\n"
         abbreviations_text = "\n".join([f"{list(abbrev.keys())[0]}: {list(abbrev.values())[0]}" for abbrev in abbreviations])
         f"Abbreviations:\n{abbreviations_text}\n\n"
