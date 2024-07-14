@@ -43,12 +43,12 @@ def compute_accuracy(model, tokenizer, dev_file):
             prompt += "Answer: Option"
             
             inputs = tokenizer(prompt, return_tensors="pt", truncation=True, max_length=2048).to(model.device)
-            attention_mask = inputs['attention_mask']
+            # attention_mask = inputs['attention_mask']
             # Generate answer
             outputs = model.generate(
                 **inputs,
                 max_new_tokens=10,
-                attention_mask=attention_mask,
+                # attention_mask=attention_mask,
                 pad_token_id=tokenizer.eos_token_id,
                 num_return_sequences=1,
                 no_repeat_ngram_size=2,
