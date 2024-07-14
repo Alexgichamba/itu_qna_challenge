@@ -17,33 +17,39 @@ def compute_accuracy(model, tokenizer, dev_file):
     with open(dev_file, 'r') as f:
         dev_data = json.load(f)
     
-    tokenizer.pad_token = tokenizer.eos_token
+    # Ensure the pad token is set
+    if tokenizer.pad_token_id is None:
+        tokenizer.pad_token_id = tokenizer.eos_token_id
+
     with torch.no_grad():
         for question_id, question_data in tqdm(dev_data.items(), desc="Computing accuracy"):
             question = remove_tags(question_data['question'])
             option_keys = sorted(key for key in question_data if key.startswith("option "))
             options = [question_data[key] for key in option_keys]
             correct_answer = question_data['answer']
-
+            context = question_data['context']
             abbrevs_list = find_appearing_abbreviations(question_data)
 
             # Prepare input
-            input_text = f"Instruct: {question}\n"
+            prompt = f"Instruct: You will answer each question correctly by giving only the Option ID, the number that follows each Option.\n"
+            prompt += f"The output should be in the format: Option <Option id>\n"
+            prompt += f"Provide the answer to the following multiple choice question in the specified format.\n\n"
+            prompt += f"Context: {context}\n\n"
+            abbreviations_text = "\n".join([f"{list(abbrev.keys())[0]}: {list(abbrev.values())[0]}" for abbrev in abbrevs_list])
+            f"Abbreviations:\n{abbreviations_text}\n\n"
+            prompt += f"Question: {question}\n"
             for i, option in enumerate(options, 1):
                 input_text += f"Option {i}: {option}\n"
-            # add abbreviations to context
-            input_text += "\nAbbreviations:\n"
-            for abbrev_dict in abbrevs_list:
-                for abbrev, meaning in abbrev_dict.items():
-                    input_text += f"{abbrev}: {meaning}\n"
-            input_text += "\nOutput: "
+            prompt += "Answer: Option"
             
-            inputs = tokenizer(input_text, return_tensors="pt", truncation=True, max_length=512).to(model.device)
-            
+            inputs = tokenizer(input_text, return_tensors="pt", truncation=True, max_length=2048).to(model.device)
+            attention_mask = inputs['attention_mask']
             # Generate answer
             outputs = model.generate(
                 **inputs,
-                max_new_tokens=15,
+                max_new_tokens=10,
+                attention_mask=attention_mask,
+                pad_token_id=tokenizer.eos_token_id,
                 num_return_sequences=1,
                 no_repeat_ngram_size=2,
             )
