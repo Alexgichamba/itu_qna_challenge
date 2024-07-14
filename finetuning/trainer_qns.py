@@ -86,16 +86,16 @@ class QuestionAnsweringDataset(Dataset):
         return len(self.examples)
 
     def formatting_func(self, example, abbreviations):
-        # prompt = f"Instruct: You will answer each question correctly by giving only the Option ID, the number that follows each Option.\n"
-        # prompt += f"The output should be in the format: Option <Option id>\n"
-        prompt = f"Instruct: Use the context below to correctly answer the following multiple choice question.\n\n"
+        prompt = f"Instruct: You will answer each question correctly by giving only the Option ID, the number that follows each Option.\n"
+        prompt += f"The output should be in the format: Option <Option id>\n"
+        prompt += f"Provide the answer to the following multiple choice question in the specified format.\n\n"
         prompt += f"Context: {example.context}\n\n"
         abbreviations_text = "\n".join([f"{list(abbrev.keys())[0]}: {list(abbrev.values())[0]}" for abbrev in abbreviations])
         f"Abbreviations:\n{abbreviations_text}\n\n"
         prompt += f"Question: {example.question}\n"
         for i, option in enumerate(example.options, 1):
             prompt += f"Option {i}: {option}\n"
-        prompt += "Answer: "
+        prompt += "Answer: Option"
         
         target = f"{example.answer}\nExplanation: {example.explanation}"
         
@@ -118,7 +118,7 @@ class QuestionAnsweringDataset(Dataset):
         attention_mask = result["attention_mask"].squeeze(0)
         
         # Find the position where the answer starts
-        prompt = full_text.split("Answer: ")[0] + "Answer: "
+        prompt = full_text.split("Answer: Option")[0] + "Answer: Option"
         answer_start = len(self.tokenizer.encode(prompt, add_special_tokens=False))
         
         labels = input_ids.clone()
@@ -150,7 +150,7 @@ def main():
     train_file = "data/qs_train_with_context.txt"
     dev_file = "data/366qs_with_context.txt"
     output_dir = "./save_phi2_ft_lora"
-    hf_repo_name = "alexgichamba/phi-2-finetuned-qa-lora-r32-a16_context"
+    hf_repo_name = "alexgichamba/phi-2-finetuned-qa-lora-r32-a16_longcontext"
 
     tokenizer = AutoTokenizer.from_pretrained(model_name,
                                               padding_side="left",
