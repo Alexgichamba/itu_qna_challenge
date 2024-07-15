@@ -124,15 +124,9 @@ def find_appearing_abbreviations(question):
         if re.search(pattern, (question['question'].split('?')[0])):
             appearing_abbreviations.add(abbreviation)
         for key in question:
-            if key.startswith('option'):
+            if key.startswith('option') and question[key] is not None:
                 if re.search(pattern, question[key]):
                     appearing_abbreviations.add(abbreviation)
-        if 'answer' in question:
-            if re.search(pattern, question['answer']):
-                appearing_abbreviations.add(abbreviation)
-        if 'explanation' in question:
-            if re.search(pattern, question['explanation']):
-                appearing_abbreviations.add(abbreviation)
     
     # return a list of dicts with the abbreviation and its full form
     returned_abbreviations = [{abbrev: abbreviations[abbrev]} for abbrev in appearing_abbreviations]
@@ -158,7 +152,7 @@ def find_full_forms():
         for qid, question_dict in tqdm(questions.items(), desc=f'Processing {filename}'):
             
             # find all options
-            options = [k for k in question_dict.keys() if k.startswith("option")]
+            options = [k for k in question_dict.keys() if k.startswith("option") and question_dict[k] is not None]
             
             # process question and options
             for key in ['question'] + options:
