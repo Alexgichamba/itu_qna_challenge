@@ -67,9 +67,56 @@ if __name__ == '__main__':
     #         f.write(f"{abbreviation}: {full_form}\n")
 
     # replace abbreviations with full forms
-    find_full_forms()
+    # find_full_forms()
 
+    # generate a triplet dataset for training embeddings
+    with open('data/qs_train.txt', 'r') as f_train_in:
+        train_qns = json.load(f_train_in)
+    
+    # generate triplets: anchor, positive, negative
+    # anchor: explanation
+    # positive: correct answer
+    # negative: incorrect answers
+    # it should be like: {'set': {'explanation': '', 'correct': [''], 'incorrect': ['', '', ...]}}	
+    triplets = {}
+    for q_id, q_data in train_qns.items():
+        options = [(k, v) for k, v in q_data.items() if k.startswith("option") and v is not None]
+        answer = q_data['answer']
+        # answer is of the form 'option 1: ...'
+        # need to find the option + number and build list of incorrect
+        answer_option = answer.split(':')[0].strip()
+        incorrect = [v for k, v in options if k.strip() != answer_option]
+        correct = [v for k, v in options if k.strip() == answer_option]
+        # add the triplet
+        triplets[q_id] = {'explanation': q_data['explanation'],
+                          'correct': correct,
+                          'incorrect': incorrect}
+    # save the triplets
+    with open('data/triplets_train.txt', 'w') as f_triplets_out:
+        json.dump(triplets, f_triplets_out, indent=4)
             
+    # DO THE same for dev data
+    with open('data/qs_dev.txt', 'r') as f_dev_in:
+        dev_qns = json.load(f_dev_in)
+
+    # generate triplets: anchor, positive, negative
+    triplets = {}
+    for q_id, q_data in dev_qns.items():
+        options = [(k, v) for k, v in q_data.items() if k.startswith("option") and v is not None]
+        answer = q_data['answer']
+        # answer is of the form 'option 1: ...'
+        # need to find the option + number and build list of incorrect
+        answer_option = answer.split(':')[0].strip()
+        incorrect = [v for k, v in options if k.strip() != answer_option]
+        correct = [v for k, v in options if k.strip() == answer_option]
+        # add the triplet
+        triplets[q_id] = {'explanation': q_data['explanation'],
+                          'correct': correct,
+                          'incorrect': incorrect}
+    # save the triplets
+    with open('data/triplets_dev.txt', 'w') as f_triplets_out:
+        json.dump(triplets, f_triplets_out, indent=4)
+        
         
 
 
