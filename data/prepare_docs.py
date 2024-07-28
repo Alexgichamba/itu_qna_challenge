@@ -23,7 +23,7 @@ Usage:
 ------
 1. Ensure all required libraries are installed.
 2. Place the document files in the `data/rel18` directory.
-3. Prepare the question files (`data/qs_dev.txt`, `data/qs_eval.txt`, `data/qs_train.txt`, `data/366qs.txt`) in JSON format.
+3. Prepare the question files (`data/qs_dev.txt`, `data/qs_eval.txt`, `data/qs_train.txt`) in JSON format.
 4. Run the script to extract abbreviations, expand abbreviations in questions, and process the documents.
 5. Check the output files (`data/abbreviations.txt`, `data/qs_dev_full_forms.txt`, etc.) for results.
 
@@ -296,7 +296,6 @@ def find_full_forms():
     - 'data/qs_dev.txt'
     - 'data/qs_eval.txt'
     - 'data/qs_train.txt'
-    - 'data/366qs.txt'
 
     The updated files are saved with the suffix '_full_forms' added to the original filenames.
 
@@ -319,8 +318,7 @@ def find_full_forms():
     for filename in [
         "data/qs_dev.txt",
         "data/qs_eval.txt",
-        "data/qs_train.txt",
-        "data/366qs.txt",
+        "data/qs_train.txt"
     ]:
         with open(filename, "r") as f:
             questions = json.load(f)
