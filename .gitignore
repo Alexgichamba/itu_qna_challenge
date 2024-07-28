@@ -1,4 +1,3 @@
-data/rel18
 wandb
 training.log
 save_phi2_ft_lora
