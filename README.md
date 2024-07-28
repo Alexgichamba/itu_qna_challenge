@@ -6,86 +6,70 @@ For detailed information about this project, including methodology, architectura
 
 📚 [Project Documentation](https://3musketeers.gitbook.io/zindi-itu/)
 
+## System
+We have tested the inference on two systems. We encourage you to use either. If not, please adapt accordinly.
+-------------------------------------
+**Instance Details:**
+- **Instance Type:** g6.2xlarge (AWS)
+- **Operating System:** Ubuntu with Deep Learning Image
+
+**GPU Information:**
+- **GPU Model:** NVIDIA L4
+- **NVIDIA-SMI Version:** 535.183.01
+- **CUDA Version:** 12.2
+- **Total GPU Memory:** 23034 MiB
+-------------------------------------
+OR
+-------------------------------------
+**Instance Details:**
+- **Instance Type:** g5.2xlarge (AWS)
+- **Operating System:** Ubuntu with Deep Learning Image
+
+**GPU Information:**
+- **GPU Model:** NVIDIA A10G
+- **NVIDIA-SMI Version:** 535.183.01
+- **CUDA Version:** 12.2
+- **Total GPU Memory:** 23034 MiB
+-------------------------------------
+
+Note: Training needs at least an A100
+
 ## Setup
-
+setup miniconda and conda env
 ```shell
-conda create -n itu_qna python=3.10.13
-conda activate itu_qna
-pip install -r requirements.txt
+wget https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh
+chmod +x Miniconda3-latest-Linux-x86_64.sh
+./Miniconda3-latest-Linux-x86_64.sh
+# answer yes to terms and to automatically setting up Miniconda
+# reopen terminal
+conda deactivate # exit from base env
+conda create -n qna python=3.10
+conda activate qna
 ```
 
-## Ablation Studies
-
-### RAG Hyperparameters
-
-#### Chunk Size: 50
-| k   | Accuracy (%) |
-|-----|--------------|
-| 1   | 69.9         |
-| 3   | 71.3         |
-| 10  | 73.7         |
-
-#### Chunk Size: 100
-| k   | Accuracy (%) |
-|-----|--------------|
-| 1   | 72.6         |
-| 3   | 72.9         |
-| 6   | 75.4         |
-| 7   | 75.6         |
-
-#### Chunk Size: 150
-| k   | Accuracy (%) |
-|-----|--------------|
-| 5   | 75.6         |
-| 6   | 76.2         |
-| 7   | 77.0         |
-| 8   | 77.0         |
-| 9   | 76.5         |
-| 10  | 76.7         |
-| 12  | 75.1         |
-
-#### Chunk Size: 180
-| k   | Accuracy (%) |
-|-----|--------------|
-| 1   | 74.3         |
-| 2   | 73.7         |
-| 3   | 75.6         |
-| 4   | 75.1         |
-
-#### Chunk Size: 250
-| k   | Accuracy (%) |
-|-----|--------------|
-| 1   | 73.22        |
-| 3   | 73.22        |
-| 5   | 71.1         |
-
-### BM25
-
-#### Chunk Size: 150
-| k   | Accuracy (%) |
-|-----|--------------|
-| 3   | 68.3         |
-| 10  | 67.2         |
-
-#### Chunk Size: 300
-| k   | Accuracy (%) |
-|-----|--------------|
-| 3   | 67.2         |
-
-## Training and Inference
-
-### Hugging Face Login
-Before training, log in to Hugging Face:
+install git LFS
 ```shell
-huggingface-cli login
+sudo apt install git-lfs
 ```
 
-### Finetuning Phi-2 on Questions
+clone repo
 ```shell
-python3 finetuning/trainer_qns.py --num_epochs <num_epochs>
+git clone https://github.com/Alexgichamba/itu_qna_challenge.git
+cd itu_qna_challenge/
+```
+install dependencies
+```shell
+chmod +x install_dependencies.sh
+./install_dependencies.sh
 ```
 
-### Inference with Phi-2
+## Inference
+for Phi-2
 ```shell
-python3 phi2_inference.py --model_name <model_name_on_HF> --adapter_path <check_point>
+python3 phi2_final_submission.py
+```
+
+for Falcon7B
+```shell
+python3 falcon_final_submission.py
 ```
