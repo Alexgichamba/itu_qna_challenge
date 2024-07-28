@@ -35,15 +35,28 @@ System Requirements and Environment:
 - **NVIDIA-SMI Version:** 535.183.01
 - **CUDA Version:** 12.2
 - **Total GPU Memory:** 23034 MiB
+-------------------------------------
+OR
+-------------------------------------
+**Instance Details:**
+- **Instance Type:** g5.2xlarge (AWS)
+- **Operating System:** Ubuntu with Deep Learning Image
+
+**GPU Information:**
+- **GPU Model:** NVIDIA A10G
+- **NVIDIA-SMI Version:** 535.183.01
+- **CUDA Version:** 12.2
+- **Total GPU Memory:** 23034 MiB
+-------------------------------------
 
 Usage:
 ------
 1. Ensure all required libraries are installed.
-2. Place the document files in the data/rel18 directory.
-3. Prepare the question files data/TeleQnA_testing1.txt and data/questions_new.txt.
-4. Run the script to process questions, generate answers, and score responses.
-5. Check responses.json for detailed responses and output_results.csv for final results.
+2. Run the script to process questions, generate answers, and score responses.
+3. Check responses.json for detailed responses and output_results.csv for final results.
 
+Runtime:
+This script takes roughly 4 hours to complete running
 
 """
 
@@ -70,7 +83,6 @@ torch.manual_seed(seed)
 torch.cuda.manual_seed_all(seed)
 
 
-# Define Helper Functions
 def create_prompt(question, context, abbrevs):
     """
     Constructs a prompt string for a language model based on the given question, context, and abbreviations.
@@ -91,15 +103,11 @@ def create_prompt(question, context, abbrevs):
     )
     # Construct the prompt string with the given context, abbreviations, and question
     prompt = (
-        # special tag required by Falcon Language Model
         f">>DOMAIN<<\n{context}\n"
-        # Add the abbreviations under the Abbreviations section
         f"Abbreviations:\n{abbreviations_text}\n"
-        # Add the question under the QUESTION section
         f">>QUESTION<<{question}\n\n"
-        f">>ANSWER<<"  # Placeholder for the answer
+        f">>ANSWER<<"
     )
-    # Return the constructed prompt
     return prompt
 
 
@@ -120,7 +128,6 @@ def find_appearing_abbreviations(question):
         list of dict: A list of dictionaries where each dictionary has an abbreviation as the key
                       and its full form as the value.
     """
-    # Read abbreviations from the file
     with open("data/abbreviations.txt", "r") as f_abbrevs:
         abbreviations = {}
         for line in f_abbrevs:
@@ -132,13 +139,10 @@ def find_appearing_abbreviations(question):
     sorted_abbrevs = sorted(
         abbreviations.items(), key=lambda x: len(x[0]), reverse=True
     )
-    # Ensure the question is a dictionary
     assert isinstance(question, dict)
-    # Use a set to store unique abbreviations that appear in the question or options
     appearing_abbreviations = set()
     # Check for each abbreviation in the question and its options
     for abbreviation, full_form in sorted_abbrevs:
-        # Create a regex pattern to find the abbreviation as a whole word
         pattern = r"\b" + re.escape(abbreviation) + r"\b"
         # Check if the abbreviation appears in the question text
         if re.search(pattern, (question["question"].split("?")[0])):
@@ -177,7 +181,6 @@ def preprocess_text(text):
     text = text.replace("-", " ")
     # Remove extra whitespace by splitting and rejoining the text
     text = " ".join(text.split())
-    # Return the cleaned and preprocessed text
     return text
 
 
@@ -224,7 +227,6 @@ def compute_word_overlap(options, response):
                 overlap_score += score * response_tfidf_dict[word]
         # Store the overlap score in the dictionary with the option index as the key
         scores_dict[i] = overlap_score
-    # Return the dictionary of overlap scores
     return scores_dict
 
 
@@ -255,10 +257,8 @@ def compute_cosine_similarity(options, response, embedding_model):
     for i, option in enumerate(options):
         option_embedding = options_embeddings[i]
         scores_dict[i] = cos_sim(response_embedding, option_embedding)
-    # Convert the scores from tensor to float
     for key, value in scores_dict.items():
         scores_dict[key] = float(value)
-    # Return the dictionary of cosine similarity scores
     return scores_dict
 
 
@@ -280,22 +280,18 @@ def generate_response(question, context, abbreviations, tokenizer):
     """
     # Create the prompt using the provided question, context, and abbreviations
     prompt = create_prompt(question, context, abbreviations)
-    # Generate sequences using the language model pipeline
     sequences = pipeline(
-        f"{prompt}",  # The prompt to be used for generation
+        f"{prompt}",
         max_new_tokens=100,  # Maximum number of new tokens to generate
         do_sample=False,  # Disable sampling to generate deterministic output
-        num_return_sequences=1,  # Number of sequences to return
-        truncation=True,  # Enable truncation of the input prompt
+        num_return_sequences=1,
+        truncation=True,
         eos_token_id=tokenizer.eos_token_id,  # End-of-sequence token ID
         pad_token_id=tokenizer.eos_token_id,  # Padding token ID
     )
-    # Initialize an empty string to store the response
     response = ""
-    # Join the generated sequences into a single response string
     for seq in sequences:
         response += seq["generated_text"]
-    # Return the generated response
     return response
 
 
@@ -307,16 +303,15 @@ documents = SimpleDirectoryReader("data/rel18").load_data()
 docs_str = [doc.text for doc in documents]  # Extract text from each document
 
 # Initialize RAG model and Index Documents
-# Load the pre-trained RAG model ragatouille with  colbert embeddings
 RAG = RAGPretrainedModel.from_pretrained("colbert-ir/colbertv2.0")
 print("Indexing documents...")
 print("Takes about 20 minutes...")
 # Index the documents using the RAG model
 RAG.index(
-    collection=docs_str,  # The collection of document texts to index
-    index_name="ITU RAG 150",  # The name of the index to be created
-    max_document_length=150,  # Maximum length of each document
-    split_documents=True,  # Whether to split documents into smaller chunks
+    collection=docs_str,
+    index_name="ITU RAG 150",
+    max_document_length=150,
+    split_documents=True,
     use_faiss=True,  # Whether to use FAISS for efficient similarity search
 )
 
@@ -324,72 +319,59 @@ RAG.index(
 with open("data/TeleQnA_testing1.txt", "r") as file1, open(
         "data/questions_new.txt", "r"
 ) as file2:
-    questions = json.load(file1)  # Load questions from the first JSON file
-    # Load and merge questions from the second JSON file
+    questions = json.load(file1)
     questions.update(json.load(file2))
 
-# Loading Language Model, Tokenizer  and embedding model
 # Tag for the embedding model
 embedding_model_tag = "alexgichamba/gte-large-en-v1.5-triplet-finetuned-for-telco-qa"
-# Initialize the embedding model
 embedding_model = SentenceTransformer(embedding_model_tag, trust_remote_code=True)
-# Define language model to be loaded
+# Define language model and tokenizer to be loaded
 model_name = "tiiuae/falcon-7b-instruct"
-# Initialize the tokenizer for the language model
 tokenizer = AutoTokenizer.from_pretrained(model_name)
 # Initialize the text generation pipeline with the specified model and tokenizer
 pipeline = pipeline(
-    "text-generation",  # Task type for the pipeline
-    model=model_name,  # The pre-trained model to use
-    tokenizer=tokenizer,  # The tokenizer to use
-    torch_dtype=torch.bfloat16,  # Data type for the model's tensors
-    trust_remote_code=True,  # Whether to trust remote code
-    device_map="auto",  # Automatically map the model to available devices
+    "text-generation",
+    model=model_name,
+    tokenizer=tokenizer,
+    torch_dtype=torch.bfloat16,
+    trust_remote_code=True,
+    device_map="auto",
 )
 
 # Generate responses for each question
-responses = {}  # Initialize an empty dictionary to store responses
+responses = {}
 # Iterate over each question in the questions dictionary
 for q_id, q_data in tqdm(questions.items(), desc="Processing questions"):
     q_id_number = q_id.split()[1]  # Extract the question ID number
-    # Remove any text within square brackets from the question
+    # Remove the tag specifying the release version
     question_text = re.sub(r"\s*\[.*?\]\s*$", "", q_data["question"])
-    # Extract options from the question data
     options = [
         (k, v) for k, v in q_data.items() if k.startswith("option") and v is not None
     ]
     # Perform a search using the RAG model to get the top 3 relevant documents
     results = RAG.search(query=question_text, k=3)
-    # Concatenate the content of the top 3 search results to form the context
     context = " ".join([result["content"] for result in results])
     # Find abbreviations that appear in the question data
     abbreviations = find_appearing_abbreviations(q_data)
-    # Generate a response using the question text, context, and abbreviations
     response = generate_response(question_text, context, abbreviations, tokenizer)
-    # Extract the actual response text from the generated response
     response = response.split(">>ANSWER<<")[1].strip()
-    # Print the question and the generated response
     print(f"\nQuestion: {question_text}\nResponse: {response}")
-    # Store the question and response in the responses dictionary
     responses[q_id] = {"question": question_text, "response": response}
 
 # Save responses to JSON file
 with open("responses.json", "w") as f:
-    json.dump(responses, f)  # Write the responses dictionary to a JSON file
+    json.dump(responses, f)
 # Load responses for scoring
 with open("responses.json", "r") as f:
-    responses = json.load(f)  # Load the responses from the JSON file
+    responses = json.load(f)
 
 # Compute scores and save to CSV
-answers = []  # Initialize an empty list to store answers
+answers = []
 # Iterate over each question in the questions dictionary
 for q_id, q_data in tqdm(questions.items(), desc="Scoring responses"):
-    q_id_number = q_id.split()[1]  # Extract the question ID number
-    # Remove any text within square brackets from the question
+    q_id_number = q_id.split()[1]
     question_text = re.sub(r"\s*\[.*?\]\s*$", "", q_data["question"])
-    # Extract options from the question data
     options = [v for k, v in q_data.items() if k.startswith("option") and v is not None]
-    # Retrieve the generated response for the current question
     response = responses[q_id]["response"]
     # Compute word overlap scores between the response and each option
     word_overlap_scores = compute_word_overlap(options, response)
@@ -397,13 +379,10 @@ for q_id, q_data in tqdm(questions.items(), desc="Scoring responses"):
     cosine_similarity_scores = compute_cosine_similarity(
         options, response, embedding_model
     )
-    # Print the question text
     print(f"\nQuestion: {question_text}")
-    # Print word overlap scores for each option
     print("Word overlap scores:")
     for i, score in word_overlap_scores.items():
         print(f"Option {i + 1}: {score}")
-    # Print cosine similarity scores for each option
     print("Cosine similarity scores:")
     for i, score in cosine_similarity_scores.items():
         print(f"Option {i + 1}: {score}")
@@ -419,9 +398,7 @@ for q_id, q_data in tqdm(questions.items(), desc="Scoring responses"):
     # Determine the option with the highest combined score
     # Add 1 to convert zero-based index to one-based index
     answer_id = max(scores, key=scores.get) + 1
-    # Print the selected answer ID
     print(f"Answer ID: {answer_id}")
-    # Append the question ID number, answer ID, and task name to the answers list
     answers.append([q_id_number, answer_id, "Falcon 7.5B"])
 
 # Write the answers to a CSV file
@@ -430,5 +407,4 @@ with open("output_results.csv", "w", newline="") as csvfile:
     csvwriter.writerow(["Question_ID", "Answer_ID", "Task"])  # Write the header row
     csvwriter.writerows(answers)  # Write the answer rows
 
-# Inform the user that processing is complete and responses have been saved
 print("Processing complete. Responses saved to 'output_results.csv'.")
