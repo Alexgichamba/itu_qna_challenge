@@ -148,7 +148,7 @@ def main():
     args = parse_args()
     model_name = "microsoft/phi-2"
     train_file = "data/qs_train_with_context.txt"
-    dev_file = "data/366qs_with_context.txt"
+    dev_file = "data/qs_dev_with_context.txt"
     output_dir = "./save_phi2_ft_lora"
     hf_repo_name = "alexgichamba/phi-2-finetuned-qa-lora-r32-a16_longcontext"
 
