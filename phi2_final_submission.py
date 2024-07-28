@@ -88,7 +88,9 @@ model = PeftModel.from_pretrained(
 ).to("cuda")
 tokenizer = AutoTokenizer.from_pretrained("microsoft/phi-2")
 
-# Load documents from the specified directory
+# Load documents
+print("Loading documents...")
+print("Takes about 5 minutes...")
 documents = SimpleDirectoryReader("data/rel18").load_data()
 docs_str = []
 for doc in documents:
@@ -98,6 +100,8 @@ for doc in documents:
 RAG = RAGPretrainedModel.from_pretrained("colbert-ir/colbertv2.0")
 
 # Index the documents using the RAG model
+print("Indexing documents...")
+print("Takes about 20 minutes...")
 RAG.index(
     collection=docs_str,
     index_name="ITU RAG 150",
