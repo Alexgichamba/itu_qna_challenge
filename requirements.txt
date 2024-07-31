@@ -1,18 +1,15 @@
-# Installs custom fork of ragatouille without faiss-cpu
-git+https://github.com/teddyk251/RAGatouille.git@main
-
-# Other dependencies
 docx==0.2.4
 huggingface_hub==0.23.4
+llama_index==0.10.58
+numpy==1.22.3
 peft==0.11.1
-numpy>=1.26.4
-llama-index
 python_docx==1.1.2
 python_Levenshtein==0.25.1
-python_Levenshtein==0.25.1
+# Installs custom fork of ragatouille without faiss-cpu
+git+https://github.com/teddyk251/RAGatouille.git@main
+scikit_learn==1.5.1
+sentence_transformers==2.7.0
 torch==2.3.1
 tqdm==4.66.4
 transformers==4.42.3
-docx2txt
-xformers
-wandb
+wandb==0.17.5
