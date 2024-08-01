@@ -7,7 +7,7 @@ preds.csv
 data/__pycache__/*.pyc
 .ragatouille
 Miniconda3-latest-Linux-x86_64.sh
-data/rel18.rar
+data/rel18*
 output_results*.csv
 failed_questions.txt
 failed_questions_og.txt
