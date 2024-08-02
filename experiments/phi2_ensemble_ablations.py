@@ -62,8 +62,8 @@ print("Indexing documents BM25...")
 splitter = SentenceSplitter(chunk_size=150, chunk_overlap=30)
 nodes = splitter.get_nodes_from_documents(documents)
 
-# Initialize BM25Retriever with a high k value
-max_bm25_k = 15  # Set this to the maximum k value you want to test
+# Initializing BM25Retriever with a high k value
+max_bm25_k = 15  
 bm25_retriever = BM25Retriever.from_defaults(nodes=nodes, similarity_top_k=max_bm25_k)
 
 # Read questions from the text files
@@ -126,8 +126,8 @@ def parse_answer(response):
     return answer
 
 # Define ranges for k values
-colbert_k_values = range(2, 12)  # 1 to 15
-bm25_k_values = range(1, 12)  # 1 to 15
+colbert_k_values = range(2, 12) 
+bm25_k_values = range(1, 12)  
 
 # Create all combinations of k values
 k_combinations = list(itertools.product(colbert_k_values, bm25_k_values))
