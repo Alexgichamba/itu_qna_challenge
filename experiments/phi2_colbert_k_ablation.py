@@ -104,8 +104,8 @@ print("Indexing documents...")
 print("Takes about 20 minutes...")
 RAG.index(
     collection=docs_str,
-    index_name="ITU RAG 150",
-    max_document_length=150,
+    index_name="ITU RAG 200",
+    max_document_length=200,
     split_documents=True,
 )
 
@@ -235,7 +235,7 @@ def parse_answer(response):
 
 
 # make a list of values of k from 1 to 13
-k_values = list(range(14, 17))
+k_values = list(range(14, 16))
 for k in k_values:
     responses = []
     # Loop through each question and get the response
