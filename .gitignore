@@ -14,3 +14,5 @@ failed_questions_og.txt
 data/*_full_forms.txt
 bm25_retriever_150
 responses.json
+experiments/medqa/data_clean/*
+experiments/medqa/data_clean.zip
