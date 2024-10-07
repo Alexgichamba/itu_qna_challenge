@@ -1,6 +1,7 @@
 docx==0.2.4
 huggingface_hub==0.23.4
 llama_index==0.10.58
+llama-index-retrievers-bm25
 numpy==1.22.3
 peft==0.11.1
 python_docx==1.1.2
