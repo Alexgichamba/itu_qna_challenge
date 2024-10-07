@@ -48,6 +48,11 @@ for q_id, q_data in tqdm(questions.items(), desc="Processing questions"):
     answers = q_data["answer"]
     retrieved_nodes = bm25_retriever.retrieve(question_text)
 
+    # Extract options, ensuring only non-null options are included
+    options = [
+        (k, v) for k, v in q_data.items() if k.startswith("option") and v is not None
+    ]
+
     # join the text of the top k documents into a list
     doc_texts = [node.text for node in retrieved_nodes]
 
@@ -66,6 +71,7 @@ for q_id, q_data in tqdm(questions.items(), desc="Processing questions"):
     # Store the question, answers, and results in the responses dict
     responses[q_id] = {
         "question": question_text,
+        "options": options,
         "correct_answer": answers,
         "retrieved_chunks": chunks
     }
