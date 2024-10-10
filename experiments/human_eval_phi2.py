@@ -2,6 +2,7 @@ import json
 import os
 import re
 from tqdm import tqdm
+import platform
 
 # Function to load the question data from the 366qs.txt file and map subdomains and releases
 def load_questions_metadata(questions_filepath):
@@ -41,6 +42,27 @@ def load_questions_metadata(questions_filepath):
     
     return metadata
 
+# Function to clear the console output
+def clear_console():
+    if platform.system() == "Windows":
+        os.system('cls')
+    else:
+        os.system('clear')
+
+def get_first_word_as_phrase(question):
+    # Extract the first word from the question
+    first_word = question.split()[0].lower() if question else ""
+    
+    # Predefined list of phrases
+    phrases = ["why", "when", "what", "how", "who", "which", "where"]
+    
+    # Automatically assign the first word if it's in the list
+    if first_word in phrases:
+        return first_word
+    else:
+        # If first word doesn't match any phrase, return None to trigger manual input
+        return None
+
 # Function to prompt evaluator and restrict input to possible options
 def get_valid_input(prompt_message, valid_options):
     print(f"{prompt_message} (Choose from: {', '.join(valid_options)})")
@@ -51,7 +73,7 @@ def get_valid_input(prompt_message, valid_options):
     return user_input
 
 # Function to prompt evaluator and collect input
-def collect_input_for_question(question_data, subdomain, release, correct_position):
+def collect_input_for_question(question_data, subdomain, release, correct_position, wrong_position):
     print(f"Question: {question_data['question']}")
     
     # Print abbreviations if available
@@ -76,39 +98,37 @@ def collect_input_for_question(question_data, subdomain, release, correct_positi
     # Print correct answer
     print(f"Correct Answer: {question_data['correct_answer']}")
     
-    # print selected answer
+    # Print selected answer
     print(f"Selected Answer: {question_data['response']}")
     
-    # Define sets of possible options
-    phrases = ["why", "when", "what", "how", "who", "which", "where"]
-    # question_types = ["factoid", "list", "yesno", "relationship", "definition","other"]
-    answer_types = ["entity", "place", "number", "date", "explanation", "method", "document", "thing", "list", "other"]
-    involved_options = ["standalone", "both", "all", "none"]
-    # correct_positions = ["1", "2", "3", "4", "5"]
-    wrong_positions = ["1", "2", "3", "4", "5"]
-    document_recall = ["0", "1"]
+    # Automatically determine the question phrase from the first word
+    automatic_phrase = get_first_word_as_phrase(question_data['question'])
+    
+    # Prompt for evaluator's input if automatic_phrase is not found
+    if automatic_phrase:
+        print(f"Automatically detected phrase: {automatic_phrase}")
+    else:
+        print("\nCould not detect a phrase from the question. Please provide the following details:")
+        phrases = ["why", "when", "what", "how", "who", "which", "where"]
+        automatic_phrase = get_valid_input("Question Phrase", phrases)
 
-    # Prompt for evaluator's input, constrained to valid options
-    print("\nPlease provide the following details:")
-    phrase = get_valid_input("Question Phrase", phrases)
-    # question_type = get_valid_input("Question Type", question_types)
+    # Define sets of possible options
+    answer_types = ["numerical", "entity", "specification document", "functional role", "definition", "explanation", "other"]
+    involved_options = ["standalone", "both", "all", "none"]
+    document_recall = ["0", "1"]
 
     # Prompt for answer details, constrained to valid options
     involved_option = get_valid_input("Options involved: ", involved_options)
     answer_type = get_valid_input("Answer Type", answer_types)
-    # correct_position = get_valid_input("Correct position: ", correct_positions)
-    wrong_position = get_valid_input("Wrong position: ", wrong_positions)
-
     # Prompt for retrieval
     document_recall = get_valid_input("Document recall: ", document_recall)
 
     # Construct new fields
     return {
         'humaneval_question': {
-            'phrase': phrase,
+            'phrase': automatic_phrase,
             'subdomain': subdomain,  # Automatically populated from 366qs.txt
             'release': release,      # Automatically populated from 366qs.txt
-            # 'type': question_type
         },
         'humaneval_answer': {
             'options_involved': involved_option,
@@ -133,7 +153,11 @@ def save_updated_errors(filepath, errors_data):
 
 # Main function to run the evaluation
 def run_evaluation():
-    evaluator_name = input("Please enter your name: ")
+    evaluator_name = input("Please enter your name (alex or brian): ").lower()
+    
+    if evaluator_name not in ["alex", "brian"]:
+        print("Invalid evaluator name. Please enter 'alex' or 'brian'.")
+        return
 
     # Load errors dataset
     errors_filepath = "data/errors_phi2.json"
@@ -150,9 +174,26 @@ def run_evaluation():
         return
 
     errors_data = load_errors(errors_filepath)
+    total_questions = len(errors_data)
+    half_point = total_questions // 2
 
-    # Collect input for each question in the dataset
-    for question_id, question_data in tqdm(errors_data.items(), desc="Processing errors"):
+    # Split the questions for Alex and Brian based on the name
+    if evaluator_name == "alex":
+        questions_subset = list(errors_data.items())[:half_point]
+    elif evaluator_name == "brian":
+        questions_subset = list(errors_data.items())[half_point:]
+
+    # Evaluate the assigned questions for the user
+    output_filepath = f"data/phi2_error_analysis_human.json"
+    
+    for question_id, question_data in tqdm(questions_subset, desc=f"Processing errors for {evaluator_name}"):
+        # Skip the question if it has already been evaluated
+        if 'evaluator' in question_data:
+            print(f"Skipping question {question_id} as it has already been evaluated.")
+            continue
+        
+        # Clear the console at the start of each question
+        clear_console()
         print(f"\n--- Evaluating {question_id} ---")
         
         # Fetch the corresponding subdomain and release from 366qs.txt
@@ -160,17 +201,18 @@ def run_evaluation():
         subdomain = metadata['subdomain']
         release = metadata['release']
         correct_option = metadata['correct_option']
-        print(f"Subdomain: {subdomain}, Release: {release} (Correct Option: {correct_option})")
+        wrong_option = question_data['response'].split(" ")[1]
+        print(f"Subdomain: {subdomain}, Release: {release}, Correct Option: {correct_option}, Wrong Option: {wrong_option}")
 
-        question_evaluation = collect_input_for_question(question_data, subdomain, release, correct_option)
+        question_evaluation = collect_input_for_question(question_data, subdomain, release, correct_option, wrong_option)
 
         # Add evaluator name and collected input to the question data
         question_data['evaluator'] = evaluator_name
         question_data.update(question_evaluation)
     
-    # Save the updated dataset
-    output_filepath = f"data/{evaluator_name}_eval_errors_phi2.json"
-    save_updated_errors(output_filepath, errors_data)
+        # Save the updated dataset after each question
+        save_updated_errors(output_filepath, errors_data)
+    
     print("Evaluation complete and saved.")
 
 if __name__ == "__main__":
