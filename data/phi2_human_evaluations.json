@@ -1,4 +1,635 @@
 {
+    "question 8200": {
+        "evaluator": "alex",
+        "humaneval_question": {
+            "phrase": "what",
+            "subdomain": "Standards specifications",
+            "release": "18"
+        },
+        "humaneval_answer": {
+            "options_involved": "standalone",
+            "answer_type": "other",
+            "correct_position": "4",
+            "wrong_position": "1"
+        },
+        "humaneval_retrieval": {
+            "document_recall": "1"
+        }
+    },
+    "question 8210": {
+        "evaluator": "alex",
+        "humaneval_question": {
+            "phrase": "what",
+            "subdomain": "Standards specifications",
+            "release": "18"
+        },
+        "humaneval_answer": {
+            "options_involved": "standalone",
+            "answer_type": "functional role",
+            "correct_position": "3",
+            "wrong_position": "4"
+        },
+        "humaneval_retrieval": {
+            "document_recall": "0"
+        }
+    },
+    "question 8272": {
+        "evaluator": "alex",
+        "humaneval_question": {
+            "phrase": "what",
+            "subdomain": "Standards overview",
+            "release": "16"
+        },
+        "humaneval_answer": {
+            "options_involved": "standalone",
+            "answer_type": "functional role",
+            "correct_position": "1",
+            "wrong_position": "2"
+        },
+        "humaneval_retrieval": {
+            "document_recall": "1"
+        }
+    },
+    "question 8319": {
+        "evaluator": "alex",
+        "humaneval_question": {
+            "phrase": "when",
+            "subdomain": "Standards specifications",
+            "release": "17"
+        },
+        "humaneval_answer": {
+            "options_involved": "standalone",
+            "answer_type": "other",
+            "correct_position": "4",
+            "wrong_position": "1"
+        },
+        "humaneval_retrieval": {
+            "document_recall": "0"
+        }
+    },
+    "question 8350": {
+        "evaluator": "alex",
+        "humaneval_question": {
+            "phrase": "what",
+            "subdomain": "Standards specifications",
+            "release": "18"
+        },
+        "humaneval_answer": {
+            "options_involved": "standalone",
+            "answer_type": "functional role",
+            "correct_position": "1",
+            "wrong_position": "5"
+        },
+        "humaneval_retrieval": {
+            "document_recall": "1"
+        }
+    },
+    "question 8354": {
+        "evaluator": "alex",
+        "humaneval_question": {
+            "phrase": "what",
+            "subdomain": "Standards overview",
+            "release": "17"
+        },
+        "humaneval_answer": {
+            "options_involved": "standalone",
+            "answer_type": "functional role",
+            "correct_position": "3",
+            "wrong_position": "1"
+        },
+        "humaneval_retrieval": {
+            "document_recall": "1"
+        }
+    },
+    "question 8364": {
+        "evaluator": "alex",
+        "humaneval_question": {
+            "phrase": "what",
+            "subdomain": "Standards specifications",
+            "release": "17"
+        },
+        "humaneval_answer": {
+            "options_involved": "standalone",
+            "answer_type": "functional role",
+            "correct_position": "4",
+            "wrong_position": "3"
+        },
+        "humaneval_retrieval": {
+            "document_recall": "0"
+        }
+    },
+    "question 8369": {
+        "evaluator": "alex",
+        "humaneval_question": {
+            "phrase": "which",
+            "subdomain": "Standards overview",
+            "release": "15"
+        },
+        "humaneval_answer": {
+            "options_involved": "standalone",
+            "answer_type": "specification document",
+            "correct_position": "1",
+            "wrong_position": "2"
+        },
+        "humaneval_retrieval": {
+            "document_recall": "1"
+        }
+    },
+    "question 8396": {
+        "evaluator": "alex",
+        "humaneval_question": {
+            "phrase": "where",
+            "subdomain": "Standards specifications",
+            "release": "17"
+        },
+        "humaneval_answer": {
+            "options_involved": "standalone",
+            "answer_type": "other",
+            "correct_position": "4",
+            "wrong_position": "3"
+        },
+        "humaneval_retrieval": {
+            "document_recall": "0"
+        }
+    },
+    "question 8426": {
+        "evaluator": "alex",
+        "humaneval_question": {
+            "phrase": "what",
+            "subdomain": "Standards specifications",
+            "release": "18"
+        },
+        "humaneval_answer": {
+            "options_involved": "standalone",
+            "answer_type": "functional role",
+            "correct_position": "3",
+            "wrong_position": "5"
+        },
+        "humaneval_retrieval": {
+            "document_recall": "1"
+        }
+    },
+    "question 8499": {
+        "evaluator": "alex",
+        "humaneval_question": {
+            "phrase": "which",
+            "subdomain": "Standards specifications",
+            "release": "18"
+        },
+        "humaneval_answer": {
+            "options_involved": "standalone",
+            "answer_type": "specification document",
+            "correct_position": "2",
+            "wrong_position": "1"
+        },
+        "humaneval_retrieval": {
+            "document_recall": "1"
+        }
+    },
+    "question 8531": {
+        "evaluator": "alex",
+        "humaneval_question": {
+            "phrase": "which",
+            "subdomain": "Standards specifications",
+            "release": "17"
+        },
+        "humaneval_answer": {
+            "options_involved": "standalone",
+            "answer_type": "numerical",
+            "correct_position": "4",
+            "wrong_position": "5"
+        },
+        "humaneval_retrieval": {
+            "document_recall": "1"
+        }
+    },
+    "question 8541": {
+        "evaluator": "alex",
+        "humaneval_question": {
+            "phrase": "what",
+            "subdomain": "Standards specifications",
+            "release": "17"
+        },
+        "humaneval_answer": {
+            "options_involved": "standalone",
+            "answer_type": "functional role",
+            "correct_position": "3",
+            "wrong_position": "1"
+        },
+        "humaneval_retrieval": {
+            "document_recall": "1"
+        }
+    },
+    "question 8546": {
+        "evaluator": "alex",
+        "humaneval_question": {
+            "phrase": "what",
+            "subdomain": "Standards specifications",
+            "release": "17"
+        },
+        "humaneval_answer": {
+            "options_involved": "standalone",
+            "answer_type": "explanation",
+            "correct_position": "2",
+            "wrong_position": "1"
+        },
+        "humaneval_retrieval": {
+            "document_recall": "1"
+        }
+    },
+    "question 8598": {
+        "evaluator": "alex",
+        "humaneval_question": {
+            "phrase": "what",
+            "subdomain": "Standards specifications",
+            "release": "17"
+        },
+        "humaneval_answer": {
+            "options_involved": "standalone",
+            "answer_type": "numerical",
+            "correct_position": "4",
+            "wrong_position": "2"
+        },
+        "humaneval_retrieval": {
+            "document_recall": "0"
+        }
+    },
+    "question 8601": {
+        "evaluator": "alex",
+        "humaneval_question": {
+            "phrase": "which",
+            "subdomain": "Standards specifications",
+            "release": "18"
+        },
+        "humaneval_answer": {
+            "options_involved": "standalone",
+            "answer_type": "functional role",
+            "correct_position": "2",
+            "wrong_position": "3"
+        },
+        "humaneval_retrieval": {
+            "document_recall": "1"
+        }
+    },
+    "question 8641": {
+        "evaluator": "alex",
+        "humaneval_question": {
+            "phrase": "what",
+            "subdomain": "Standards specifications",
+            "release": "17"
+        },
+        "humaneval_answer": {
+            "options_involved": "standalone",
+            "answer_type": "functional role",
+            "correct_position": "5",
+            "wrong_position": "3"
+        },
+        "humaneval_retrieval": {
+            "document_recall": "1"
+        }
+    },
+    "question 8665": {
+        "evaluator": "alex",
+        "humaneval_question": {
+            "phrase": "how",
+            "subdomain": "Standards specifications",
+            "release": "17"
+        },
+        "humaneval_answer": {
+            "options_involved": "both",
+            "answer_type": "explanation",
+            "correct_position": "5",
+            "wrong_position": "4"
+        },
+        "humaneval_retrieval": {
+            "document_recall": "0"
+        }
+    },
+    "question 8672": {
+        "evaluator": "alex",
+        "humaneval_question": {
+            "phrase": "which",
+            "subdomain": "Standards specifications",
+            "release": "17"
+        },
+        "humaneval_answer": {
+            "options_involved": "standalone",
+            "answer_type": "functional role",
+            "correct_position": "1",
+            "wrong_position": "3"
+        },
+        "humaneval_retrieval": {
+            "document_recall": "1"
+        }
+    },
+    "question 8696": {
+        "evaluator": "alex",
+        "humaneval_question": {
+            "phrase": "when",
+            "subdomain": "Standards specifications",
+            "release": "17"
+        },
+        "humaneval_answer": {
+            "options_involved": "standalone",
+            "answer_type": "explanation",
+            "correct_position": "1",
+            "wrong_position": "3"
+        },
+        "humaneval_retrieval": {
+            "document_recall": "1"
+        }
+    },
+    "question 8735": {
+        "evaluator": "alex",
+        "humaneval_question": {
+            "phrase": "what",
+            "subdomain": "Standards specifications",
+            "release": "17"
+        },
+        "humaneval_answer": {
+            "options_involved": "standalone",
+            "answer_type": "functional role",
+            "correct_position": "5",
+            "wrong_position": "4"
+        },
+        "humaneval_retrieval": {
+            "document_recall": "0"
+        }
+    },
+    "question 8770": {
+        "evaluator": "alex",
+        "humaneval_question": {
+            "phrase": "what",
+            "subdomain": "Standards specifications",
+            "release": "18"
+        },
+        "humaneval_answer": {
+            "options_involved": "standalone",
+            "answer_type": "functional role",
+            "correct_position": "2",
+            "wrong_position": "1"
+        },
+        "humaneval_retrieval": {
+            "document_recall": "1"
+        }
+    },
+    "question 8808": {
+        "evaluator": "alex",
+        "humaneval_question": {
+            "phrase": "what",
+            "subdomain": "Standards specifications",
+            "release": "17"
+        },
+        "humaneval_answer": {
+            "options_involved": "standalone",
+            "answer_type": "other",
+            "correct_position": "5",
+            "wrong_position": "1"
+        },
+        "humaneval_retrieval": {
+            "document_recall": "0"
+        }
+    },
+    "question 8862": {
+        "evaluator": "alex",
+        "humaneval_question": {
+            "phrase": "what",
+            "subdomain": "Standards specifications",
+            "release": "17"
+        },
+        "humaneval_answer": {
+            "options_involved": "standalone",
+            "answer_type": "other",
+            "correct_position": "1",
+            "wrong_position": "3"
+        },
+        "humaneval_retrieval": {
+            "document_recall": "1"
+        }
+    },
+    "question 8868": {
+        "evaluator": "alex",
+        "humaneval_question": {
+            "phrase": "what",
+            "subdomain": "Standards specifications",
+            "release": "17"
+        },
+        "humaneval_answer": {
+            "options_involved": "standalone",
+            "answer_type": "functional role",
+            "correct_position": "1",
+            "wrong_position": "5"
+        },
+        "humaneval_retrieval": {
+            "document_recall": "0"
+        }
+    },
+    "question 8885": {
+        "evaluator": "alex",
+        "humaneval_question": {
+            "phrase": "what",
+            "subdomain": "Standards specifications",
+            "release": "18"
+        },
+        "humaneval_answer": {
+            "options_involved": "standalone",
+            "answer_type": "other",
+            "correct_position": "4",
+            "wrong_position": "2"
+        },
+        "humaneval_retrieval": {
+            "document_recall": "0"
+        }
+    },
+    "question 8942": {
+        "evaluator": "alex",
+        "humaneval_question": {
+            "phrase": "which",
+            "subdomain": "Standards specifications",
+            "release": "17"
+        },
+        "humaneval_answer": {
+            "options_involved": "standalone",
+            "answer_type": "entity",
+            "correct_position": "3",
+            "wrong_position": "2"
+        },
+        "humaneval_retrieval": {
+            "document_recall": "0"
+        }
+    },
+    "question 8987": {
+        "evaluator": "alex",
+        "humaneval_question": {
+            "phrase": "which",
+            "subdomain": "Standards overview",
+            "release": "15"
+        },
+        "humaneval_answer": {
+            "options_involved": "standalone",
+            "answer_type": "specification document",
+            "correct_position": "5",
+            "wrong_position": "4"
+        },
+        "humaneval_retrieval": {
+            "document_recall": "1"
+        }
+    },
+    "question 9030": {
+        "evaluator": "alex",
+        "humaneval_question": {
+            "phrase": "who",
+            "subdomain": "Standards specifications",
+            "release": "17"
+        },
+        "humaneval_answer": {
+            "options_involved": "standalone",
+            "answer_type": "entity",
+            "correct_position": "3",
+            "wrong_position": "5"
+        },
+        "humaneval_retrieval": {
+            "document_recall": "1"
+        }
+    },
+    "question 9048": {
+        "evaluator": "alex",
+        "humaneval_question": {
+            "phrase": "which",
+            "subdomain": "Standards overview",
+            "release": "15"
+        },
+        "humaneval_answer": {
+            "options_involved": "standalone",
+            "answer_type": "other",
+            "correct_position": "3",
+            "wrong_position": "1"
+        },
+        "humaneval_retrieval": {
+            "document_recall": "1"
+        }
+    },
+    "question 9050": {
+        "evaluator": "alex",
+        "humaneval_question": {
+            "phrase": "which",
+            "subdomain": "Standards specifications",
+            "release": "18"
+        },
+        "humaneval_answer": {
+            "options_involved": "standalone",
+            "answer_type": "other",
+            "correct_position": "1",
+            "wrong_position": "2"
+        },
+        "humaneval_retrieval": {
+            "document_recall": "1"
+        }
+    },
+    "question 9124": {
+        "evaluator": "alex",
+        "humaneval_question": {
+            "phrase": "what",
+            "subdomain": "Standards specifications",
+            "release": "17"
+        },
+        "humaneval_answer": {
+            "options_involved": "standalone",
+            "answer_type": "numerical",
+            "correct_position": "3",
+            "wrong_position": "2"
+        },
+        "humaneval_retrieval": {
+            "document_recall": "0"
+        }
+    },
+    "question 9174": {
+        "evaluator": "alex",
+        "humaneval_question": {
+            "phrase": "what",
+            "subdomain": "Standards specifications",
+            "release": "17"
+        },
+        "humaneval_answer": {
+            "options_involved": "standalone",
+            "answer_type": "numerical",
+            "correct_position": "5",
+            "wrong_position": "4"
+        },
+        "humaneval_retrieval": {
+            "document_recall": "0"
+        }
+    },
+    "question 9214": {
+        "evaluator": "alex",
+        "humaneval_question": {
+            "phrase": "what",
+            "subdomain": "Standards specifications",
+            "release": "17"
+        },
+        "humaneval_answer": {
+            "options_involved": "standalone",
+            "answer_type": "other",
+            "correct_position": "3",
+            "wrong_position": "5"
+        },
+        "humaneval_retrieval": {
+            "document_recall": "1"
+        }
+    },
+    "question 9277": {
+        "evaluator": "alex",
+        "humaneval_question": {
+            "phrase": "what",
+            "subdomain": "Standards specifications",
+            "release": "18"
+        },
+        "humaneval_answer": {
+            "options_involved": "standalone",
+            "answer_type": "explanation",
+            "correct_position": "2",
+            "wrong_position": "4"
+        },
+        "humaneval_retrieval": {
+            "document_recall": "1"
+        }
+    },
+    "question 9314": {
+        "evaluator": "alex",
+        "humaneval_question": {
+            "phrase": "how",
+            "subdomain": "Standards specifications",
+            "release": "17"
+        },
+        "humaneval_answer": {
+            "options_involved": "standalone",
+            "answer_type": "numerical",
+            "correct_position": "2",
+            "wrong_position": "3"
+        },
+        "humaneval_retrieval": {
+            "document_recall": "0"
+        }
+    },
+    "question 9339": {
+        "evaluator": "alex",
+        "humaneval_question": {
+            "phrase": "what",
+            "subdomain": "Standards specifications",
+            "release": "17"
+        },
+        "humaneval_answer": {
+            "options_involved": "standalone",
+            "answer_type": "other",
+            "correct_position": "5",
+            "wrong_position": "2"
+        },
+        "humaneval_retrieval": {
+            "document_recall": "1"
+        }
+    }
+    },
+{
     "question 9344": {
         "evaluator": "brian",
         "humaneval_question": {
