@@ -1,6 +1,6 @@
 {
     "question 9442": {
-        "binary_recall": 0
+        "binary_recall": 1
     },
     "question 9845": {
         "binary_recall": 0
@@ -51,10 +51,10 @@
         "binary_recall": 1
     },
     "question 8964": {
-        "binary_recall": 0
+        "binary_recall": 1
     },
     "question 8915": {
-        "binary_recall": 0
+        "binary_recall": 1
     },
     "question 9804": {
         "binary_recall": 1
@@ -66,10 +66,10 @@
         "binary_recall": 0
     },
     "question 9277": {
-        "binary_recall": 0
+        "binary_recall": 1
     },
     "question 8779": {
-        "binary_recall": 0
+        "binary_recall": 1
     },
     "question 9630": {
         "binary_recall": 1
@@ -81,7 +81,7 @@
         "binary_recall": 1
     },
     "question 9434": {
-        "binary_recall": 0
+        "binary_recall": 1
     },
     "question 9999": {
         "binary_recall": 0
@@ -96,7 +96,7 @@
         "binary_recall": 1
     },
     "question 9447": {
-        "binary_recall": 0
+        "binary_recall": 1
     },
     "question 8525": {
         "binary_recall": 1
@@ -129,13 +129,13 @@
         "binary_recall": 0
     },
     "question 9741": {
-        "binary_recall": 0
+        "binary_recall": 1
     },
     "question 9118": {
         "binary_recall": 1
     },
     "question 9728": {
-        "binary_recall": 0
+        "binary_recall": 1
     },
     "question 9780": {
         "binary_recall": 0
