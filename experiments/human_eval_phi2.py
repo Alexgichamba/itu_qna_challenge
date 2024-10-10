@@ -99,14 +99,14 @@ def collect_input_for_question(question_data, subdomain, release, correct_positi
     print(f"Correct Answer: {question_data['correct_answer']}")
     
     # Print selected answer
-    print(f"Selected Answer: {question_data['response']}")
+    # print(f"Selected Answer: {question_data['response']}")
     
     # Automatically determine the question phrase from the first word
     automatic_phrase = get_first_word_as_phrase(question_data['question'])
     
     # Prompt for evaluator's input if automatic_phrase is not found
     if automatic_phrase:
-        print(f"Automatically detected phrase: {automatic_phrase}")
+        pass
     else:
         print("\nCould not detect a phrase from the question. Please provide the following details:")
         phrases = ["why", "when", "what", "how", "who", "which", "where"]
