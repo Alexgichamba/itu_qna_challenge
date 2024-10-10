@@ -75,7 +75,7 @@ def get_valid_input(prompt_message, valid_options):
 # Function to prompt evaluator and collect input
 def collect_input_for_question(question_data, subdomain, release, correct_position, wrong_position):
     print(f"Question: {question_data['question']}")
-    
+
     # Print abbreviations if available
     if 'abbreviations' in question_data:
         abbrevs = question_data['abbreviations']
@@ -94,26 +94,18 @@ def collect_input_for_question(question_data, subdomain, release, correct_positi
     print("Options:")
     for option in question_data['options']:
         print(f"{option[0]}: {option[1]}")
-    
-    # Print correct answer
-    print(f"Correct Answer: {question_data['correct_answer']}")
-    
-    # Print selected answer
-    # print(f"Selected Answer: {question_data['response']}")
-    
+
     # Automatically determine the question phrase from the first word
     automatic_phrase = get_first_word_as_phrase(question_data['question'])
     
     # Prompt for evaluator's input if automatic_phrase is not found
-    if automatic_phrase:
-        pass
-    else:
+    if not automatic_phrase:
         print("\nCould not detect a phrase from the question. Please provide the following details:")
         phrases = ["why", "when", "what", "how", "who", "which", "where"]
         automatic_phrase = get_valid_input("Question Phrase", phrases)
 
     # Define sets of possible options
-    answer_types = ["numerical", "entity", "specification document", "functional role", "definition", "explanation", "other"]
+    answer_types = ["numerical", "entity", "specification document", "functional role", "definition", "explanation", "other", "yes/no"]
     involved_options = ["standalone", "both", "all", "none"]
     document_recall = ["0", "1"]
 
@@ -146,10 +138,10 @@ def load_errors(filepath):
     with open(filepath, 'r') as f:
         return json.load(f)
 
-# Save the updated dataset
-def save_updated_errors(filepath, errors_data):
+# Save the updated evaluations dataset to a separate file
+def save_evaluations(filepath, evaluations_data):
     with open(filepath, 'w') as f:
-        json.dump(errors_data, f, indent=4)
+        json.dump(evaluations_data, f, indent=4)
 
 # Main function to run the evaluation
 def run_evaluation():
@@ -159,7 +151,7 @@ def run_evaluation():
         print("Invalid evaluator name. Please enter 'alex' or 'brian'.")
         return
 
-    # Load errors dataset
+    # Load errors dataset (read-only)
     errors_filepath = "data/errors_phi2.json"
     if not os.path.exists(errors_filepath):
         print(f"Error: {errors_filepath} not found.")
@@ -183,12 +175,18 @@ def run_evaluation():
     elif evaluator_name == "brian":
         questions_subset = list(errors_data.items())[half_point:]
 
-    # Evaluate the assigned questions for the user
-    output_filepath = f"data/phi2_error_analysis_human.json"
+    # Create a separate output file to store evaluations
+    evaluations_filepath = "data/phi2_human_evaluations.json"
     
+    # Load existing evaluations if the file exists, or create a new dict
+    if os.path.exists(evaluations_filepath):
+        evaluations_data = load_errors(evaluations_filepath)
+    else:
+        evaluations_data = {}
+
     for question_id, question_data in tqdm(questions_subset, desc=f"Processing errors for {evaluator_name}"):
-        # Skip the question if it has already been evaluated
-        if 'evaluator' in question_data:
+        # Skip the question if it has already been evaluated by anyone
+        if question_id in evaluations_data:
             print(f"Skipping question {question_id} as it has already been evaluated.")
             continue
         
@@ -206,12 +204,14 @@ def run_evaluation():
 
         question_evaluation = collect_input_for_question(question_data, subdomain, release, correct_option, wrong_option)
 
-        # Add evaluator name and collected input to the question data
-        question_data['evaluator'] = evaluator_name
-        question_data.update(question_evaluation)
+        # Add evaluator name and collected input to the evaluations data
+        evaluations_data[question_id] = {
+            'evaluator': evaluator_name,
+            **question_evaluation
+        }
     
-        # Save the updated dataset after each question
-        save_updated_errors(output_filepath, errors_data)
+        # Save the updated evaluations dataset after each question
+        save_evaluations(evaluations_filepath, evaluations_data)
     
     print("Evaluation complete and saved.")
 
