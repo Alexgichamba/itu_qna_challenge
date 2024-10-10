@@ -3,11 +3,12 @@ import re
 from openai import OpenAI
 from tqdm.auto import tqdm
 import time
+import os
 
-openai_api = "YOUR_API_KEY"
+openai_api = os.getenv('OPENAI_API_KEY')
 client = OpenAI(api_key=openai_api)
-context_file = '../data/Retrieval Results.json'
-questions_file = '../data/366qs.txt'
+context_file = 'data/Retrieval Results.json'
+questions_file = 'data/366qs.txt'
 
 def load_questions(file):
     with open(file, 'r') as f:
@@ -38,7 +39,7 @@ def find_appearing_abbreviations(question):
         list of dict: A list of dictionaries where each dictionary has an abbreviation as the key
                       and its full form as the value.
     """
-    with open("../data/abbreviations.txt", "r") as f_abbrevs:
+    with open("data/abbreviations.txt", "r") as f_abbrevs:
         abbreviations = {}
         for line in f_abbrevs:
             # Split each line into abbreviation and full form
@@ -70,7 +71,7 @@ def find_appearing_abbreviations(question):
 
 
 def analyze_context(question, options, answer, explanation, chunk, abbreviations):
-    #options_text = "\n".join([f"{i+1}. {opt[1]}" for i, opt in enumerate(options)])
+    options_text = "\n".join([f"{i+1}. {opt[1]}" for i, opt in enumerate(options)])
     abbreviations_text = "\n".join(
         [
             f"{list(abbrev.keys())[0]}: {list(abbrev.values())[0]}"
@@ -80,6 +81,7 @@ def analyze_context(question, options, answer, explanation, chunk, abbreviations
     
     prompt = f"""
 Question: {question}
+Options: {options_text}
 Correct Answer: {answer}
 Explanation: {explanation}
 Abbreviations Full Forms: {abbreviations_text}
@@ -89,9 +91,9 @@ Context:
 
 Task: Determine if the given context helps answer the question correctly.
 Instructions:
-1. Consider the question, correct answer, and explanation.
+1. Consider the question, options, correct answer, and explanation.
 2. Analyze whether the context provides information that supports the correct answer.
-3. Respond with only 1 if the context helps, or 0 if it doesn't help.
+3. Respond with only 1 if the context helps you find the correct answer from the options, or 0 if it doesn't help.
 
 Your response should be a single digit: 0 or 1.
 """
@@ -143,7 +145,6 @@ def process_questions(questions, context,output_file,question_per_batch=10,sleep
             'retrieved_chunks': chunk_results
 
         }
-
         # Save results to a JSON file after each question
         with open(output_file, 'w') as outfile:
             json.dump(results, outfile, indent=4)      
