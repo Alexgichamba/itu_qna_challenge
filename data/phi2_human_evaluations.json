@@ -627,9 +627,7 @@
         "humaneval_retrieval": {
             "document_recall": "1"
         }
-    }
     },
-{
     "question 9344": {
         "evaluator": "brian",
         "humaneval_question": {
