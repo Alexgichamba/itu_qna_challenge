@@ -95,6 +95,9 @@ def collect_input_for_question(question_data, subdomain, release, correct_positi
     for option in question_data['options']:
         print(f"{option[0]}: {option[1]}")
 
+    # Print correct option
+    print(f"Correct Option: {question_data['correct_answer']}")
+
     # Automatically determine the question phrase from the first word
     automatic_phrase = get_first_word_as_phrase(question_data['question'])
     
