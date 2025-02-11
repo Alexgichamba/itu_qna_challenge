@@ -12,7 +12,7 @@ scikit_learn==1.5.1
 sentence_transformers==2.7.0
 torch==2.3.1
 tqdm==4.66.4
-transformers==4.42.3
+transformers==4.48.0
 wandb==0.17.5
 docx2txt
 xformers
